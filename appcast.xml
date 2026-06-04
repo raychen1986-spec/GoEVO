@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>GoEvo</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 04 Jun 2026 17:03:03 +0800</pubDate>
+            <sparkle:version>402</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="101281158" type="application/octet-stream" sparkle:edSignature="7mSZsRKQYnUzygsSWRCpHg1erObJetIVhLdAhriH8qcjUexyvQomyTykmg1S16uRJWzJxo/QYBXGpWKoJD1aAA=="/>
+        </item>
+    </channel>
+</rss>
