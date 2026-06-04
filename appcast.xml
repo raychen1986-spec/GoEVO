@@ -5,7 +5,7 @@
         <item>
             <title>1.0.0</title>
             <pubDate>Thu, 04 Jun 2026 17:03:03 +0800</pubDate>
-            <sparkle:version>402</sparkle:version>
+            <sparkle:version>404</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
