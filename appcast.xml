@@ -9,7 +9,7 @@
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="101276869" type="application/octet-stream" sparkle:edSignature="2yjG7t7NW5+H1LxASyH2hTKZOPhnEyiPi7UvJWYRz0ef6kgpCgO9XVKh4W/o3sdLliuA2qrSAegNRC7HdNfYBQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="101276870" type="application/octet-stream" sparkle:edSignature="QO0nw3OUeGPkiqHEG8k8Yk6IvXleEEvYFGpkcC3kHnNFlvm2e0nmmPJ8gQs46HRzHn2urt0F5VTMcswOnHTvBQ=="/>
         </item>
     </channel>
 </rss>
