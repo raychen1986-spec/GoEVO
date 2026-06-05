@@ -4,12 +4,12 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 04 Jun 2026 21:40:00 +0800</pubDate>
-            <sparkle:version>414</sparkle:version>
+            <pubDate>Fri, 05 Jun 2026 08:28:44 +0800</pubDate>
+            <sparkle:version>416</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103660006" type="application/octet-stream" sparkle:edSignature="hzeQOhIkb4//BxfsOfNYvYX71H9hSdjtrI+w+XB1YBPgE/dk53kmFfbTrRm6CU9SQSU0z0HWCIsnZ4c02J3KDA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103721922" type="application/octet-stream" sparkle:edSignature="DlyZ4k4vpxQ+P6RKhEoVNJ86m/DcORFlmhxNIdtmrnLhVVVO2bOstwOnEqgL1LA2psaPQ0plctAVHAGpeoH0Cg=="/>
         </item>
     </channel>
 </rss>
