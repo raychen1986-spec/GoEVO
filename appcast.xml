@@ -4,29 +4,25 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 06 Jun 2026 14:10:24 +0800</pubDate>
-            <sparkle:version>448</sparkle:version>
+            <pubDate>Sat, 06 Jun 2026 16:20:41 +0800</pubDate>
+            <sparkle:version>453</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 448）</h3>
-<h4>长线任务能力</h4>
+            <description><![CDATA[<h3>本次更新（build 453）</h3>
+<h4>多 Agent 委派（长线任务）</h4>
 <ul>
-  <li><b>新增「任务委派」</b>：主助手可把多步/重任务委派给精简执行子助手，在隔离上下文中跑完、只回传结果，长任务不再因上下文膨胀而中途失败。</li>
-  <li><b>技能执行更稳</b>：长任务中技能的操作步骤会被「钉住」保护、被省略的旧步骤转为进展摘要，不再丢失关键上下文。</li>
+  <li><b>子 Agent 轻装执行</b>：用 @提及角色、或说「用多个 agent / 分工」来做时，子 Agent 自动以精简档运行（不再背全套人格/画像/规则/记忆），主上下文不堆积，长任务更稳。</li>
+  <li><b>结构化交付</b>：子 Agent 完成后回传「状态 + 结论 + 产物 + 关键事实」的精简交付物给主助手汇总。</li>
+  <li><b>执行不再被打断</b>：子 Agent 执行阶段不再中途弹澄清卡住等待；需要确认的事项由主助手在派活前问清。</li>
+  <li>新增「用多个 agent / 多智能体 / 分工协作」等说法即可触发多 Agent 协同。</li>
 </ul>
-<h4>命令执行修复</h4>
+<h4>费用统计修复</h4>
 <ul>
-  <li>修正命令安全过滤的误拦截（如含 dd 子串的正常命令）。</li>
-  <li>Python 安装/环境问题给出可执行的修复指引（PEP 668、依赖损坏等）。</li>
-</ul>
-<h4>其它修复</h4>
-<ul>
-  <li>自定义模型定价保存不再相互覆盖（记费恢复正常）。</li>
-  <li>多项会话隔离与稳定性修复。</li>
+  <li>修正成本记录把模型名误当 Provider 的问题；未配定价的第三方模型告警改为每模型只提示一次。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103953470" type="application/octet-stream" sparkle:edSignature="QVciamAYsUrL9qbDL46LDIdbn9W02tW0wX7c+BPmc7bmHr2SVSXOGHrs4IgKh51BGbHpaRpdYxvplU/askaNCw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103957363" type="application/octet-stream" sparkle:edSignature="vKp5GehKbW7ftnvHHKpy99eMHKwG2qIgqThgkGP5ueLCh9MADnq2HmK9rGdtyMITEO9YhLAi51eMjD8RL1XPCA=="/>
         </item>
     </channel>
 </rss>
