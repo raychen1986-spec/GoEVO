@@ -4,25 +4,22 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 06 Jun 2026 16:20:41 +0800</pubDate>
-            <sparkle:version>453</sparkle:version>
+            <pubDate>Sat, 06 Jun 2026 21:40:53 +0800</pubDate>
+            <sparkle:version>456</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 453）</h3>
-<h4>多 Agent 委派（长线任务）</h4>
+            <description><![CDATA[<h3>本次更新（build 456）</h3>
+<h4>多 Agent 协同体验</h4>
 <ul>
-  <li><b>子 Agent 轻装执行</b>：用 @提及角色、或说「用多个 agent / 分工」来做时，子 Agent 自动以精简档运行（不再背全套人格/画像/规则/记忆），主上下文不堆积，长任务更稳。</li>
-  <li><b>结构化交付</b>：子 Agent 完成后回传「状态 + 结论 + 产物 + 关键事实」的精简交付物给主助手汇总。</li>
-  <li><b>执行不再被打断</b>：子 Agent 执行阶段不再中途弹澄清卡住等待；需要确认的事项由主助手在派活前问清。</li>
-  <li>新增「用多个 agent / 多智能体 / 分工协作」等说法即可触发多 Agent 协同。</li>
+  <li><b>协同卡片可视化增强</b>：多 Agent 协同时可看到各子 Agent 的推理明细与「汇总中」状态，过程更透明。</li>
 </ul>
-<h4>费用统计修复</h4>
+<h4>诊断</h4>
 <ul>
-  <li>修正成本记录把模型名误当 Provider 的问题；未配定价的第三方模型告警改为每模型只提示一次。</li>
+  <li>诊断支持包回溯窗口由 15 分钟延长到 30 分钟，避免长任务日志被截断。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103957363" type="application/octet-stream" sparkle:edSignature="vKp5GehKbW7ftnvHHKpy99eMHKwG2qIgqThgkGP5ueLCh9MADnq2HmK9rGdtyMITEO9YhLAi51eMjD8RL1XPCA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103971981" type="application/octet-stream" sparkle:edSignature="cFe3RFU7RdCGy9yqPkS2WpTfFN4/nJrtAxwQhlM3KV4DYWVHcRn6foCVgvMG6kdR8/3qgexyGa1Tu5D3m7oTBQ=="/>
         </item>
     </channel>
 </rss>
