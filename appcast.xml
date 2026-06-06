@@ -4,22 +4,18 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 06 Jun 2026 21:40:53 +0800</pubDate>
-            <sparkle:version>456</sparkle:version>
+            <pubDate>Sat, 06 Jun 2026 23:46:15 +0800</pubDate>
+            <sparkle:version>459</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 456）</h3>
-<h4>多 Agent 协同体验</h4>
+            <description><![CDATA[<h3>本次更新（build 459）</h3>
+<h4>长链路稳定性</h4>
 <ul>
-  <li><b>协同卡片可视化增强</b>：多 Agent 协同时可看到各子 Agent 的推理明细与「汇总中」状态，过程更透明。</li>
-</ul>
-<h4>诊断</h4>
-<ul>
-  <li>诊断支持包回溯窗口由 15 分钟延长到 30 分钟，避免长任务日志被截断。</li>
+  <li><b>长任务不再被 token 预算误杀</b>：Token 估算改为更贴合中文（CJK）的算法，并移除冗余的累计终止线，长链路任务执行更稳、不会中途被错误终止。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103971981" type="application/octet-stream" sparkle:edSignature="cFe3RFU7RdCGy9yqPkS2WpTfFN4/nJrtAxwQhlM3KV4DYWVHcRn6foCVgvMG6kdR8/3qgexyGa1Tu5D3m7oTBQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103973220" type="application/octet-stream" sparkle:edSignature="kjMsXUWPHHRnXGY5sh0TfGKrsU+jNzgcbWT3CHxygJunyp9g7uYkPMg9TTMcCMU+f32JU4P11RkoLb5zVwP2Dw=="/>
         </item>
     </channel>
 </rss>
