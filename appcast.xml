@@ -4,32 +4,18 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sun, 07 Jun 2026 23:31:13 +0800</pubDate>
-            <sparkle:version>484</sparkle:version>
+            <pubDate>Mon, 08 Jun 2026 07:22:27 +0800</pubDate>
+            <sparkle:version>487</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 484）</h3>
-<h4>技能体系大升级</h4>
+            <description><![CDATA[<h3>本次更新（build 487）</h3>
+<h4>修复</h4>
 <ul>
-  <li><b>技能自愈</b>：技能/任务因可修复原因失败（缺依赖、配置不当、环境损坏）时可自动诊断并修复，自主程度三档可调（默认仅提议、你批准才执行）。</li>
-  <li><b>技能编辑结构化</b>：显示名、描述、触发关键词、不适用场景分字段编辑，保存即生效、可搜索、跨重启。</li>
-  <li><b>外部程序适配</b>：可手动修正入口命令/参数/安装命令等；新增支持 Java / .NET / PHP 项目。</li>
-  <li><b>安装/卸载统一</b>：界面与对话两条路径完全一致，卸载会清干净自定义配置，重装不再"复活"旧设置。</li>
-  <li>技能市场 GitHub 体验增强。</li>
-</ul>
-<h4>模型与能力接入大幅扩充</h4>
-<ul>
-  <li>新增 7 个 OpenAI 兼容大模型 Provider；向量模型新增智谱 / 通义 DashScope / Jina / Voyage。</li>
-  <li>生图 / 生视频新增通义万相、Stability、可灵、海螺、智谱 CogView、OpenAI gpt-image 等。</li>
-</ul>
-<h4>更易上手</h4>
-<ul>
-  <li>精简首次启动引导（欢迎 → 配置模型 → 完成），开箱即用。</li>
-  <li>聊天顶部快捷栏精简。</li>
+  <li><b>修复用「/」调用技能无法执行的问题</b>：之前用「/」选中 ClawHub/GitHub 等技能后，只显示步骤说明却不真正执行。现已统一为「/选定技能 = 明确执行该技能」，会真正把脚本/命令跑起来产出结果；缺参数或涉及敏感操作时才会跟你确认。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104674751" type="application/octet-stream" sparkle:edSignature="OhQiMaGVhk2ecaQ2+9xwPL3B/H7vTykv1tBNwlC3UoSXDsGHw8pW6Vf39dEivZSlDam1zf8hlNe05mkMxOJCAw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104705641" type="application/octet-stream" sparkle:edSignature="KbrMmN+0ONnxCSGrBNvBtF67+rwDuysJC1aTSSK/vhHkXyVKDcasGxuLGvXqDfFkHEF84wcB/+kD6Jw4rXGSAw=="/>
         </item>
     </channel>
 </rss>
