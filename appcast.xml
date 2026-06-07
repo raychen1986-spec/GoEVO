@@ -4,18 +4,23 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 06 Jun 2026 23:46:15 +0800</pubDate>
-            <sparkle:version>459</sparkle:version>
+            <pubDate>Sun, 07 Jun 2026 11:12:11 +0800</pubDate>
+            <sparkle:version>465</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 459）</h3>
-<h4>长链路稳定性</h4>
+            <description><![CDATA[<h3>本次更新（build 465）</h3>
+<h4>远程桥接（RemoteBridge）</h4>
 <ul>
-  <li><b>长任务不再被 token 预算误杀</b>：Token 估算改为更贴合中文（CJK）的算法，并移除冗余的累计终止线，长链路任务执行更稳、不会中途被错误终止。</li>
+  <li><b>新增远程配对与审批</b>：可在设置中配对远程入口；远程发起的操作会按风险分级走审批确认，安全可控。</li>
+</ul>
+<h4>技能体验</h4>
+<ul>
+  <li>降低技能调用摩擦：文件类错误提示更清晰，shell 始终允许 mkdir/cp/mv 等常用命令。</li>
+  <li>技能改名/描述/关键词在弹窗保存后实时联动并可立即搜索到。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="103973220" type="application/octet-stream" sparkle:edSignature="kjMsXUWPHHRnXGY5sh0TfGKrsU+jNzgcbWT3CHxygJunyp9g7uYkPMg9TTMcCMU+f32JU4P11RkoLb5zVwP2Dw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104358762" type="application/octet-stream" sparkle:edSignature="bJYhpv6FMWX5fOury72Y0tqT4DHFcYMx4TDDpHr7wvcCnQU9EpP0m6q2C1LsNUWIuJBEow/oN835p6bqwschCQ=="/>
         </item>
     </channel>
 </rss>
