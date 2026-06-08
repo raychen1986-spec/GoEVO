@@ -4,23 +4,29 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 08 Jun 2026 08:49:03 +0800</pubDate>
-            <sparkle:version>491</sparkle:version>
+            <pubDate>Mon, 08 Jun 2026 12:56:37 +0800</pubDate>
+            <sparkle:version>494</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 491）</h3>
+            <description><![CDATA[<h3>本次更新（build 494）</h3>
+<h4>新功能</h4>
+<ul>
+  <li><b>随身端（远程控制）设置入口</b>：新增「设置 → 随身端」，可连接中转站、生成配对二维码，为手机端远程操控打基础（开发中，需配合手机 App）。</li>
+  <li><b>自我修复（实验）</b>：连续遇到同类问题时，会主动提出「一键修复」配置建议（如自动调低单次工具输出上限），你确认后即生效、可回滚。</li>
+</ul>
 <h4>重要修复</h4>
 <ul>
-  <li><b>修复连续闪退</b>：某些技能评分异常时会导致一发消息就崩溃，已修复。</li>
+  <li><b>长任务不再被误判中断</b>：修复多轮 / 长链路任务因 token 预算误算（中文被严重低估）而在中途被强制终止的问题。</li>
+  <li><b>技能调用更稳</b>：修复部分技能因文件操作被拦、报错信息看不懂而失败的问题。</li>
 </ul>
 <h4>体验优化</h4>
 <ul>
-  <li><b>发送快捷键改为「回车」</b>，换行用「Shift+回车」，更符合习惯。</li>
-  <li><b>新增「新手引导配置」入口</b>：在欢迎页可随时点开新手引导（配置模型、了解功能），不再只有首次启动才弹。</li>
+  <li><b>新手引导</b>：配置模型页可滚动，选中服务商后自动滚到 Key 输入区。</li>
+  <li><b>诊断包</b>：上下文回溯窗口延长到 30 分钟，长任务问题更易复现定位。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104709748" type="application/octet-stream" sparkle:edSignature="wAVjl5ZY+mz97hXbbSFgxAg3M4Q5oHfJJdpNSLmpfQsLmUb2Rtm3hrI4h2AukYjMQPvkdWDeC6WS4VShaZa9BA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104738393" type="application/octet-stream" sparkle:edSignature="Tgm9Nxo+roAQCeoHiWkw3LTy3P0yybtOLmnIoEoHck/THZsILtz3pX9smCUCAvots5Xg5KSje6jzW2sLPUflAQ=="/>
         </item>
     </channel>
 </rss>
