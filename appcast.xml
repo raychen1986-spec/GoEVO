@@ -4,29 +4,31 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 08 Jun 2026 13:59:28 +0800</pubDate>
-            <sparkle:version>497</sparkle:version>
+            <pubDate>Mon, 08 Jun 2026 18:21:19 +0800</pubDate>
+            <sparkle:version>503</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 497）</h3>
+            <description><![CDATA[<h3>本次更新（build 503）</h3>
 <h4>新功能</h4>
 <ul>
-  <li><b>随身端（远程控制）设置入口</b>：新增「设置 → 随身端」，可连接中转站、生成配对二维码，为手机端远程操控打基础（开发中，需配合手机 App）。<b>修复了该页打开显示「未初始化」的问题，现可正常配置。</b></li>
-  <li><b>自我修复（实验）</b>：连续遇到同类问题时，会主动提出「一键修复」配置建议（如自动调低单次工具输出上限），你确认后即生效、可回滚。</li>
+  <li><b>多 Agent 强制确认弹窗</b>：AI 建议调用多 Agent 协同时，必须弹出确认对话框，明确展示编排计划、预估 Token 消耗和耗时，你确认后才执行，不会再悄悄启动大量子 Agent。</li>
+  <li><b>随时终止多 Agent 任务</b>：编排执行过程中，卡片右上角新增「■ 终止」按钮，可随时取消所有子 Agent 任务。</li>
+  <li><b>新手引导优化</b>：弹窗扩容，内容区更宽敞；「新手引导配置」入口移至欢迎页更显眼位置，顶部/底部间距收紧贴近边框。</li>
 </ul>
 <h4>重要修复</h4>
 <ul>
-  <li><b>长任务不再被误判中断</b>：修复多轮 / 长链路任务因 token 预算误算（中文被严重低估）而在中途被强制终止的问题。</li>
-  <li><b>技能调用更稳</b>：修复部分技能因文件操作被拦、报错信息看不懂而失败的问题。</li>
+  <li><b>抓取 AI 资讯时卡死</b>：修复「AI 新闻」等网络内容在 87K+ tokens 上下文时触发正则灾难性回溯、导致整个请求挂起的问题。</li>
+  <li><b>子 Agent 推理联动打开主 Agent 空白面板</b>：点击子 Agent 推理过程时，不再错误联动打开主 Agent 的空白推理面板；主 Agent 推理在编排期间自动折叠为小标签，点击可手动展开。</li>
+  <li><b>知识库首次启动报错</b>：修复 App 首次启动时知识库分类树因数据库尚未就绪而弹出「加载失败」错误的问题。</li>
+  <li><b>历史 Trace 清理</b>：启动时自动清理超过 60 分钟仍未结束的僵尸追踪记录，防止诊断视图积累大量「进行中」的无效条目。</li>
 </ul>
 <h4>体验优化</h4>
 <ul>
-  <li><b>新手引导</b>：配置模型页可滚动，选中服务商后自动滚到 Key 输入区。</li>
-  <li><b>诊断包</b>：上下文回溯窗口延长到 30 分钟，长任务问题更易复现定位。</li>
+  <li><b>日志容量扩大</b>：日志缓冲区从 2000 条扩容至 5000 条，长任务排查更完整。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104739026" type="application/octet-stream" sparkle:edSignature="0+5nUxvG78ga2WlSgCHHhzB55PQ02Uutz8xMlg7O3IqlBy0iEBb+gx5DlDFCRpIu40xtzBGgulwyGO4h50YWBw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104761486" type="application/octet-stream" sparkle:edSignature="C3QxZ5DtS3aWTZTr1YA8Ybcrb7niZUHIvFn3reSKXoF+6l+abmOfmCutahCjTf0PeMZ4ciDbOHK9cH2q1p39Dg=="/>
         </item>
     </channel>
 </rss>
