@@ -4,12 +4,12 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 10 Jun 2026 09:15:35 +0800</pubDate>
-            <sparkle:version>516</sparkle:version>
+            <pubDate>Wed, 10 Jun 2026 10:49:36 +0800</pubDate>
+            <sparkle:version>525</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 516）</h3>
+            <description><![CDATA[<h3>本次更新（build 525）</h3>
 <h4>PPT 生成（go-pptx-pro）大幅增强</h4>
 <ul>
   <li><b>一句话出专业 PPT</b>：内置 5 套主题（炭黑/咨询蓝/深色科技/紫蓝/暖调）× 14 种专业版式（封面 SCQA、一页讲清、KPI、柱状图、泳道流程图、中枢架构图、分层架构、专业甘特、决策网格等），主题与版式自由组合，全部原生可编辑。</li>
@@ -28,8 +28,15 @@
   <li><b>超大输入不再撑爆预算</b>：超长文档/材料自动转存为工作文件、按需读取，避免每轮重复占用上下文导致失败。</li>
   <li><b>随身端连接更稳</b>：Mac 随身端新增 WebSocket 保活与静默掉线自动重连；会话列表只同步未归档会话。</li>
 </ul>
+<h4>其它改进</h4>
+<ul>
+  <li><b>知识库检索工具</b>：AI 可直接检索内部知识库（全文 + 语义融合排序），回答更贴合你的资料。</li>
+  <li><b>表情 Orb 与旁白</b>：新增表情球视图与活动旁白，交互反馈更生动。</li>
+  <li><b>Shell 命令兼容性修复</b>：修复含分号的脚本命令（如 python3 -c "…;…"）被误拦的问题，技能脚本执行更顺畅。</li>
+  <li><b>技能安装时间显示修复</b>：自动识别毫秒/秒时间戳，安装时间显示正确。</li>
+</ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104914197" type="application/octet-stream" sparkle:edSignature="ZbsJZevDOIf/A5Z/HA1Z7BiW6dm0Aktgq1E70N8V0gVlrLZ2r2lkuIj5HOGGBcdSSyEnEqrT+o0W7pCwlTfFAQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="104921053" type="application/octet-stream" sparkle:edSignature="/X9fZLltObpDWaVqHnXvh8gI6SupTMa0WQ6x1IhhsjrwW1VrmNpolDi1h3y1lPyTxYlDleMudHEmEJOspMn5BA=="/>
         </item>
     </channel>
 </rss>
