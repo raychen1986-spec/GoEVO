@@ -4,34 +4,38 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sun, 14 Jun 2026 10:30:02 +0800</pubDate>
-            <sparkle:version>637</sparkle:version>
+            <pubDate>Sun, 14 Jun 2026 13:37:02 +0800</pubDate>
+            <sparkle:version>642</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>本次更新（build 636）</h3>
+            <description><![CDATA[<h3>本次更新</h3>
 
-<h4>AI 设计 PPT（go-llm-ppt）多项修复</h4>
+<h4>AI 设计 PPT</h4>
 <ul>
-  <li><b>配色还原</b>：修复部分图表（面积图、流程框、进度条等）导出 PPTX 时渐变填充丢失、变成灰色块的问题，配色与预览一致。</li>
-  <li><b>图标正常</b>：修复图标偶发被撑大成巨型方块、深色背景下变实心黑块的问题；图标恢复正常大小与描边配色。</li>
-  <li><b>深色主题文字可见</b>：修复深色主题下浅色文字「白字白底」看不清的问题。</li>
-  <li><b>设计确认更清楚</b>：确认卡稳定显示「设计风格 / 主题配色」等全部项，已给的值会预选为默认（仍可改）；标题项数与实际一致。</li>
-  <li><b>更稳的策略规划</b>：增强方案 JSON 的容错解析，弱模型也更不易失败；用 / 指定技能时锁定执行、失败明确报错，不再悄悄降级到旧技能。</li>
+  <li><b>新增「PPT 技能管理」设置</b>：可为「策略师」单独指定专属模型（如 deepseek-v4-pro）与输出上限（4K–100K，默认 20K），并维护设计风格库、并行设计师并发等。</li>
+  <li><b>修复大册生成失败</b>：10 页以上时策略师方案因输出被截断而失败的问题已解决（更大输出预算 + 计划精简 + 截断自动重试）。</li>
+  <li><b>设计确认更清楚</b>：确认卡稳定显示设计风格 / 主题配色等全部项，已给的值预选为默认（仍可改）。</li>
+  <li><b>配色 / 图标 / 深色文字</b>：修复导出 PPTX 时渐变变灰、图标巨大化或变黑块、深色主题浅色文字看不清等问题。</li>
 </ul>
 
-<h4>桌面表情光球</h4>
+<h4>聊天体验</h4>
 <ul>
-  <li><b>任务态表情</b>：思考中 / 日志流 / 完成 · 失败等状态有了对应的「机器人脸」表情与心声播报，进展更直观。</li>
+  <li><b>消息显性标识引用能力</b>：发出的消息若用了技能 / 子 Agent / 知识库，气泡顶部会显示对应的彩色标识，一眼可见。</li>
+  <li><b>任务态表情</b>：思考中 / 日志流 / 完成 · 失败等状态有了对应的桌面「机器人脸」表情与心声播报。</li>
+</ul>
+
+<h4>模型配置</h4>
+<ul>
+  <li><b>Max Tokens 范围放宽</b>：单次响应输出上限可调区间扩大到 4K–100K（默认 8K），且对所有模型的主对话真正生效（注意仍受各模型自身输出硬上限约束）。</li>
 </ul>
 
 <h4>稳定性</h4>
 <ul>
-  <li><b>进度卡不再串台</b>：修复正在生成 PPT 时切换到其他会话，进度卡片错误显示到别的会话的问题。</li>
-  <li><b>预览更可信</b>：调试用 HTML 预览改为逐页隔离渲染，与最终 PPTX 效果一致。</li>
+  <li>修复生成 PPT 时切换会话进度卡串台；调试 HTML 预览改为逐页隔离，与最终 PPTX 一致。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="106547622" type="application/octet-stream" sparkle:edSignature="wmpN29NfrA1nGopykfLhrKc9PMGdQJj4od5s2sXaGHmZjWPuju/T+Ef3JvKavnyBK3gWpZ7hHISKrCw3JYkVBw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="106587652" type="application/octet-stream" sparkle:edSignature="pchJfPv0RzVzzGhIr+A1810qikkZF/1MIUSbvfzLKj38K8DrjRBxC0vm1ZrKvf4ghbP+Q0NQgroLooisM+ECBQ=="/>
         </item>
     </channel>
 </rss>
