@@ -4,43 +4,43 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sun, 14 Jun 2026 15:29:50 +0800</pubDate>
-            <sparkle:version>645</sparkle:version>
+            <pubDate>Sun, 14 Jun 2026 20:53:13 +0800</pubDate>
+            <sparkle:version>657</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>隐私与安全</h4>
+<h4>AI 设计 PPT 稳定性大幅提升</h4>
 <ul>
-  <li><b>新增「敏感内容仅用本地模型」开关</b>（设置 → 安全，默认关闭）：修复内容里出现长数字（被误判为银行卡等）时报「无可用 LLM Provider」、任务直接失败的问题。默认关闭时，敏感片段会自动脱敏打码后照常使用云端模型；开启则强制只用本地模型、不上云。无论开关如何，命中的敏感信息都会先脱敏。</li>
+  <li><b>修复封面/复杂页空白</b>：设计师每页输出上限过小导致整页被截断（封面只剩黑底没标题）的问题已解决；新增可调的「设计师输出上限」（默认 12K）。</li>
+  <li><b>部分失败不再白费</b>：少数页生成失败时，已完成页会先组装成可用 PPTX，并保留「续传」从断点补齐——不再因失败而丢弃已生成内容、也不再误切换技能。</li>
+  <li><b>残页不再当成功</b>：截断/不完整的页会判为失败并自动重试，不再静默交付空壳页。</li>
+  <li><b>进度卡更可靠</b>：完成后不再自动消失（可随时展开看文件位置/逐页重试）；完成后计时器停住；切换会话不再串台。</li>
 </ul>
 
-<h4>AI 设计 PPT</h4>
+<h4>PPT 技能管理（设置）</h4>
 <ul>
-  <li><b>新增「PPT 技能管理」设置</b>：可为「策略师」单独指定专属模型（如 deepseek-v4-pro）与输出上限（4K–100K，默认 20K），并维护设计风格库、并行设计师并发等。</li>
-  <li><b>修复大册生成失败</b>：10 页以上时策略师方案因输出被截断而失败的问题已解决（更大输出预算 + 计划精简 + 截断自动重试）。</li>
-  <li><b>设计确认更清楚</b>：确认卡稳定显示设计风格 / 主题配色等全部项，已给的值预选为默认（仍可改）。</li>
-  <li><b>配色 / 图标 / 深色文字</b>：修复导出 PPTX 时渐变变灰、图标巨大化或变黑块、深色主题浅色文字看不清等问题。</li>
+  <li>「设置 → PPT 技能管理」可为策略师/设计师分别指定专属模型与输出上限（4K–100K），并维护设计风格库、并行并发等。</li>
+</ul>
+
+<h4>监控 / 进化 / 日志 中心改版</h4>
+<ul>
+  <li>监控、进化、日志三大模块信息架构重构，新增监控中心、待确认面板与跨模块跳转，问题排查与自我进化更顺手。</li>
+</ul>
+
+<h4>隐私与模型配置</h4>
+<ul>
+  <li><b>「敏感内容仅用本地模型」开关</b>（设置 → 安全，默认关）：修复内容含长数字被误判为敏感时报「无可用 LLM Provider」失败的问题；默认会脱敏打码后照常使用云端模型。</li>
+  <li><b>Max Tokens 范围放宽</b>：单次输出上限可调区间扩大到 4K–100K（默认 8K），且对所有模型主对话生效。</li>
 </ul>
 
 <h4>聊天体验</h4>
 <ul>
-  <li><b>消息显性标识引用能力</b>：发出的消息若用了技能 / 子 Agent / 知识库，气泡顶部会显示对应的彩色标识。</li>
-  <li><b>任务态表情</b>：思考中 / 日志流 / 完成 · 失败等状态有了对应的桌面「机器人脸」表情与心声播报。</li>
-</ul>
-
-<h4>模型配置</h4>
-<ul>
-  <li><b>Max Tokens 范围放宽</b>：单次响应输出上限可调区间扩大到 4K–100K（默认 8K），且对所有模型的主对话真正生效（仍受各模型自身输出硬上限约束）。</li>
-</ul>
-
-<h4>稳定性</h4>
-<ul>
-  <li>修复生成 PPT 时切换会话进度卡串台；调试 HTML 预览改为逐页隔离，与最终 PPTX 一致。</li>
+  <li>消息引用的技能 / 子 Agent / 知识库会在气泡顶部彩色标识；任务态桌面「机器人脸」表情与心声播报。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="106585622" type="application/octet-stream" sparkle:edSignature="BjaIujgmD8n5ewflw4Gcr0EH0N773C14oZqZy8Bt2QGWXxAiYosZgGx6aPuvgdzEcHHDvw4De1dHQW/SylrZDA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="106915276" type="application/octet-stream" sparkle:edSignature="YdDVNZdLbJOA1/zqQbBxAl/rQyoDStjlyMv5mHp+hBAEz/HSKGD5FPrIaIIK5ENsPCDvCyabF3E9KHfWSXgqAw=="/>
         </item>
     </channel>
 </rss>
