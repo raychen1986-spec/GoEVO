@@ -4,12 +4,17 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sun, 14 Jun 2026 13:37:02 +0800</pubDate>
-            <sparkle:version>642</sparkle:version>
+            <pubDate>Sun, 14 Jun 2026 15:29:50 +0800</pubDate>
+            <sparkle:version>645</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+
+<h4>隐私与安全</h4>
+<ul>
+  <li><b>新增「敏感内容仅用本地模型」开关</b>（设置 → 安全，默认关闭）：修复内容里出现长数字（被误判为银行卡等）时报「无可用 LLM Provider」、任务直接失败的问题。默认关闭时，敏感片段会自动脱敏打码后照常使用云端模型；开启则强制只用本地模型、不上云。无论开关如何，命中的敏感信息都会先脱敏。</li>
+</ul>
 
 <h4>AI 设计 PPT</h4>
 <ul>
@@ -21,13 +26,13 @@
 
 <h4>聊天体验</h4>
 <ul>
-  <li><b>消息显性标识引用能力</b>：发出的消息若用了技能 / 子 Agent / 知识库，气泡顶部会显示对应的彩色标识，一眼可见。</li>
+  <li><b>消息显性标识引用能力</b>：发出的消息若用了技能 / 子 Agent / 知识库，气泡顶部会显示对应的彩色标识。</li>
   <li><b>任务态表情</b>：思考中 / 日志流 / 完成 · 失败等状态有了对应的桌面「机器人脸」表情与心声播报。</li>
 </ul>
 
 <h4>模型配置</h4>
 <ul>
-  <li><b>Max Tokens 范围放宽</b>：单次响应输出上限可调区间扩大到 4K–100K（默认 8K），且对所有模型的主对话真正生效（注意仍受各模型自身输出硬上限约束）。</li>
+  <li><b>Max Tokens 范围放宽</b>：单次响应输出上限可调区间扩大到 4K–100K（默认 8K），且对所有模型的主对话真正生效（仍受各模型自身输出硬上限约束）。</li>
 </ul>
 
 <h4>稳定性</h4>
@@ -35,7 +40,7 @@
   <li>修复生成 PPT 时切换会话进度卡串台；调试 HTML 预览改为逐页隔离，与最终 PPTX 一致。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="106587652" type="application/octet-stream" sparkle:edSignature="pchJfPv0RzVzzGhIr+A1810qikkZF/1MIUSbvfzLKj38K8DrjRBxC0vm1ZrKvf4ghbP+Q0NQgroLooisM+ECBQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="106585622" type="application/octet-stream" sparkle:edSignature="BjaIujgmD8n5ewflw4Gcr0EH0N773C14oZqZy8Bt2QGWXxAiYosZgGx6aPuvgdzEcHHDvw4De1dHQW/SylrZDA=="/>
         </item>
     </channel>
 </rss>
