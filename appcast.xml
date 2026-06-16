@@ -4,33 +4,27 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 16 Jun 2026 15:38:33 +0800</pubDate>
-            <sparkle:version>691</sparkle:version>
+            <pubDate>Tue, 16 Jun 2026 18:44:25 +0800</pubDate>
+            <sparkle:version>695</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>随身端：装上即用，无需任何令牌</h4>
+<h4>AI 设计 PPT：逐页质量审计，产出更稳更精</h4>
 <ul>
-  <li><b>首次启动自动登记本机</b>：用本机公钥向中转站自证注册，普通用户不再需要 ADMIN_TOKEN，"装 App → 打开 → 直接配对"。</li>
-  <li><b>中转站地址内置默认</b>：开箱即连，普通用户无需填写；自部署可在「高级设置」覆盖。</li>
-  <li>设置页重排：配对主流程置顶，中转站地址 / 管理员令牌下沉到「高级设置（仅运维/自部署）」。</li>
-  <li>零信任不变：只发公钥，私钥永不离开本机；中转站不持会话密钥、不解密。</li>
+  <li><b>每页自动质检 + 自动修复</b>：每页生成后先做几何审计（内容超出画布 / 元素重叠 / 页面过空），发现问题自动反馈设计师重画——零额外模型成本，只重画有问题的页。彻底拦截"整页错位"这类瑕疵。</li>
+  <li><b>可选视觉模型审计（更强）</b>：开启后把每页截图交给视觉模型按评分卡找审美/可读性/图表问题再重画。可在「设置 → PPT 技能管理 → 逐页质量审计」开启，并单独指定视觉审计专属模型（Claude / Kimi / 豆包）。默认关。</li>
+  <li><b>排版消毒</b>：自动修正设计师偶发的 CSS 无单位写法（如 left:60 漏 px），从源头杜绝整页布局塌陷。</li>
+  <li>至此策略师 / 设计师 / 视觉审计三角色均可独立指定模型，各按特长配置。</li>
 </ul>
 
-<h4>经营分析专家增强</h4>
+<h4>随身端（上一版延续）</h4>
 <ul>
-  <li>多 Agent 并行分析流水线接入更多数据源（钉钉多维表格支持贴链接自动解析、文件批量、HTTP API 等）。</li>
-</ul>
-
-<h4>大模型 / 工具</h4>
-<ul>
-  <li>主聊天缓存命中率可观测（日志「缓存命中 N/M」），配合前缀缓存稳定性优化更省更快。</li>
-  <li>消息底部冗余工具清单文本默认关闭（工具仍经 native function calling 全量发送，能力不变），每轮省约 4-5K token。</li>
+  <li>装上即用：首次启动自动登记本机、中转站地址内置默认，普通用户无需任何令牌即可配对。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="107389392" type="application/octet-stream" sparkle:edSignature="lyo/4/hwK4GPY2dL3Avh3TXojOQ8Ke7mLFERhbrYB3Vq8czxHiLexXtcxXgbsOqPJ4J01SSXL6ciOZ/wrv5ICA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="110182365" type="application/octet-stream" sparkle:edSignature="7MEcszutig4nWcwSfRYlhQJJN9bs7Gwt7df4wPfG8R/KqsCIrMDybusXRrajZ8vH+UigMUOZ47yYxdkagsvjAQ=="/>
         </item>
     </channel>
 </rss>
