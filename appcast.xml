@@ -4,28 +4,37 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 15 Jun 2026 14:54:07 +0800</pubDate>
-            <sparkle:version>677</sparkle:version>
+            <pubDate>Tue, 16 Jun 2026 09:04:38 +0800</pubDate>
+            <sparkle:version>686</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>模型输出上限默认值按官方最新数据刷新</h4>
+<h4>新技能：经营分析专家（多 Agent 并行流水线）</h4>
 <ul>
-  <li><b>「模型输出 Max Tokens」默认值贴合各模型真实输出上限</b>：DeepSeek V4 320K、OpenAI / 智谱 GLM 128K、Claude / 通义 / 豆包 / Gemini 等 64K，不再一刀切，也与放宽后的滑块区间（64K–10M）对齐。</li>
-  <li><b>内置种子模型升级到当前版本</b>：OpenAI → GPT-5.5、Gemini → Gemini 3.5 Flash（此前为 gpt-4o-mini / gemini-2.0-flash）。</li>
-  <li><b>PPT 生成默认放宽</b>：策略师 128K、设计师 64K，复杂多页方案更不易被截断。</li>
-  <li>注：以上为新增 Provider 的默认值，已保存的 Provider 配置不受影响（可在「设置→模型配置」按需调整）。</li>
+  <li>一站式商业/经营分析：主策略拆解 → 并行子分析 → 汇聚成稿，沿用 PPT 同款确定性编排（带进度卡、断点续传）。</li>
+  <li>支持接入钉钉多维表格等数据源。</li>
 </ul>
 
-<h4>大模型缓存提速（上一版延续，持续生效）</h4>
+<h4>大模型缓存：主聊天也能看命中率了</h4>
 <ul>
-  <li>前缀缓存稳定性优化：系统提示会话内冻结、历史只追加不重排、请求确定性序列化 → 连续请求命中各厂商原生前缀缓存（命中部分约 1/10 计费），长对话与多页 PPT 更省更快。</li>
-  <li>日志中心显示每次调用「缓存命中 N/M (XX%)」，命中效果可量化。</li>
+  <li>主聊天（流式）调用现在也输出「缓存命中 N/M (XX%)」到日志中心，配合上一版的前缀缓存稳定性优化，可直接观测长对话省了多少。</li>
+</ul>
+
+<h4>工具调用：更省 token</h4>
+<ul>
+  <li>消息底部冗余的「工具清单文本」默认关闭——工具始终通过 native function calling 全量发送给模型，能力不受影响，每轮省最多约 4-5K token。如需兼容弱/本地模型可在「设置→ReAct」打开回退。</li>
+</ul>
+
+<h4>其它</h4>
+<ul>
+  <li>修复：发图片偶发「识别不了」（视觉路由被临时指定模型覆盖）。</li>
+  <li>失败诊断带真实配置 + 任务可行性预判（识别"尚未披露"等不可得数据，不再空转）。</li>
+  <li>监控/进化/日志中心原生控件主题化、选中对比度统一。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="107101163" type="application/octet-stream" sparkle:edSignature="MRHR1fX8oEk5NJYoPij8JbUZyPxcHTlKWiEVNW5DvkoIf+IgUvhI4nGdG4dXYK8pavSHqCQKCTNbl0UO8HmDBA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="107333908" type="application/octet-stream" sparkle:edSignature="zE6QGcnxh7Y1hnGdY37Mj3+7RqD/eWa0HTMNHuTNeObr3WgjlFtjidT9ggWX9DcDywYG+vM/SqydXmyvnV5vCw=="/>
         </item>
     </channel>
 </rss>
