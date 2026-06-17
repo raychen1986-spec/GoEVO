@@ -4,12 +4,19 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 17 Jun 2026 12:08:29 +0800</pubDate>
-            <sparkle:version>704</sparkle:version>
+            <pubDate>Wed, 17 Jun 2026 15:46:28 +0800</pubDate>
+            <sparkle:version>711</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+
+<h4>AI 设计 PPT：成功不再被误判失败、模型故障快速止损</h4>
+<ul>
+  <li><b>生成成功不再被吞</b>：PPT 全部生成完成后，会<b>直接交付结果</b>（✅ 已生成 N 页 + 文件路径），不再因事后那次模型汇总调用抖动而误报「生成超时」失败、让你以为白做了。</li>
+  <li><b>长 PPT 不被超时腰斩</b>：页数多 / 模型较慢时，整册生成可能超过 20 分钟——现在不会再被主循环超时中途砍掉、丢弃已生成内容。</li>
+  <li><b>模型故障快速止损</b>：当所用模型持续不可用（503 / 熔断），不再对着挂掉的服务空转十几分钟，而是<b>几十秒内停止</b>并给出清晰引导（换 Provider / 核对模型名 → 点「续传」从断点继续，已完成的页保留）。</li>
+</ul>
 
 <h4>「终止」键现在真能停下来</h4>
 <ul>
@@ -27,7 +34,7 @@
   <li>排版消毒：自动修正设计师 CSS 无单位写法，杜绝整页布局塌陷。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113245031" type="application/octet-stream" sparkle:edSignature="Aeqd90lPgrcCNSyMp+gsS+TWK1u4cif/HBFWX900xcyrmB9e3msDzj9qOv98hbDbQMgjaZ0mSzq8in3GHxOBDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113255746" type="application/octet-stream" sparkle:edSignature="TZKbIp4V55Zm7b8WNJknA4MRYvb2PyGqlDU8hydzwTLAxRSu38obyhBPgGOO3HS3W1S7Izn5kIxV9eAEMOKzDg=="/>
         </item>
     </channel>
 </rss>
