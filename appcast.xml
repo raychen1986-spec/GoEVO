@@ -4,12 +4,17 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 17 Jun 2026 15:46:28 +0800</pubDate>
-            <sparkle:version>711</sparkle:version>
+            <pubDate>Wed, 17 Jun 2026 17:05:23 +0800</pubDate>
+            <sparkle:version>714</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+
+<h4>钉钉多维表格读取：整合强化</h4>
+<ul>
+  <li>读取多维表时优先匹配「常用多维表映射」（按别名 / 表名 / 链接里的 sheetId 自动定位 base_id），不再每次都来回追问；MCP 钉钉入口前置、设置项收敛更清爽。</li>
+</ul>
 
 <h4>AI 设计 PPT：成功不再被误判失败、模型故障快速止损</h4>
 <ul>
@@ -34,7 +39,7 @@
   <li>排版消毒：自动修正设计师 CSS 无单位写法，杜绝整页布局塌陷。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113255746" type="application/octet-stream" sparkle:edSignature="TZKbIp4V55Zm7b8WNJknA4MRYvb2PyGqlDU8hydzwTLAxRSu38obyhBPgGOO3HS3W1S7Izn5kIxV9eAEMOKzDg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113258964" type="application/octet-stream" sparkle:edSignature="5PrgeNQK9O1OYbqourKPAc8QyVL2ckagZLKnfpnLinp4dV/QW3ecm7TRWPf5niGlf6BeBG776aGEe/y9hVXGBA=="/>
         </item>
     </channel>
 </rss>
