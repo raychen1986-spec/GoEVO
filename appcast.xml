@@ -4,26 +4,31 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 18 Jun 2026 16:55:54 +0800</pubDate>
-            <sparkle:version>724</sparkle:version>
+            <pubDate>Thu, 18 Jun 2026 21:02:38 +0800</pubDate>
+            <sparkle:version>726</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>检索类技能开箱即用：装好就能搜，不再首用必踩坑</h4>
+<h4>「做梦」功能（全新）</h4>
 <ul>
-  <li><b>安装即生成运行配置</b>：从 GitHub 安装的命令行技能（如 anysearch 联网检索），安装时会<b>自动探测本机运行环境并写好运行配置</b>（runtime.conf）。此前缺这一步，AI 只能「自己猜命令」、经常把参数拼错导致检索失败、空转——现在装好直接可用。</li>
+  <li>新增「做梦」能力：记忆整理（M1）+ 织梦全链路（M2），并配套创作库与输入体验增强。</li>
 </ul>
 
-<h4>技能 API Key 配置：填了就真生效</h4>
+<h4>输入与编辑：实时富文本（所见即所得）</h4>
 <ul>
-  <li><b>密钥落到正确位置</b>：给技能配置的 API Key 现在统一写入<b>该技能自己的配置文件</b>，调用时确实读得到。修复了「明明配了 Key 却一直走匿名/失败」的问题（根因是旧版把 Key 写进了系统登录文件，技能根本读不到）。</li>
-  <li><b>技能中心可视化配置</b>：「技能 → 配置」面板新增「技能密钥」区，需要 Key 的技能会列出可填项，输入即保存（本机存储、不上传、不进日志）。多数技能匿名也可用，配置后获得完整额度。</li>
-  <li><b>更新技能不丢 Key</b>：升级已安装技能时，已配置的密钥会被<b>保留</b>，不再需要重配。</li>
+  <li><b>聊天输入框实时富文本</b>：输入 Markdown 时直接呈现效果——标题分级、有序/无序列表自动缩进、粗体/斜体、引用、行内代码即时生效，不再是一屏原始符号。底层与发送给 AI 的内容仍是干净文本，完全不受影响。</li>
+  <li><b>知识库编辑器同款升级</b>：Wiki 文档编辑改为单栏所见即所得；排版工具栏改为在<b>光标处</b>插入（不再塞到文末）。文档存储仍是 Markdown。</li>
+  <li><b>知识库正文标题字号修正</b>：正文标题不再比文档主标题还大，层级更清晰。</li>
+</ul>
+
+<h4>体验修复</h4>
+<ul>
+  <li><b>「/」选技能不再清空已输入文字</b>：先写好正文、再用「/」指定技能，正文会保留（所选技能以橙色标签呈现）。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113625359" type="application/octet-stream" sparkle:edSignature="D3JaF1t/BJ5z3/D9d94L8NHsJIe5aK9s5MnEaDlNWJgoDOKS8OoB1zlQ9VIRMZZSSH9mkriXLHGJM6r55f5WCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="114157860" type="application/octet-stream" sparkle:edSignature="e0y2VxP1m+oqwk/XGQJIG103DtHi/Wn6AFc3PfGmG+STJFkzx3uRaBSKYAGH0Migp+F47s6AHUpwTkQMlCSZCw=="/>
         </item>
     </channel>
 </rss>
