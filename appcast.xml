@@ -4,8 +4,8 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 18 Jun 2026 15:46:21 +0800</pubDate>
-            <sparkle:version>723</sparkle:version>
+            <pubDate>Thu, 18 Jun 2026 16:55:54 +0800</pubDate>
+            <sparkle:version>724</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
@@ -23,7 +23,7 @@
   <li><b>更新技能不丢 Key</b>：升级已安装技能时，已配置的密钥会被<b>保留</b>，不再需要重配。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113601971" type="application/octet-stream" sparkle:edSignature="RpMoQN+h03x6uIfaiNJsy6aMI27Fr/5M564AVNiCs/zx6kBwJdKuUmoCAAzpZOk19uaGAEs+iY+UWz3aZhRcBA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113625359" type="application/octet-stream" sparkle:edSignature="D3JaF1t/BJ5z3/D9d94L8NHsJIe5aK9s5MnEaDlNWJgoDOKS8OoB1zlQ9VIRMZZSSH9mkriXLHGJM6r55f5WCQ=="/>
         </item>
     </channel>
 </rss>
