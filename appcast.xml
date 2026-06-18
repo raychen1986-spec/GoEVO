@@ -4,8 +4,8 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 18 Jun 2026 10:37:11 +0800</pubDate>
-            <sparkle:version>720</sparkle:version>
+            <pubDate>Thu, 18 Jun 2026 12:11:59 +0800</pubDate>
+            <sparkle:version>722</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
@@ -39,7 +39,7 @@
   <li>排版消毒：自动修正设计师 CSS 无单位写法，杜绝整页布局塌陷。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113573251" type="application/octet-stream" sparkle:edSignature="KTYIdM3+2jgq6KDWj2WLoCBGX5i007bk8MlRz8jQhIXF73XdzPfRjuVpW71Td1yxT0p3vb63MrniJHftv9ERBA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113577223" type="application/octet-stream" sparkle:edSignature="JfM72cP/UdL5c67QzLxgYofjgFVLq+ETVKDEjUGupPZ4cQ6kXkLxlUeeQvICB01pFxe7eOY4hP0wHEhp1rbgDg=="/>
         </item>
     </channel>
 </rss>
