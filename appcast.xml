@@ -4,42 +4,26 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 18 Jun 2026 12:11:59 +0800</pubDate>
-            <sparkle:version>722</sparkle:version>
+            <pubDate>Thu, 18 Jun 2026 15:11:02 +0800</pubDate>
+            <sparkle:version>726</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>钉钉多维表格读取：整合强化</h4>
+<h4>检索类技能开箱即用：装好就能搜，不再首用必踩坑</h4>
 <ul>
-  <li>读取多维表时优先匹配「常用多维表映射」（按别名 / 表名 / 链接里的 sheetId 自动定位 base_id），不再每次都来回追问；MCP 钉钉入口前置、设置项收敛更清爽。</li>
+  <li><b>安装即生成运行配置</b>：从 GitHub 安装的命令行技能（如 anysearch 联网检索），安装时会<b>自动探测本机运行环境并写好运行配置</b>（runtime.conf）。此前缺这一步，AI 只能「自己猜命令」、经常把参数拼错导致检索失败、空转——现在装好直接可用。</li>
 </ul>
 
-<h4>AI 设计 PPT：成功不再被误判失败、模型故障快速止损</h4>
+<h4>技能 API Key 配置：填了就真生效</h4>
 <ul>
-  <li><b>生成成功不再被吞</b>：PPT 全部生成完成后，会<b>直接交付结果</b>（✅ 已生成 N 页 + 文件路径），不再因事后那次模型汇总调用抖动而误报「生成超时」失败、让你以为白做了。</li>
-  <li><b>长 PPT 不被超时腰斩</b>：页数多 / 模型较慢时，整册生成可能超过 20 分钟——现在不会再被主循环超时中途砍掉、丢弃已生成内容。</li>
-  <li><b>模型故障快速止损</b>：当所用模型持续不可用（503 / 熔断），不再对着挂掉的服务空转十几分钟，而是<b>几十秒内停止</b>并给出清晰引导（换 Provider / 核对模型名 → 点「续传」从断点继续，已完成的页保留）。</li>
-</ul>
-
-<h4>「终止」键现在真能停下来</h4>
-<ul>
-  <li><b>修复取消失效</b>：点「终止」后，主推理循环、正在执行的技能（如 AI 设计 PPT 的逐页生成）、子 Agent 编排会<b>立即全部停止</b>——不再出现「点了终止却继续跑、又自动起新一轮、再弹确认卡」的情况。</li>
-</ul>
-
-<h4>模型接入：中转站 / 反向代理地址更省心</h4>
-<ul>
-  <li><b>防重复地址拼接</b>：自定义 Provider / 中转站填地址时，无论填"基址"还是"完整的 …/chat/completions"，都能正确连接——不再因地址被拼成 …/chat/completions/chat/completions 而报 503、刷屏熔断。7 类 OpenAI 兼容 Provider 全部受益。</li>
-</ul>
-
-<h4>AI 设计 PPT：逐页质量审计（上一版延续）</h4>
-<ul>
-  <li>每页生成后自动几何审计（超出画布 / 元素重叠 / 页面过空）→ 有问题自动反馈设计师重画；可选视觉模型审计（可单独指定视觉审计专属模型）。「设置 → PPT 技能管理 → 逐页质量审计」可调。</li>
-  <li>排版消毒：自动修正设计师 CSS 无单位写法，杜绝整页布局塌陷。</li>
+  <li><b>密钥落到正确位置</b>：给技能配置的 API Key 现在统一写入<b>该技能自己的配置文件</b>，调用时确实读得到。修复了「明明配了 Key 却一直走匿名/失败」的问题（根因是旧版把 Key 写进了系统登录文件，技能根本读不到）。</li>
+  <li><b>技能中心可视化配置</b>：「技能 → 配置」面板新增「技能密钥」区，需要 Key 的技能会列出可填项，输入即保存（本机存储、不上传、不进日志）。多数技能匿名也可用，配置后获得完整额度。</li>
+  <li><b>更新技能不丢 Key</b>：升级已安装技能时，已配置的密钥会被<b>保留</b>，不再需要重配。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113577223" type="application/octet-stream" sparkle:edSignature="JfM72cP/UdL5c67QzLxgYofjgFVLq+ETVKDEjUGupPZ4cQ6kXkLxlUeeQvICB01pFxe7eOY4hP0wHEhp1rbgDg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="113641302" type="application/octet-stream" sparkle:edSignature="ZyLciqfH9TdN25ZfzMcp/GlaaflcK8mCDnkXNpbCa0vV0PUdbJL1sPesAyb/uSHQOP/+l20qcnKmRZH1Wb2wDg=="/>
         </item>
     </channel>
 </rss>
