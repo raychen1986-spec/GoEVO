@@ -4,30 +4,34 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 19 Jun 2026 20:38:47 +0800</pubDate>
-            <sparkle:version>754</sparkle:version>
+            <pubDate>Fri, 19 Jun 2026 22:17:56 +0800</pubDate>
+            <sparkle:version>759</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>修复：会话「串台」（推理过程 / 工具面板跨会话泄漏）</h4>
+<h4>修复：会话「串台」进一步加固</h4>
 <ul>
-  <li>修复了切换会话时，「推理过程」与右侧「工具」面板偶尔显示到别的会话内容的问题（会话隔离根因修复）。</li>
-  <li>新增内部强制守护：运行态写入越界会在开发/测试期当场报错，从机制上防止该问题再次回归。</li>
+  <li>彻底封死跨会话状态泄漏的最后一条隐蔽路径（运行态在无会话归属时不再误写到当前显示会话）；配合此前的隔离守护，三类成因已全部封堵。</li>
 </ul>
 
-<h4>自定义工具 / 技能：LLM 引导式创建</h4>
+<h4>修复：交互卡片需「点两次」</h4>
 <ul>
-  <li>支持通过对话引导创建自定义工具 / 技能；后台管理页简化为微调管理。</li>
+  <li>修复了部分交互卡片（确认/选择等）首次点击无响应、需点两次才生效的问题。</li>
 </ul>
 
-<h4>记忆与做梦增强</h4>
+<h4>修复：自定义工具偶发卡死</h4>
 <ul>
-  <li>「做梦」记忆整理/规则能力增强；情景记忆注入条数等可在设置中按滑块调节。</li>
+  <li>修复了自定义工具占位内容残留导致的偶发死循环；同时让相关报错更直接地指向对应设置项，便于排查。</li>
+</ul>
+
+<h4>知识库：资产去重治理</h4>
+<ul>
+  <li>新增知识资产去重能力，减少重复条目。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="115581395" type="application/octet-stream" sparkle:edSignature="maZTw8AQyMK0b2oGDBqwb5lFMq4Kncpl5eJylz4mem6pTlX4w81GODlXlyOFroS4FgEh/800q9KplxEAVwSWCw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="115653785" type="application/octet-stream" sparkle:edSignature="Pa0l3i4T5Wmfk0DTQUfpsrzo+YqFqBraaw8OH9ViWJ04zQKxT7p4mTYBG69hEGhwnj/2MxrS0TvSLjuqKlD3AA=="/>
         </item>
     </channel>
 </rss>
