@@ -4,30 +4,30 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 19 Jun 2026 12:09:24 +0800</pubDate>
-            <sparkle:version>748</sparkle:version>
+            <pubDate>Fri, 19 Jun 2026 20:38:47 +0800</pubDate>
+            <sparkle:version>754</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>模型健康监控：真实「调用测试」+ 熔断挂起</h4>
+<h4>修复：会话「串台」（推理过程 / 工具面板跨会话泄漏）</h4>
 <ul>
-  <li><b>新增「调用测试」</b>：对模型 Provider 发起一次真实最小调用，反映此刻能不能真用——成功自动解除熔断、失败计入熔断。原「测试连接」改名「检查配置」（它只查 API Key 是否配置，不代表能调用）。</li>
-  <li><b>熔断挂起</b>：Provider 连续探测失败达上限后转入「挂起」，停止自动反复重试路由；恢复需手动「调用测试」成功或「重置熔断器」——避免对已挂掉/限流的模型一直空转。</li>
+  <li>修复了切换会话时，「推理过程」与右侧「工具」面板偶尔显示到别的会话内容的问题（会话隔离根因修复）。</li>
+  <li>新增内部强制守护：运行态写入越界会在开发/测试期当场报错，从机制上防止该问题再次回归。</li>
 </ul>
 
-<h4>循环保护：报错更直接可排错</h4>
+<h4>自定义工具 / 技能：LLM 引导式创建</h4>
 <ul>
-  <li>触发循环/无进展终止时，提示会直接说清<b>哪条规则、什么阈值、该调哪个设置</b>；循环检测的「重复模式触发次数」等阈值可在「设置 → ReAct → 循环检测」按滑块调节。</li>
+  <li>支持通过对话引导创建自定义工具 / 技能；后台管理页简化为微调管理。</li>
 </ul>
 
-<h4>记忆与知识库增强</h4>
+<h4>记忆与做梦增强</h4>
 <ul>
-  <li>「做梦」记忆语义整理增强；知识库/创作库交互打磨；聊天框与知识库编辑器支持实时富文本编辑（底层仍为 Markdown）。</li>
+  <li>「做梦」记忆整理/规则能力增强；情景记忆注入条数等可在设置中按滑块调节。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="115379856" type="application/octet-stream" sparkle:edSignature="avAJxO0VPjVu5mMFe6DSVmOysSPGfJ9vUojc9Kk6EITM4tpycmM4yDR3r8CSw/8ZrMTKLBeSktrKcZWPiOQvBw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="115581395" type="application/octet-stream" sparkle:edSignature="maZTw8AQyMK0b2oGDBqwb5lFMq4Kncpl5eJylz4mem6pTlX4w81GODlXlyOFroS4FgEh/800q9KplxEAVwSWCw=="/>
         </item>
     </channel>
 </rss>
