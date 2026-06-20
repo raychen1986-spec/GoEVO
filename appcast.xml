@@ -4,34 +4,39 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 19 Jun 2026 22:17:56 +0800</pubDate>
-            <sparkle:version>759</sparkle:version>
+            <pubDate>Sat, 20 Jun 2026 22:02:42 +0800</pubDate>
+            <sparkle:version>788</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>修复：会话「串台」进一步加固</h4>
+<h4>重要修复：部分新用户显示代码内容时闪退</h4>
 <ul>
-  <li>彻底封死跨会话状态泄漏的最后一条隐蔽路径（运行态在无会话归属时不再误写到当前显示会话）；配合此前的隔离守护，三类成因已全部封堵。</li>
+  <li>修复了部分新安装用户在聊天中出现「代码块」时 App 崩溃/闪退的问题（资源加载缺陷）。强烈建议所有用户更新到本版本。</li>
+</ul>
+
+<h4>修复：会话「串台」彻底封堵</h4>
+<ul>
+  <li>跨会话状态泄漏（推理过程 / 工具面板 / 输入框）的三类成因已全部封死。</li>
 </ul>
 
 <h4>修复：交互卡片需「点两次」</h4>
 <ul>
-  <li>修复了部分交互卡片（确认/选择等）首次点击无响应、需点两次才生效的问题。</li>
+  <li>修复了部分交互卡片（确认 / 选择等）首次点击无响应、需点两次才生效的问题。</li>
 </ul>
 
 <h4>修复：自定义工具偶发卡死</h4>
 <ul>
-  <li>修复了自定义工具占位内容残留导致的偶发死循环；同时让相关报错更直接地指向对应设置项，便于排查。</li>
+  <li>修复了自定义工具占位内容残留导致的偶发死循环；相关报错更直接地指向对应设置项。</li>
 </ul>
 
-<h4>知识库：资产去重治理</h4>
+<h4>其他</h4>
 <ul>
-  <li>新增知识资产去重能力，减少重复条目。</li>
+  <li>知识库资产去重、聊天自动滚动「粘底跟随 + 回到底部」等体验优化。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="115653785" type="application/octet-stream" sparkle:edSignature="Pa0l3i4T5Wmfk0DTQUfpsrzo+YqFqBraaw8OH9ViWJ04zQKxT7p4mTYBG69hEGhwnj/2MxrS0TvSLjuqKlD3AA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116215680" type="application/octet-stream" sparkle:edSignature="9w7f/E6GUlarfhArUw2xtwVKFDb1PSKOSelCctxuTQSDYeNiTjCo+uHa7jKOuEtuwE4bhhRxlXyhCpBRr/59Dg=="/>
         </item>
     </channel>
 </rss>
