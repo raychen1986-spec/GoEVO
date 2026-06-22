@@ -4,43 +4,32 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 22 Jun 2026 12:51:55 +0800</pubDate>
-            <sparkle:version>837</sparkle:version>
+            <pubDate>Mon, 22 Jun 2026 17:34:38 +0800</pubDate>
+            <sparkle:version>850</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>编程能力大幅增强</h4>
+<h4>全新「提示词管理」与场景化对话</h4>
 <ul>
-  <li>真实项目编程：执行前快照 + 逐行 diff、自动理解项目结构、跨多文件改动、Git 安全网（可一键恢复到执行前）。</li>
-  <li>内联编程工作区：计划步骤与验收标准可在批准前编辑；逐用例红绿验收；自由聊天自动识别编程意图。</li>
+  <li>设置新增「提示词管理」：分层查看与编辑 L0 安全硬规则（只读）、L1 人设、L2 场景、L3 回应风格。</li>
+  <li>聊天输入框新增「场景」与「粒度」选择：场景可选「自动」（按你输入的意图自动切换 编程 / 研究 / 创作 等），也可手动钉死；粒度分 简 / 中 / 详。</li>
+  <li>AI 回复会挂上本轮命中的场景小标签（如「编程·工程 · 自动命中」），一眼可见、可核对。</li>
+  <li>编程 / 研究 / 代办 等核心场景提示词按一线实践深化，回答更专业、更懂场景。</li>
 </ul>
 
-<h4>界面全面统一与打磨</h4>
+<h4>记忆</h4>
 <ul>
-  <li>全项目弹窗统一为新的浮层设计（圆角 / 阴影 / 蒙版可控、深浅主题适配、自适应高度），输入框、下拉、分段、滑块、步进等控件统一主题风格。</li>
-  <li>创作库「资产详情」重做：速览面板 + 富详情分工，修复透明与布局问题。</li>
-  <li>聊天 Markdown 渲染升级；知识库分类与列表密度优化。</li>
-</ul>
-
-<h4>桌面机器人</h4>
-<ul>
-  <li>右键新增「宠物设置」：可选「一直驻留」或「主页面隐藏」（打开主窗口时自动收起机器人）。</li>
-</ul>
-
-<h4>模型与记忆</h4>
-<ul>
-  <li>新增 OpenModel 大模型接入。</li>
-  <li>记忆候选池（实验功能，可在「做梦」设置中开启灰度试用）。</li>
+  <li>记忆候选池置信度校准 + 三档阈值分层（运行时可调）。</li>
 </ul>
 
 <h4>修复</h4>
 <ul>
-  <li>流式空回复、悬浮机器人面板日志、晨报卡片切换会话串台、连接测试等多项问题修复。</li>
+  <li>修复切换话题后（如做完编程任务再去搜资料）仍被当成上一个编程任务处理的问题。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116359312" type="application/octet-stream" sparkle:edSignature="mvWKizS488TSzdWNQdvWoJW9I2AmaHAnueVpSyX+fIsS6qZeea7u68zUPBCtsh/x6B1SvGAZNJTgl0tgy1wEDA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116521192" type="application/octet-stream" sparkle:edSignature="r1FBMYnsnwivI603rhVRsaFWLHhPweGj6ELt8q+JYICGBMt+j692elVo23B97ignPiptS5+2XEGv/43+JSWeAQ=="/>
         </item>
     </channel>
 </rss>
