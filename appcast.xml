@@ -4,39 +4,43 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 20 Jun 2026 22:02:42 +0800</pubDate>
-            <sparkle:version>788</sparkle:version>
+            <pubDate>Mon, 22 Jun 2026 12:51:55 +0800</pubDate>
+            <sparkle:version>837</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>重要修复：部分新用户显示代码内容时闪退</h4>
+<h4>编程能力大幅增强</h4>
 <ul>
-  <li>修复了部分新安装用户在聊天中出现「代码块」时 App 崩溃/闪退的问题（资源加载缺陷）。强烈建议所有用户更新到本版本。</li>
+  <li>真实项目编程：执行前快照 + 逐行 diff、自动理解项目结构、跨多文件改动、Git 安全网（可一键恢复到执行前）。</li>
+  <li>内联编程工作区：计划步骤与验收标准可在批准前编辑；逐用例红绿验收；自由聊天自动识别编程意图。</li>
 </ul>
 
-<h4>修复：会话「串台」彻底封堵</h4>
+<h4>界面全面统一与打磨</h4>
 <ul>
-  <li>跨会话状态泄漏（推理过程 / 工具面板 / 输入框）的三类成因已全部封死。</li>
+  <li>全项目弹窗统一为新的浮层设计（圆角 / 阴影 / 蒙版可控、深浅主题适配、自适应高度），输入框、下拉、分段、滑块、步进等控件统一主题风格。</li>
+  <li>创作库「资产详情」重做：速览面板 + 富详情分工，修复透明与布局问题。</li>
+  <li>聊天 Markdown 渲染升级；知识库分类与列表密度优化。</li>
 </ul>
 
-<h4>修复：交互卡片需「点两次」</h4>
+<h4>桌面机器人</h4>
 <ul>
-  <li>修复了部分交互卡片（确认 / 选择等）首次点击无响应、需点两次才生效的问题。</li>
+  <li>右键新增「宠物设置」：可选「一直驻留」或「主页面隐藏」（打开主窗口时自动收起机器人）。</li>
 </ul>
 
-<h4>修复：自定义工具偶发卡死</h4>
+<h4>模型与记忆</h4>
 <ul>
-  <li>修复了自定义工具占位内容残留导致的偶发死循环；相关报错更直接地指向对应设置项。</li>
+  <li>新增 OpenModel 大模型接入。</li>
+  <li>记忆候选池（实验功能，可在「做梦」设置中开启灰度试用）。</li>
 </ul>
 
-<h4>其他</h4>
+<h4>修复</h4>
 <ul>
-  <li>知识库资产去重、聊天自动滚动「粘底跟随 + 回到底部」等体验优化。</li>
+  <li>流式空回复、悬浮机器人面板日志、晨报卡片切换会话串台、连接测试等多项问题修复。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116215680" type="application/octet-stream" sparkle:edSignature="9w7f/E6GUlarfhArUw2xtwVKFDb1PSKOSelCctxuTQSDYeNiTjCo+uHa7jKOuEtuwE4bhhRxlXyhCpBRr/59Dg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116359312" type="application/octet-stream" sparkle:edSignature="mvWKizS488TSzdWNQdvWoJW9I2AmaHAnueVpSyX+fIsS6qZeea7u68zUPBCtsh/x6B1SvGAZNJTgl0tgy1wEDA=="/>
         </item>
     </channel>
 </rss>
