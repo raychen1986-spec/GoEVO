@@ -4,32 +4,39 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 22 Jun 2026 17:34:38 +0800</pubDate>
-            <sparkle:version>850</sparkle:version>
+            <pubDate>Tue, 23 Jun 2026 14:01:00 +0800</pubDate>
+            <sparkle:version>874</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>全新「提示词管理」与场景化对话</h4>
+<h4>场景化对话更聪明</h4>
 <ul>
-  <li>设置新增「提示词管理」：分层查看与编辑 L0 安全硬规则（只读）、L1 人设、L2 场景、L3 回应风格。</li>
-  <li>聊天输入框新增「场景」与「粒度」选择：场景可选「自动」（按你输入的意图自动切换 编程 / 研究 / 创作 等），也可手动钉死；粒度分 简 / 中 / 详。</li>
-  <li>AI 回复会挂上本轮命中的场景小标签（如「编程·工程 · 自动命中」），一眼可见、可核对。</li>
-  <li>编程 / 研究 / 代办 等核心场景提示词按一线实践深化，回答更专业、更懂场景。</li>
+  <li>聊天框「场景」可选「自动」：按你输入的意图自动切换 编程 / 研究 / 创作 / 代办 等场景，AI 回复挂上命中的场景小标签，一眼可见、可核对。</li>
+  <li>切换话题更跟手：做完编程任务再去搜资料 / 闲聊，不会再被当成上一个编程任务继续处理。</li>
 </ul>
 
-<h4>记忆</h4>
+<h4>取消与确认卡修复</h4>
 <ul>
-  <li>记忆候选池置信度校准 + 三档阈值分层（运行时可调）。</li>
+  <li>取消编程 / PPT 任务现在「真取消」：点「取消」立即中止、不再照默认参数继续生成，并给出「已取消」回执。</li>
+  <li>重型任务（PPT / 经营分析）确认卡长时间无操作不再自动按默认产出。</li>
+  <li>确认卡片不再卡死或顶满聊天窗口：题目多时可内部滚动，底部按钮常驻可见。</li>
 </ul>
 
-<h4>修复</h4>
+<h4>编程中心</h4>
 <ul>
-  <li>修复切换话题后（如做完编程任务再去搜资料）仍被当成上一个编程任务处理的问题。</li>
+  <li>「项目 → 任务 → 工作台」统一入口；任务内可直接对话问答与驱动改动。</li>
+</ul>
+
+<h4>其他修复与优化</h4>
+<ul>
+  <li>知识库归档：分类对齐实时分类表，修复归档报错，手工新增的分类也能正确归入。</li>
+  <li>会话重命名时标题文字稳定全选，便于直接覆盖。</li>
+  <li>记忆候选池与画像召回升级；系统提示精简，每轮更省 token。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116521192" type="application/octet-stream" sparkle:edSignature="r1FBMYnsnwivI603rhVRsaFWLHhPweGj6ELt8q+JYICGBMt+j692elVo23B97ignPiptS5+2XEGv/43+JSWeAQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116718687" type="application/octet-stream" sparkle:edSignature="xRPc3PvfD8KtMPcKj8wxJOrkC1XZ2ZXJNd1O5/6ZAPpOgidz78R7MId2x/aWzpMgfLQSP8i48ZxRClXEPttQBQ=="/>
         </item>
     </channel>
 </rss>
