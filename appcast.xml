@@ -4,39 +4,31 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 23 Jun 2026 14:01:00 +0800</pubDate>
-            <sparkle:version>874</sparkle:version>
+            <pubDate>Tue, 23 Jun 2026 18:22:01 +0800</pubDate>
+            <sparkle:version>899</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>场景化对话更聪明</h4>
+<h4>可视化网页</h4>
 <ul>
-  <li>聊天框「场景」可选「自动」：按你输入的意图自动切换 编程 / 研究 / 创作 / 代办 等场景，AI 回复挂上命中的场景小标签，一眼可见、可核对。</li>
-  <li>切换话题更跟手：做完编程任务再去搜资料 / 闲聊，不会再被当成上一个编程任务继续处理。</li>
+  <li>新增「可视化网页」能力：属性面板可视化调整、对话微调、数据绑定，配合精准锚点回写与样式即时直写。</li>
 </ul>
 
-<h4>取消与确认卡修复</h4>
+<h4>创作库</h4>
 <ul>
-  <li>取消编程 / PPT 任务现在「真取消」：点「取消」立即中止、不再照默认参数继续生成，并给出「已取消」回执。</li>
-  <li>重型任务（PPT / 经营分析）确认卡长时间无操作不再自动按默认产出。</li>
-  <li>确认卡片不再卡死或顶满聊天窗口：题目多时可内部滚动，底部按钮常驻可见。</li>
-</ul>
-
-<h4>编程中心</h4>
-<ul>
-  <li>「项目 → 任务 → 工作台」统一入口；任务内可直接对话问答与驱动改动。</li>
+  <li>健康中心「重复治理」修复：点「保留最新处理全部」现在会真正清理重复副本，关闭后明细同步更新（此前只标记、不生效）。</li>
+  <li>资产详情里点「编辑标签」，标签弹窗不再被详情面板挡住。</li>
+  <li>健康中心交互反馈优化。</li>
 </ul>
 
 <h4>其他修复与优化</h4>
 <ul>
-  <li>知识库归档：分类对齐实时分类表，修复归档报错，手工新增的分类也能正确归入。</li>
-  <li>会话重命名时标题文字稳定全选，便于直接覆盖。</li>
-  <li>记忆候选池与画像召回升级；系统提示精简，每轮更省 token。</li>
+  <li>会话列表重命名时标题文字稳定全选，便于直接覆盖。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116718687" type="application/octet-stream" sparkle:edSignature="xRPc3PvfD8KtMPcKj8wxJOrkC1XZ2ZXJNd1O5/6ZAPpOgidz78R7MId2x/aWzpMgfLQSP8i48ZxRClXEPttQBQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116971244" type="application/octet-stream" sparkle:edSignature="XoLYuPkR2aBMiJq4riIa9+MMnOg3Tv2rpw16jgdb+mpls/D/HJFIlqjpXzyl+RRwa9sbPBPOGgNrjZA9YGbLCg=="/>
         </item>
     </channel>
 </rss>
