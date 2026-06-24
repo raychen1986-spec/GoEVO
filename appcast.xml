@@ -4,34 +4,39 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 24 Jun 2026 10:12:03 +0800</pubDate>
-            <sparkle:version>912</sparkle:version>
+            <pubDate>Wed, 24 Jun 2026 22:33:00 +0800</pubDate>
+            <sparkle:version>945</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>编程中心 · 工作流</h4>
+<h4>上网更顺、更安静</h4>
 <ul>
-  <li>新增多种工作流：快速、TDD（测试先行）、修复（复现优先）、重构（行为保护）、探索（最快原型）——AI 会按你的需求自动选合适的，计划卡上也能一键换，无需进设置。</li>
-  <li>新增「审查改动」：任务做完后随时点一下，AI 以审查者视角找潜在 bug / 边界 / 安全问题并给修改建议。</li>
-  <li>工作区「对话」升级：支持 Markdown 渲染、4 倍高输入框（回车发送 / Shift+回车换行）、深度思考开关、@引用本项目文件。</li>
+  <li>搜索 / 爬取网页全程在后台静默完成，不再弹出浏览器窗口打断你。</li>
+  <li>内置 16 个搜索引擎（中文优先：百度 / 必应 / 搜狗 / 360 等），无需任何配置即可联网检索。</li>
+  <li>遇到 Cloudflare / 反爬站点会自动绕过取内容，拿不到再逐级兜底。</li>
 </ul>
 
-<h4>可视化网页 · 数据绑定</h4>
+<h4>技能中心改版</h4>
 <ul>
-  <li>数据绑定：支持导入 CSV / Excel / JSON，自动整理成页面可读的数据；可「导出模板」先看清要填哪些字段。</li>
-  <li>修复网页绑定数据后预览「读取失败」的问题；新增分场景起手模板（汇报页 / 看板 / 原型）。</li>
-  <li>验收清单：网页类任务可手动逐条勾选验收（通过 / 失败）。</li>
+  <li>能力按 8 大用途分类（办公 / 检索 / 创作 / 开发 / 进化 / 运维 / 兴趣 / 其它）整理，内置能力自动归位。</li>
+  <li>聊天框输入「/」可按分类快速挑选能力；「已安装」页支持按分类筛选，并能直接给能力打标签。</li>
+  <li>修复：点「卸载」没有反应；新增「编辑名称 / 描述」入口；能力配置弹窗的样式与「新建工具」统一。</li>
 </ul>
 
-<h4>其他修复与优化</h4>
+<h4>确认卡与进度卡修复</h4>
 <ul>
-  <li>工作区窗口拉窄时内容自适应，不再被挤出窗口。</li>
-  <li>对话微调 / 任务对话执行时显示实时活动，不再黑盒转圈。</li>
+  <li>PPT / 经营分析的「设计确认卡」高度统一，「取消」按钮可正常中止任务。</li>
+  <li>经营分析的完成卡固定在它所属的那一轮，再发新消息也不会错位下沉。</li>
+</ul>
+
+<h4>其他优化</h4>
+<ul>
+  <li>多处弹窗、按钮、开关的样式与配色一致性优化，浅 / 深色更协调。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117097878" type="application/octet-stream" sparkle:edSignature="W0s1BZwJFpNX2GDplBkWQrQQrfEJ+EtbRKABl6zNEEV96ItB3dUyhlC7+4Ud8A9j2Gr+j6ncmyGDx5Nh74WaAQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117440774" type="application/octet-stream" sparkle:edSignature="FYvW8BHF9ROX6Mm5u383FnLdMTvxgkHkXsZsZbrkdk3SPgHMcZUQ+RADKFYzbLOXsVC/xJY9NxSHXB9tVFIKDQ=="/>
         </item>
     </channel>
 </rss>
