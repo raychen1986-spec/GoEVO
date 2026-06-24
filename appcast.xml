@@ -4,31 +4,34 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 23 Jun 2026 18:22:01 +0800</pubDate>
-            <sparkle:version>899</sparkle:version>
+            <pubDate>Wed, 24 Jun 2026 10:12:03 +0800</pubDate>
+            <sparkle:version>912</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>可视化网页</h4>
+<h4>编程中心 · 工作流</h4>
 <ul>
-  <li>新增「可视化网页」能力：属性面板可视化调整、对话微调、数据绑定，配合精准锚点回写与样式即时直写。</li>
+  <li>新增多种工作流：快速、TDD（测试先行）、修复（复现优先）、重构（行为保护）、探索（最快原型）——AI 会按你的需求自动选合适的，计划卡上也能一键换，无需进设置。</li>
+  <li>新增「审查改动」：任务做完后随时点一下，AI 以审查者视角找潜在 bug / 边界 / 安全问题并给修改建议。</li>
+  <li>工作区「对话」升级：支持 Markdown 渲染、4 倍高输入框（回车发送 / Shift+回车换行）、深度思考开关、@引用本项目文件。</li>
 </ul>
 
-<h4>创作库</h4>
+<h4>可视化网页 · 数据绑定</h4>
 <ul>
-  <li>健康中心「重复治理」修复：点「保留最新处理全部」现在会真正清理重复副本，关闭后明细同步更新（此前只标记、不生效）。</li>
-  <li>资产详情里点「编辑标签」，标签弹窗不再被详情面板挡住。</li>
-  <li>健康中心交互反馈优化。</li>
+  <li>数据绑定：支持导入 CSV / Excel / JSON，自动整理成页面可读的数据；可「导出模板」先看清要填哪些字段。</li>
+  <li>修复网页绑定数据后预览「读取失败」的问题；新增分场景起手模板（汇报页 / 看板 / 原型）。</li>
+  <li>验收清单：网页类任务可手动逐条勾选验收（通过 / 失败）。</li>
 </ul>
 
 <h4>其他修复与优化</h4>
 <ul>
-  <li>会话列表重命名时标题文字稳定全选，便于直接覆盖。</li>
+  <li>工作区窗口拉窄时内容自适应，不再被挤出窗口。</li>
+  <li>对话微调 / 任务对话执行时显示实时活动，不再黑盒转圈。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="116971244" type="application/octet-stream" sparkle:edSignature="XoLYuPkR2aBMiJq4riIa9+MMnOg3Tv2rpw16jgdb+mpls/D/HJFIlqjpXzyl+RRwa9sbPBPOGgNrjZA9YGbLCg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117097878" type="application/octet-stream" sparkle:edSignature="W0s1BZwJFpNX2GDplBkWQrQQrfEJ+EtbRKABl6zNEEV96ItB3dUyhlC7+4Ud8A9j2Gr+j6ncmyGDx5Nh74WaAQ=="/>
         </item>
     </channel>
 </rss>
