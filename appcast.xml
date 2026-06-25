@@ -4,12 +4,18 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 24 Jun 2026 22:33:00 +0800</pubDate>
-            <sparkle:version>945</sparkle:version>
+            <pubDate>Thu, 25 Jun 2026 09:49:21 +0800</pubDate>
+            <sparkle:version>954</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+
+<h4>全新「自动化」（实验）</h4>
+<ul>
+  <li>设置新增「自动化」：当某事件发生时自动执行动作——任务完成提醒、调用技能/工具、工具调用前二次确认/拦截等，框架强制执行。</li>
+  <li>默认关闭；开启后可用预置模板一键启用，所有动作都在「活动记录」里留痕（脱敏），可一键暂停或单条测试。</li>
+</ul>
 
 <h4>上网更顺、更安静</h4>
 <ul>
@@ -36,7 +42,7 @@
   <li>多处弹窗、按钮、开关的样式与配色一致性优化，浅 / 深色更协调。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117440774" type="application/octet-stream" sparkle:edSignature="FYvW8BHF9ROX6Mm5u383FnLdMTvxgkHkXsZsZbrkdk3SPgHMcZUQ+RADKFYzbLOXsVC/xJY9NxSHXB9tVFIKDQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117495656" type="application/octet-stream" sparkle:edSignature="joczq/OIy2SOmHUpFx6gah1gJGzUqtFLobgoYnH6x7eDrZGxa/IA08wcgsqIxSBlj0uTbvBztxVB4jSCAgAmDg=="/>
         </item>
     </channel>
 </rss>
