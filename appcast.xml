@@ -4,61 +4,41 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 25 Jun 2026 15:33:18 +0800</pubDate>
-            <sparkle:version>969</sparkle:version>
+            <pubDate>Thu, 25 Jun 2026 17:20:38 +0800</pubDate>
+            <sparkle:version>979</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>全新「联网查询」一站式技能</h4>
+<h4>「自动化」升级（实验）</h4>
 <ul>
-  <li>说一句「上网查一下…」，它自动：搜索（16 引擎，中文优先）→ 进网页读取 → 综合给出带来源的答复，全程有进度卡可见。</li>
-  <li>已知网址直接读；遇反爬自动逐级兜底。原「智能搜索 / 网页获取」合并进这一个，更省心。</li>
-  <li>「/」技能选择器新增「最近」分类，按最近使用排序，常用技能一键直达。</li>
-  <li>技能「详情」新增"工具与执行流程"，看得到它调了哪些工具、何时、怎么跑。</li>
+  <li>任务完成、文档 / 图片生成等事件，机器人会冒泡亲口告诉你，不再只是一条冷冰冰的通知。</li>
+  <li>新增「推荐模板」：任务完成提醒、文档生成播报、工具失败提醒、删除类工具调用前二次确认等，一键启用。</li>
+  <li>规则可加触发条件（如「仅当工具失败时」），并支持去重（同一文档只提醒一次，不刷屏）。</li>
+  <li>可触发的事件大幅扩充：工具执行、文档 / 图片生成、记忆变更、进化建议、情绪切换、启动 / 退出等。</li>
 </ul>
 
-<h4>全新「自动化」（实验）</h4>
+<h4>模型配置更省心</h4>
 <ul>
-  <li>设置新增「自动化」：当某事件发生时自动执行动作——任务完成提醒、调用技能/工具、工具调用前二次确认/拦截等，框架强制执行。</li>
-  <li>默认关闭；开启后可用预置模板一键启用，所有动作都在「活动记录」里留痕（脱敏），可一键暂停或单条测试。</li>
+  <li>模型接入流程精简，支持「取消接入」。</li>
+  <li>向量 / 文生图 / 生视频的模型配置，统一对齐文本模型的接入体验。</li>
 </ul>
 
-<h4>上网更顺、更安静</h4>
+<h4>编程中心</h4>
 <ul>
-  <li>搜索 / 爬取网页全程在后台静默完成，不再弹出浏览器窗口打断你。</li>
-  <li>内置 16 个搜索引擎（中文优先：百度 / 必应 / 搜狗 / 360 等），无需任何配置即可联网检索。</li>
-  <li>遇到 Cloudflare / 反爬站点会自动绕过取内容，拿不到再逐级兜底。</li>
+  <li>「改动」标签页新增 diff 并排视图 + 文件树，改了哪些文件、改了什么一目了然。</li>
+  <li>可视化网页任务修复：工作目录解析 / 路由稳定性 / 失败兜底。</li>
+  <li>编程任务显示 token 用量徽标，成本可见；可用强模型按已接入情况过滤。</li>
 </ul>
 
-<h4>技能中心改版</h4>
+<h4>其他</h4>
 <ul>
-  <li>能力按 8 大用途分类（办公 / 检索 / 创作 / 开发 / 进化 / 运维 / 兴趣 / 其它）整理，内置能力自动归位。</li>
-  <li>聊天框输入「/」可按分类快速挑选能力；「已安装」页支持按分类筛选，并能直接给能力打标签。</li>
-  <li>修复：点「卸载」没有反应；新增「编辑名称 / 描述」入口；能力配置弹窗的样式与「新建工具」统一。</li>
-</ul>
-
-<h4>确认卡与进度卡修复</h4>
-<ul>
-  <li>PPT / 经营分析的「设计确认卡」高度统一，「取消」按钮可正常中止任务。</li>
-  <li>经营分析的完成卡固定在它所属的那一轮，再发新消息也不会错位下沉。</li>
-</ul>
-
-<h4>编程中心 · 可视化网页数据更好用</h4>
-<ul>
-  <li>数据来源更全：除 CSV / Excel / 钉钉多维表格外，新增「填个接口地址直接拉数据」，并可一键「刷新」重新取数。</li>
-  <li>新增「改用声明式绑定」：页面绑定一次后，以后换数据 / 刷新只需重载，<strong>不再调用 AI、零成本</strong>。</li>
-  <li>预览可切「桌面 / 平板 / 手机」宽度看版式；一键导出<strong>单文件 HTML（可离线分发，双击即看）/ 整页 PDF / 截图</strong>。</li>
-  <li>设置顶部「编程」菜单更名为「编程中心」；新增网页模板管理与环境检测一键补齐。</li>
-</ul>
-
-<h4>其他优化</h4>
-<ul>
-  <li>多处弹窗、按钮、开关的样式与配色一致性优化，浅 / 深色更协调。</li>
+  <li>修复 Dock 右键 / 窗口菜单出现重复「GoEvo」条目的问题。</li>
+  <li>菜单更清爽：隐藏用不到的系统「服务」子菜单。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117840666" type="application/octet-stream" sparkle:edSignature="mLbS5lCCtEJwC0qZgue4b3vIPljUw36/SN2ZRatmODOSAuLirSgRfZp5iEWmhf9BA0T7VMV551ZXWSxZBOpgAA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117956397" type="application/octet-stream" sparkle:edSignature="OYQf/s413Et1Cs1EAm/QmmYwK+6zSwH+ZjLoI4NhmlLbHeio6NDQmpPgdYu3Qee+aZyBCiAARbrsoo7idM4kAg=="/>
         </item>
     </channel>
 </rss>
