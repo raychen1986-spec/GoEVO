@@ -4,8 +4,8 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 25 Jun 2026 12:34:52 +0800</pubDate>
-            <sparkle:version>965</sparkle:version>
+            <pubDate>Thu, 25 Jun 2026 15:33:18 +0800</pubDate>
+            <sparkle:version>969</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
@@ -45,12 +45,20 @@
   <li>经营分析的完成卡固定在它所属的那一轮，再发新消息也不会错位下沉。</li>
 </ul>
 
+<h4>编程中心 · 可视化网页数据更好用</h4>
+<ul>
+  <li>数据来源更全：除 CSV / Excel / 钉钉多维表格外，新增「填个接口地址直接拉数据」，并可一键「刷新」重新取数。</li>
+  <li>新增「改用声明式绑定」：页面绑定一次后，以后换数据 / 刷新只需重载，<strong>不再调用 AI、零成本</strong>。</li>
+  <li>预览可切「桌面 / 平板 / 手机」宽度看版式；一键导出<strong>单文件 HTML（可离线分发，双击即看）/ 整页 PDF / 截图</strong>。</li>
+  <li>设置顶部「编程」菜单更名为「编程中心」；新增网页模板管理与环境检测一键补齐。</li>
+</ul>
+
 <h4>其他优化</h4>
 <ul>
   <li>多处弹窗、按钮、开关的样式与配色一致性优化，浅 / 深色更协调。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117736969" type="application/octet-stream" sparkle:edSignature="Ung9umKKD/YaNi6jCySHAiU3C4JtvmV36Ot0/gV1T6WJNbmgCOYDDhYoZWu1qYy7T7j61XJdTilwpgE0+RF/DQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117840666" type="application/octet-stream" sparkle:edSignature="mLbS5lCCtEJwC0qZgue4b3vIPljUw36/SN2ZRatmODOSAuLirSgRfZp5iEWmhf9BA0T7VMV551ZXWSxZBOpgAA=="/>
         </item>
     </channel>
 </rss>
