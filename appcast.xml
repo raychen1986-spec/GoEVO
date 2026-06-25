@@ -4,12 +4,20 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 25 Jun 2026 09:49:21 +0800</pubDate>
-            <sparkle:version>954</sparkle:version>
+            <pubDate>Thu, 25 Jun 2026 12:34:52 +0800</pubDate>
+            <sparkle:version>965</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+
+<h4>全新「联网查询」一站式技能</h4>
+<ul>
+  <li>说一句「上网查一下…」，它自动：搜索（16 引擎，中文优先）→ 进网页读取 → 综合给出带来源的答复，全程有进度卡可见。</li>
+  <li>已知网址直接读；遇反爬自动逐级兜底。原「智能搜索 / 网页获取」合并进这一个，更省心。</li>
+  <li>「/」技能选择器新增「最近」分类，按最近使用排序，常用技能一键直达。</li>
+  <li>技能「详情」新增"工具与执行流程"，看得到它调了哪些工具、何时、怎么跑。</li>
+</ul>
 
 <h4>全新「自动化」（实验）</h4>
 <ul>
@@ -42,7 +50,7 @@
   <li>多处弹窗、按钮、开关的样式与配色一致性优化，浅 / 深色更协调。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117495656" type="application/octet-stream" sparkle:edSignature="joczq/OIy2SOmHUpFx6gah1gJGzUqtFLobgoYnH6x7eDrZGxa/IA08wcgsqIxSBlj0uTbvBztxVB4jSCAgAmDg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="117736969" type="application/octet-stream" sparkle:edSignature="Ung9umKKD/YaNi6jCySHAiU3C4JtvmV36Ot0/gV1T6WJNbmgCOYDDhYoZWu1qYy7T7j61XJdTilwpgE0+RF/DQ=="/>
         </item>
     </channel>
 </rss>
