@@ -4,8 +4,8 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 26 Jun 2026 18:16:29 +0800</pubDate>
-            <sparkle:version>1012</sparkle:version>
+            <pubDate>Fri, 26 Jun 2026 21:40:06 +0800</pubDate>
+            <sparkle:version>1015</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
@@ -34,13 +34,15 @@
 
 <h4>体验与稳定性修复</h4>
 <ul>
+  <li><strong>修复独立预览窗反复缩放可能导致界面异常放大、内存飙升甚至卡顿的问题。</strong></li>
+  <li>修复出线框草稿时，活动流偶发显示「读取文件失败（隐藏文件）」的无害报错（草稿生成本身一直正常）。</li>
   <li>修复网页中偶发露出内部锚点文字（含中文页面时的定位错位）。</li>
   <li>修复模型下拉里长模型名被截断、不同模型看着一样的问题。</li>
   <li>任务「对话」切入即定位到最新消息；独立窗与主窗会话实时同步。</li>
   <li>统一弹窗 / 控件样式，扁平更清爽。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118393026" type="application/octet-stream" sparkle:edSignature="c+FIUTS1ErW65lmlC8QnrhBSqYb+USGf1a+VvYT8+B4/rE1f7s5zeX/BoZDX3MPOxCm8mG1+JtcnS0YMiSm3BQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118387870" type="application/octet-stream" sparkle:edSignature="x7rndlq7DYNfpaj4mOMAHLDYuuwff/kVa7UyamtNKQeusRr93AaIHLUkGzCCLx9lmxY+42/T0O7fF5WHRuw7CA=="/>
         </item>
     </channel>
 </rss>
