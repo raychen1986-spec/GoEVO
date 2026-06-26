@@ -4,44 +4,43 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 25 Jun 2026 19:04:48 +0800</pubDate>
-            <sparkle:version>985</sparkle:version>
+            <pubDate>Fri, 26 Jun 2026 18:16:29 +0800</pubDate>
+            <sparkle:version>1012</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>「自动化」升级（实验）</h4>
+<h4>可视化网页：编辑器大升级</h4>
 <ul>
-  <li>任务完成、文档 / 图片生成等事件，机器人会冒泡亲口告诉你，不再只是一条冷冰冰的通知。</li>
-  <li>新增「推荐模板」：任务完成提醒、文档生成播报、工具失败提醒、删除类工具调用前二次确认等，一键启用。</li>
-  <li>规则可加触发条件（如「仅当工具失败时」），并支持去重（同一文档只提醒一次，不刷屏）。</li>
-  <li>可触发的事件大幅扩充：工具执行、文档 / 图片生成、记忆变更、进化建议、情绪切换、启动 / 退出等。</li>
+  <li>「即时直改」：进编辑态后点选任意元素（卡片 / 容器也行），调色、字号、间距、圆角、对齐、阴影、透明度等<strong>改完即时生效并自动保存</strong>，不再需要点「应用」、不走模型。</li>
+  <li>结构操作（复制 / 删除 / 上移 / 下移）<strong>瞬时完成、零等待</strong>。</li>
+  <li>当前值<strong>高亮主题色</strong>一眼可辨；已选项<strong>再点一次即可取消、恢复原值</strong>。新增<strong>撤销 / 重做</strong>、自定义取色器、布局（列数 / 间距 / 分布）、样式刷（取样式 → 贴到另一个元素）。</li>
+  <li>新增 <strong>AI 命令（⌘K）</strong>：选中元素一句话改它（或挑常用命令），可选「全局 / 仅选中」作用范围。</li>
+  <li>独立预览窗：可拖拽调右栏宽度、<strong>缩放比例（放大 / 缩小）</strong>查看；命令执行进度 / 结果实时可见。</li>
+  <li>响应式预览切「桌面 / 平板 / 手机」时出现横向滚动条，不再压变形。</li>
 </ul>
 
-<h4>模型配置更省心</h4>
+<h4>低保真线框稿（新）</h4>
 <ul>
-  <li>模型接入流程精简，支持「取消接入」。</li>
-  <li>向量 / 文生图 / 生视频的模型配置，统一对齐文本模型的接入体验。</li>
+  <li>先出线框草稿评审、满意后一键接力做成高保真网页；支持多屏流程、多方案并排勾选、手绘风出图。</li>
 </ul>
 
 <h4>编程中心</h4>
 <ul>
-  <li>新增「代码资产库」：把打磨好的网页整工程存为代码资产，下次一键克隆即所得（长得跟当初一样，不靠模型重新生成），按场景（驾驶舱 / 看板 / 大盘 / 可视化）沉淀复用。</li>
-  <li>数据绑定升级：填 API 接口直接拉数 + 一键刷新；「声明式绑定」后换数据零成本；响应式预览 + 一键导出单文件 HTML / PDF / 截图。</li>
-  <li>「改动」标签页新增 diff 并排视图 + 文件树，改了哪些文件、改了什么一目了然。</li>
-  <li>模型更听话：默认尊重你设的首选模型（不再擅自换成次选）；编程任务显示 token 用量徽标，可用强模型按已接入情况过滤。</li>
-  <li>诚实交付：模型调用失败 / 额度不足导致没产出时，明确报失败可重试，不再误报「已交付」。</li>
-  <li>可视化网页任务修复：工作目录解析 / 路由稳定性 / 失败兜底。</li>
+  <li>编程模型下拉可选到<strong>同一 Provider 下的多个模型</strong>（如 DeepSeek v4-pro / v4-flash 分别可选）。</li>
+  <li><strong>重启后在途任务可续传</strong>：应用重启后，之前在跑的编程任务会复位为「已中断」并出现「继续」按钮，从断点接着跑、磁盘成果不丢。</li>
 </ul>
 
-<h4>其他</h4>
+<h4>体验与稳定性修复</h4>
 <ul>
-  <li>修复 Dock 右键 / 窗口菜单出现重复「GoEvo」条目的问题。</li>
-  <li>菜单更清爽：隐藏用不到的系统「服务」子菜单。</li>
+  <li>修复网页中偶发露出内部锚点文字（含中文页面时的定位错位）。</li>
+  <li>修复模型下拉里长模型名被截断、不同模型看着一样的问题。</li>
+  <li>任务「对话」切入即定位到最新消息；独立窗与主窗会话实时同步。</li>
+  <li>统一弹窗 / 控件样式，扁平更清爽。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118040981" type="application/octet-stream" sparkle:edSignature="2XdeOE5+ORHOCRFonKurQJ34FqtAlOpjMblQJvLNGBwjyx+HVo82pRRFVBtECKc8cneAbffBTJFsvY1x5qXMDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118393026" type="application/octet-stream" sparkle:edSignature="c+FIUTS1ErW65lmlC8QnrhBSqYb+USGf1a+VvYT8+B4/rE1f7s5zeX/BoZDX3MPOxCm8mG1+JtcnS0YMiSm3BQ=="/>
         </item>
     </channel>
 </rss>
