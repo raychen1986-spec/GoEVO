@@ -4,45 +4,39 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 26 Jun 2026 21:40:06 +0800</pubDate>
-            <sparkle:version>1015</sparkle:version>
+            <pubDate>Sat, 27 Jun 2026 12:08:30 +0800</pubDate>
+            <sparkle:version>1023</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>可视化网页：编辑器大升级</h4>
+<h4>经营分析：更稳、更快、可随时中断</h4>
 <ul>
-  <li>「即时直改」：进编辑态后点选任意元素（卡片 / 容器也行），调色、字号、间距、圆角、对齐、阴影、透明度等<strong>改完即时生效并自动保存</strong>，不再需要点「应用」、不走模型。</li>
-  <li>结构操作（复制 / 删除 / 上移 / 下移）<strong>瞬时完成、零等待</strong>。</li>
-  <li>当前值<strong>高亮主题色</strong>一眼可辨；已选项<strong>再点一次即可取消、恢复原值</strong>。新增<strong>撤销 / 重做</strong>、自定义取色器、布局（列数 / 间距 / 分布）、样式刷（取样式 → 贴到另一个元素）。</li>
-  <li>新增 <strong>AI 命令（⌘K）</strong>：选中元素一句话改它（或挑常用命令），可选「全局 / 仅选中」作用范围。</li>
-  <li>独立预览窗：可拖拽调右栏宽度、<strong>缩放比例（放大 / 缩小）</strong>查看；命令执行进度 / 结果实时可见。</li>
-  <li>响应式预览切「桌面 / 平板 / 手机」时出现横向滚动条，不再压变形。</li>
+  <li><strong>修复大表分析卡死</strong>：钉钉多维表格等大表数据汇总改为本地原生计算，不再依赖外部 Python 环境，告别「反复报错、跑很久不出结果」。</li>
+  <li><strong>可一键终止</strong>：经营分析 / 联网查询进度卡新增「终止」按钮，子任务正在跑也能立即中断，进度已保存可续传。</li>
+  <li><strong>钉钉取数加固</strong>：单次最多可取 2 万条（自动翻页），加了节流与限频自动重试避免被接口风控；默认取数量提升到 1000 条。</li>
 </ul>
 
-<h4>低保真线框稿（新）</h4>
+<h4>独立预览窗：画布交互重做</h4>
 <ul>
-  <li>先出线框草稿评审、满意后一键接力做成高保真网页；支持多屏流程、多方案并排勾选、手绘风出图。</li>
+  <li><strong>三种查看模式</strong>：自适应（整页缩放塞满窗口）、桌面、手机，一键切换。</li>
+  <li><strong>缩放更顺手</strong>：缩放下拉（50%–200% + 适应窗口）、⌘ 加滚轮以光标为锚缩放、⌘+ / ⌘- / ⌘0 快捷键，范围 25%–400%。</li>
+  <li><strong>平移</strong>：两指滚动或空格 + 拖拽自由移动画布，放大后每条边都能拖到。</li>
+  <li>修复反复缩放可能导致界面异常放大 / 卡顿的问题。</li>
 </ul>
 
-<h4>编程中心</h4>
+<h4>网页编辑器属性坞：高频小调整更顺手</h4>
 <ul>
-  <li>编程模型下拉可选到<strong>同一 Provider 下的多个模型</strong>（如 DeepSeek v4-pro / v4-flash 分别可选）。</li>
-  <li><strong>重启后在途任务可续传</strong>：应用重启后，之前在跑的编程任务会复位为「已中断」并出现「继续」按钮，从断点接着跑、磁盘成果不丢。</li>
+  <li><strong>自定义颜色一点即弹取色盘</strong>（修复彩虹点点不中）；文字色 / 背景色统一为 8 个常用色。</li>
+  <li><strong>数值类（字号 / 内边距 / 圆角 / 列数 / 间距 / 透明度）可手输 + 上下箭头微调</strong>，常用预设仍在。</li>
+  <li><strong>格式刷</strong>：选一个元素 → 点「格式刷」取它的样式 → 点另一个元素即套用，Esc 退出。</li>
+  <li><strong>不适用的操作自动置灰</strong>，不再「点了没反应」。</li>
 </ul>
 
-<h4>体验与稳定性修复</h4>
-<ul>
-  <li><strong>修复独立预览窗反复缩放可能导致界面异常放大、内存飙升甚至卡顿的问题。</strong></li>
-  <li>修复出线框草稿时，活动流偶发显示「读取文件失败（隐藏文件）」的无害报错（草稿生成本身一直正常）。</li>
-  <li>修复网页中偶发露出内部锚点文字（含中文页面时的定位错位）。</li>
-  <li>修复模型下拉里长模型名被截断、不同模型看着一样的问题。</li>
-  <li>任务「对话」切入即定位到最新消息；独立窗与主窗会话实时同步。</li>
-  <li>统一弹窗 / 控件样式，扁平更清爽。</li>
-</ul>
+<p style="color:#888;font-size:12px;">复杂改版随时用 AI 命令（⌘K）一句话搞定。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118387870" type="application/octet-stream" sparkle:edSignature="x7rndlq7DYNfpaj4mOMAHLDYuuwff/kVa7UyamtNKQeusRr93AaIHLUkGzCCLx9lmxY+42/T0O7fF5WHRuw7CA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118480593" type="application/octet-stream" sparkle:edSignature="9ygcFKAWzvq6FugM7ZQ5YPybRdDEh5VTQ8+wP5qM7hf3AZZEQEJpHQwlC8ygw9ekUjOnRGx/bRYPDdBh70sHAQ=="/>
         </item>
     </channel>
 </rss>
