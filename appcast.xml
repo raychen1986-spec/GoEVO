@@ -4,39 +4,36 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sun, 28 Jun 2026 18:33:53 +0800</pubDate>
-            <sparkle:version>1047</sparkle:version>
+            <pubDate>Wed, 01 Jul 2026 19:30:43 +0800</pubDate>
+            <sparkle:version>1101</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>经营分析：更稳、更快、可随时中断</h4>
+<h4>数据指标计算：从黑盒到玻璃盒，算得准、看得清</h4>
 <ul>
-  <li><strong>修复大表分析卡死</strong>：钉钉多维表格等大表数据汇总改为本地原生计算，不再依赖外部 Python 环境，告别「反复报错、跑很久不出结果」。</li>
-  <li><strong>可一键终止</strong>：经营分析 / 联网查询进度卡新增「终止」按钮，子任务正在跑也能立即中断，进度已保存可续传。</li>
-  <li><strong>钉钉取数加固</strong>：单次最多可取 2 万条（自动翻页），加了节流与限频自动重试避免被接口风控；默认取数量提升到 1000 条。</li>
+  <li><strong>执行前确认计算计划</strong>：拆解出的每个指标（口径、数据表、字段、过滤条件）先摊开给你确认，可原地编辑口径后再算——低置信项橙色高亮。</li>
+  <li><strong>全程可见 + 可终止/续传</strong>：读需求 → 探查真实表头与样本 → 并行映射 → 计划门 → 逐指标计算，每一步都看得到；失败或中断可「重试失败项」或「修改口径」后重试。</li>
+  <li><strong>支持上传 Excel（多 sheet）</strong>：除钉钉多维表格外，直接拖一个多工作表的 Excel 当数据源。</li>
+  <li><strong>不再瞎算、不再乱造指标</strong>：没真正取到数时只如实报告，绝不凭印象编数字；也不再自行添加需求里没写的指标。</li>
+  <li><strong>过滤条件真正生效</strong>：口径里写的「2026年1-5月」等过滤会下发到聚合，不再算成历史全量。</li>
+  <li><strong>用你配置的策略师模型</strong>：修复了后台配置的强模型没被真正使用的问题。</li>
 </ul>
 
-<h4>独立预览窗：画布交互重做</h4>
+<h4>意图识别更准</h4>
 <ul>
-  <li><strong>三种查看模式</strong>：自适应（整页缩放塞满窗口）、桌面、手机，一键切换。</li>
-  <li><strong>缩放更顺手</strong>：缩放下拉（50%–200% + 适应窗口）、⌘ 加滚轮以光标为锚缩放、⌘+ / ⌘- / ⌘0 快捷键，范围 25%–400%。</li>
-  <li><strong>平移</strong>：两指滚动或空格 + 拖拽自由移动画布，放大后每条边都能拖到。</li>
-  <li>修复反复缩放可能导致界面异常放大 / 卡顿的问题。</li>
+  <li><strong>不再误判</strong>：像「帮我总结/提炼这段内容」这类文字任务，即便内容里出现「看板 / 系统 / 网页」等词，也不会被误当成「做网页」。</li>
+  <li>关键词只看你的指令、不被粘贴的长资料干扰；模糊场景交由语义判断，更贴近真实意图。</li>
 </ul>
 
-<h4>网页编辑器属性坞：高频小调整更顺手</h4>
+<h4>稳定性</h4>
 <ul>
-  <li><strong>自定义颜色一点即弹取色盘</strong>（修复彩虹点点不中）；文字色 / 背景色统一为 8 个常用色。</li>
-  <li><strong>数值类（字号 / 内边距 / 圆角 / 列数 / 间距 / 透明度）可手输 + 上下箭头微调</strong>，常用预设仍在。</li>
-  <li><strong>格式刷</strong>：选一个元素 → 点「格式刷」取它的样式 → 点另一个元素即套用，Esc 退出。</li>
-  <li><strong>不适用的操作自动置灰</strong>，不再「点了没反应」。</li>
+  <li>修复派生指标公式在特殊写法下可能导致的崩溃。</li>
+  <li>修复同一会话里重跑任务时，新进度卡挂错到旧消息下方的问题。</li>
 </ul>
-
-<p style="color:#888;font-size:12px;">复杂改版随时用 AI 命令（⌘K）一句话搞定。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="118746964" type="application/octet-stream" sparkle:edSignature="ZqCPXl1IgKJuren6UXCEfOS1XbgxnJX4LbSftqfeSLglBEJgvzVMxswLzlsD6kPuwwxAUe/Z2dib2bL5V6VuCw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119594074" type="application/octet-stream" sparkle:edSignature="GNyMJxKDpznTc0b8h4V3w/nq511GQWCLQ7azbcv8MKknA54w38/7WXajVfgSRNRAfQbOIlE6l48UtGTgfELsCg=="/>
         </item>
     </channel>
 </rss>
