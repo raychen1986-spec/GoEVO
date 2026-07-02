@@ -4,36 +4,35 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 01 Jul 2026 19:30:43 +0800</pubDate>
-            <sparkle:version>1101</sparkle:version>
+            <pubDate>Thu, 02 Jul 2026 12:29:00 +0800</pubDate>
+            <sparkle:version>1112</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>数据指标计算：从黑盒到玻璃盒，算得准、看得清</h4>
+<h4>数据指标计算：算得准、看得清、更智能</h4>
 <ul>
-  <li><strong>执行前确认计算计划</strong>：拆解出的每个指标（口径、数据表、字段、过滤条件）先摊开给你确认，可原地编辑口径后再算——低置信项橙色高亮。</li>
-  <li><strong>全程可见 + 可终止/续传</strong>：读需求 → 探查真实表头与样本 → 并行映射 → 计划门 → 逐指标计算，每一步都看得到；失败或中断可「重试失败项」或「修改口径」后重试。</li>
-  <li><strong>支持上传 Excel（多 sheet）</strong>：除钉钉多维表格外，直接拖一个多工作表的 Excel 当数据源。</li>
-  <li><strong>不再瞎算、不再乱造指标</strong>：没真正取到数时只如实报告，绝不凭印象编数字；也不再自行添加需求里没写的指标。</li>
-  <li><strong>过滤条件真正生效</strong>：口径里写的「2026年1-5月」等过滤会下发到聚合，不再算成历史全量。</li>
-  <li><strong>用你配置的策略师模型</strong>：修复了后台配置的强模型没被真正使用的问题。</li>
+  <li><strong>算不出的当面说清、绝不硬算</strong>：执行前先做「可算性预检」——数据源里没有的字段、或公式引用了不存在的量，会在计划门里红色标注并说明原因，不再一股脑冲进计算、集体报错。</li>
+  <li><strong>分组指标逐组展开 + 占比</strong>：按事业部/区域/品类分组的指标，结果按每个分组一行列出「数值（占比）」，各组占比基于真实分组之和，不再出现无意义的 100%。</li>
+  <li><strong>二级下钻</strong>：支持「某事业部下的产品线占比」这类两级下钻——按父分组分块，子项默认展示 Top5（计划门可改），同时给「占本组」与「占全局」两个百分比。</li>
+  <li><strong>同比 / 环比自动补基期</strong>：只要数据里有去年 / 上月的数据，同比、环比会自动算出（系统自动补齐去年同期 / 上月基期）；没有对应数据则如实说明。</li>
+  <li><strong>映射前智能确认</strong>：读完需求、探查完数据后，仅当「统计期间不明确」或「发现可下钻维度」时才弹一次确认；没有歧义就静默跳过，不打扰。</li>
+  <li><strong>金额显示修正</strong>：客单价等「万元」派生指标不再因精度被压成 0.0，正常显示。</li>
 </ul>
 
-<h4>意图识别更准</h4>
+<h4>输入框体验</h4>
 <ul>
-  <li><strong>不再误判</strong>：像「帮我总结/提炼这段内容」这类文字任务，即便内容里出现「看板 / 系统 / 网页」等词，也不会被误当成「做网页」。</li>
-  <li>关键词只看你的指令、不被粘贴的长资料干扰；模糊场景交由语义判断，更贴近真实意图。</li>
+  <li>放大输入框输入长文时，底部光标始终可见、不再被顶走；连续打字不再闪字、滚动条不再抖动。</li>
+  <li>计划门卡里修改口径后，上下滚动会话再回来，改动不会被打回原样。</li>
 </ul>
 
 <h4>稳定性</h4>
 <ul>
-  <li>修复派生指标公式在特殊写法下可能导致的崩溃。</li>
-  <li>修复同一会话里重跑任务时，新进度卡挂错到旧消息下方的问题。</li>
+  <li>修复畸形公式可能导致的崩溃；多处确定性计算改为纯本地运算，同样的数据必得同样的结果。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119594074" type="application/octet-stream" sparkle:edSignature="GNyMJxKDpznTc0b8h4V3w/nq511GQWCLQ7azbcv8MKknA54w38/7WXajVfgSRNRAfQbOIlE6l48UtGTgfELsCg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119659206" type="application/octet-stream" sparkle:edSignature="w/f3/JrZTzmir6lwenR0qRPwk8rQRjsfrAlZvLsENK+qhRYFnbJ2uAWd93GwpmcGnsV4cK13Ez7YDOmjAYxBCQ=="/>
         </item>
     </channel>
 </rss>
