@@ -4,35 +4,39 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 02 Jul 2026 12:29:00 +0800</pubDate>
-            <sparkle:version>1112</sparkle:version>
+            <pubDate>Sat, 04 Jul 2026 01:17:27 +0800</pubDate>
+            <sparkle:version>1122</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>数据指标计算：算得准、看得清、更智能</h4>
+<h4>记得住上一步了：短期记忆重做</h4>
 <ul>
-  <li><strong>算不出的当面说清、绝不硬算</strong>：执行前先做「可算性预检」——数据源里没有的字段、或公式引用了不存在的量，会在计划门里红色标注并说明原因，不再一股脑冲进计算、集体报错。</li>
-  <li><strong>分组指标逐组展开 + 占比</strong>：按事业部/区域/品类分组的指标，结果按每个分组一行列出「数值（占比）」，各组占比基于真实分组之和，不再出现无意义的 100%。</li>
-  <li><strong>二级下钻</strong>：支持「某事业部下的产品线占比」这类两级下钻——按父分组分块，子项默认展示 Top5（计划门可改），同时给「占本组」与「占全局」两个百分比。</li>
-  <li><strong>同比 / 环比自动补基期</strong>：只要数据里有去年 / 上月的数据，同比、环比会自动算出（系统自动补齐去年同期 / 上月基期）；没有对应数据则如实说明。</li>
-  <li><strong>映射前智能确认</strong>：读完需求、探查完数据后，仅当「统计期间不明确」或「发现可下钻维度」时才弹一次确认；没有歧义就静默跳过，不打扰。</li>
-  <li><strong>金额显示修正</strong>：客单价等「万元」派生指标不再因精度被压成 0.0，正常显示。</li>
+  <li><strong>工具 / 技能的执行结果会被完整记住</strong>：像做数据分析、生成文档这类步骤的产出，现在会即时留存并落盘，追问下一句时不再「忘了刚才算出什么」。</li>
+  <li><strong>上下文按 token 智能滚动</strong>：近期对话按模型窗口的实际容量保留，更久远的内容自动生成锚点摘要（保留关键数字、文件路径），对齐主流 AI 的记忆方式。</li>
+  <li>重启或切换会话后，最近的对话会自动回灌，接着聊不断档。</li>
 </ul>
 
-<h4>输入框体验</h4>
+<h4>说了「不要调用子 Agent」，就真的不调了</h4>
 <ul>
-  <li>放大输入框输入长文时，底部光标始终可见、不再被顶走；连续打字不再闪字、滚动条不再抖动。</li>
-  <li>计划门卡里修改口径后，上下滚动会话再回来，改动不会被打回原样。</li>
+  <li>当你在消息里明确写了「不要调用子 agent / 别分工 / 你自己做」等，系统会严格尊重，<strong>不再自作主张弹出多 Agent 协同</strong>去执行。简单的改写、提炼类请求也不会被误判成需要多专家协同。</li>
+</ul>
+
+<h4>界面细节</h4>
+<ul>
+  <li>记忆锚点的「摘要」弹窗重做，更大、更清晰，风格与设置里的弹窗统一。</li>
+  <li>聊天窗口的知识库引用（@ 文档）新增分类页签，长列表可检索过滤；分类数量显示更准确。</li>
+  <li>token 用量与「上下文整理」的统计口径统一。</li>
 </ul>
 
 <h4>稳定性</h4>
 <ul>
-  <li>修复畸形公式可能导致的崩溃；多处确定性计算改为纯本地运算，同样的数据必得同样的结果。</li>
+  <li>修复进入「知识库中心」可能出现的崩溃。</li>
+  <li>修复高保真网页有时错误产出灰底线框草稿的问题。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119659206" type="application/octet-stream" sparkle:edSignature="w/f3/JrZTzmir6lwenR0qRPwk8rQRjsfrAlZvLsENK+qhRYFnbJ2uAWd93GwpmcGnsV4cK13Ez7YDOmjAYxBCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119697928" type="application/octet-stream" sparkle:edSignature="sv+eidDcutW+vWxxXwXlCge0VLf7is6Lbv8zBWmUCOoqWvy0T20SCJFfrrR72F9033ItYlNqxXb0VRMtktWVDw=="/>
         </item>
     </channel>
 </rss>
