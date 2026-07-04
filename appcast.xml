@@ -4,39 +4,31 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 04 Jul 2026 01:17:27 +0800</pubDate>
-            <sparkle:version>1122</sparkle:version>
+            <pubDate>Sat, 04 Jul 2026 16:50:49 +0800</pubDate>
+            <sparkle:version>1133</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>记得住上一步了：短期记忆重做</h4>
+<h4>编程工作台更顺手</h4>
 <ul>
-  <li><strong>工具 / 技能的执行结果会被完整记住</strong>：像做数据分析、生成文档这类步骤的产出，现在会即时留存并落盘，追问下一句时不再「忘了刚才算出什么」。</li>
-  <li><strong>上下文按 token 智能滚动</strong>：近期对话按模型窗口的实际容量保留，更久远的内容自动生成锚点摘要（保留关键数字、文件路径），对齐主流 AI 的记忆方式。</li>
-  <li>重启或切换会话后，最近的对话会自动回灌，接着聊不断档。</li>
+  <li><strong>计划门批准按钮回归</strong>：从「历史任务 / 我的项目」进入还停在计划阶段的任务时，「批准并开始」按钮会正常显示（此前接力生成高保真页面等场景会缺失）。</li>
+  <li><strong>新增「回到对话」按钮</strong>：在任务工作区一键跳回孵化它的聊天会话，接着当时的上下文继续聊；原会话已删除时按钮会置灰提示。</li>
 </ul>
 
-<h4>说了「不要调用子 Agent」，就真的不调了</h4>
+<h4>用量显示更准、失败提示更懂你</h4>
 <ul>
-  <li>当你在消息里明确写了「不要调用子 agent / 别分工 / 你自己做」等，系统会严格尊重，<strong>不再自作主张弹出多 Agent 协同</strong>去执行。简单的改写、提炼类请求也不会被误判成需要多专家协同。</li>
+  <li><strong>token 用量统一口径 + 按模型自校准</strong>：用量胶囊与上下文百分比更贴近真实（中文长文此前会明显虚高），并会依据各模型的真实用量自动校准，越用越准。</li>
+  <li><strong>“文件已生成”不再被误报成失败</strong>：当模型写好文件却没再补一句收尾说明时，会直接告诉你「文件已生成 + 路径」，并提示无需重试——避免重复生成同一份文档。</li>
 </ul>
 
-<h4>界面细节</h4>
+<h4>通知与提醒</h4>
 <ul>
-  <li>记忆锚点的「摘要」弹窗重做，更大、更清晰，风格与设置里的弹窗统一。</li>
-  <li>聊天窗口的知识库引用（@ 文档）新增分类页签，长列表可检索过滤；分类数量显示更准确。</li>
-  <li>token 用量与「上下文整理」的统计口径统一。</li>
-</ul>
-
-<h4>稳定性</h4>
-<ul>
-  <li>修复进入「知识库中心」可能出现的崩溃。</li>
-  <li>修复高保真网页有时错误产出灰底线框草稿的问题。</li>
+  <li>应用内横幅通知的可见性与设置项接线修复，开关所见即所得。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119697928" type="application/octet-stream" sparkle:edSignature="sv+eidDcutW+vWxxXwXlCge0VLf7is6Lbv8zBWmUCOoqWvy0T20SCJFfrrR72F9033ItYlNqxXb0VRMtktWVDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119731042" type="application/octet-stream" sparkle:edSignature="uWQ+R3y9ZL6Hw4fg+BR8TxMM+zju7EP6YqX1jIi5kwMKKqXein8wulqmYxQNCoeva2oy0f2PiOmZ0ISy49JLDw=="/>
         </item>
     </channel>
 </rss>
