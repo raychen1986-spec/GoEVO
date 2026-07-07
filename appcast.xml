@@ -4,31 +4,46 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 04 Jul 2026 16:50:49 +0800</pubDate>
-            <sparkle:version>1133</sparkle:version>
+            <pubDate>Tue, 07 Jul 2026 22:05:43 +0800</pubDate>
+            <sparkle:version>1180</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>编程工作台更顺手</h4>
+<h4>数据指标计算：更快、更准、更稳</h4>
 <ul>
-  <li><strong>计划门批准按钮回归</strong>：从「历史任务 / 我的项目」进入还停在计划阶段的任务时，「批准并开始」按钮会正常显示（此前接力生成高保真页面等场景会缺失）。</li>
-  <li><strong>新增「回到对话」按钮</strong>：在任务工作区一键跳回孵化它的聊天会话，接着当时的上下文继续聊；原会话已删除时按钮会置灰提示。</li>
+  <li><strong>大幅提速</strong>：修复了「深度思考」开关对 GLM / DeepSeek / Kimi 等模型不生效的问题——关闭深度思考后不再空耗大量推理，指标计算由数十分钟降到几分钟。</li>
+  <li><strong>按月过滤修复</strong>：钉钉日期字段（时间戳或「2026-07」「2026/07/06」等各种写法）现在都能按「年-月」正确命中，此前大量指标因过滤对不上而算不出的问题已解决。</li>
+  <li><strong>数据源更聚焦</strong>：只探查你点名的多维表，不再把所有已登记的表全拉进来；重复指标（同一算法不同叫法）自动合并，结果更干净。</li>
+  <li>导出 CSV 补全分组 / 下钻明细，与 Markdown 同一份数据；映射前强制确认统计期间。</li>
 </ul>
 
-<h4>用量显示更准、失败提示更懂你</h4>
+<h4>PPT 生成：更专业、更美观</h4>
 <ul>
-  <li><strong>token 用量统一口径 + 按模型自校准</strong>：用量胶囊与上下文百分比更贴近真实（中文长文此前会明显虚高），并会依据各模型的真实用量自动校准，越用越准。</li>
-  <li><strong>“文件已生成”不再被误报成失败</strong>：当模型写好文件却没再补一句收尾说明时，会直接告诉你「文件已生成 + 路径」，并提示无需重试——避免重复生成同一份文档。</li>
+  <li>多轮美观升级：版式母版化、装饰母题（品牌光晕 / 章节条）、图文仪表盘、模板库大幅扩充与专业化选型，成稿观感明显提升。</li>
 </ul>
 
-<h4>通知与提醒</h4>
+<h4>知识库（Wiki）</h4>
 <ul>
-  <li>应用内横幅通知的可见性与设置项接线修复，开关所见即所得。</li>
+  <li><strong>二级分类</strong>：分类支持子类，侧栏两级展示、可拖拽调整归属、窄列表行内预览。</li>
+  <li><strong>原文完整归档</strong>：归档时可选「不经 AI 提炼、逐字保留全文」，明细不丢。</li>
+  <li>@引用支持整个文件夹（含子类文档）作为上下文；分类选择器升级为层级视图。</li>
+</ul>
+
+<h4>钉钉多维表</h4>
+<ul>
+  <li>映射管理页重新设计；支持编辑「分组别名」，用自然语言即可定位到整张多维表。</li>
+</ul>
+
+<h4>稳定性修复</h4>
+<ul>
+  <li><strong>彻底根治</strong> Dock 右键出现两个「GoEvo」的问题（从应用入口层根除，不再反复出现）。</li>
+  <li>设备身份密钥以文件为权威源，更新 / 重签后不再漂移导致配对失效。</li>
+  <li>聊天文件卡兼容含空格 / 全角括号的中文文档路径。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119731042" type="application/octet-stream" sparkle:edSignature="uWQ+R3y9ZL6Hw4fg+BR8TxMM+zju7EP6YqX1jIi5kwMKKqXein8wulqmYxQNCoeva2oy0f2PiOmZ0ISy49JLDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120146813" type="application/octet-stream" sparkle:edSignature="nZmxZXLokC3T0GZeQq2aWe1coSD4KyuQ3Yf3jtb7d0qsGLdDKZWa67YBKQbWzLW8Uh34Zt6umoO++Dt23xhtCQ=="/>
         </item>
     </channel>
 </rss>
