@@ -4,12 +4,19 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 07 Jul 2026 22:05:43 +0800</pubDate>
-            <sparkle:version>1180</sparkle:version>
+            <pubDate>Thu, 09 Jul 2026 13:05:04 +0800</pubDate>
+            <sparkle:version>1193</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+
+<h4>监控中心：任务追踪更准</h4>
+<ul>
+  <li><strong>状态不再假死</strong>：修复了任务已返回结果、追踪却一直显示「进行中」的问题——现在正常完成显示「成功」，异常显示「错误 / 超时」；重启遗留的旧任务也会诚实标为「已中断」。</li>
+  <li><strong>Token 口径对齐</strong>：任务的 Token 现在含技能内部子调用 / 子 Agent，与「概览今日总量」一致，不再莫名偏小。</li>
+  <li>「概览」页新增一句话总结卡（健康灯 + Token + 约花费 + 结论建议），诊断以人话优先呈现。</li>
+</ul>
 
 <h4>数据指标计算：更快、更准、更稳</h4>
 <ul>
@@ -43,7 +50,7 @@
   <li>聊天文件卡兼容含空格 / 全角括号的中文文档路径。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120146813" type="application/octet-stream" sparkle:edSignature="nZmxZXLokC3T0GZeQq2aWe1coSD4KyuQ3Yf3jtb7d0qsGLdDKZWa67YBKQbWzLW8Uh34Zt6umoO++Dt23xhtCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120311504" type="application/octet-stream" sparkle:edSignature="ffyrTTz53bDMCC4gC26TJa7Uot7T4EVe8jRXT7s9b+gdO3HrHBJYARovgJuhixuxguG4GkywXNIt08xJKGjlDg=="/>
         </item>
     </channel>
 </rss>
