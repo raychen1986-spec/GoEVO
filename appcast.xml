@@ -4,22 +4,31 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 10 Jul 2026 14:38:29 +0800</pubDate>
-            <sparkle:version>1202</sparkle:version>
+            <pubDate>Fri, 10 Jul 2026 17:20:16 +0800</pubDate>
+            <sparkle:version>1205</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>PPT 生成：封面更丰富、版式更聪明（本次重点）</h4>
+<h4>PPT 生成：新增咨询级洞察页 + 更专业的叙事（本次重点）</h4>
 <ul>
-  <li><strong>封面告别千篇一律</strong>：新增 10 款封面（编辑大字、满版色块、数据头条、正式居中、个人述职、杂志目录、金句、渐变科技、历程时间轴…），并按报告类型自动「选脸」——述职用头像封面、经营分析甩头号数字、立项/方案走深色强封面，不再无论什么报告都长一个样。</li>
-  <li><strong>两种新页型</strong>：新增「断点图」（讲现状全链路断裂——一排流程环节 + 每环节红色断点卡 + 收敛结论）与「量化损失表」（把定性损失换算成真金白银——测算表 + 绿色合计带 + 口径免责说明），立项 / 诊断类汇报更有说服力。</li>
-  <li><strong>排版更专业、不再注水</strong>：章节分隔页自动限流（不再每章一张空页凑数）；正式汇报若误用了寡淡浅色封面会自动提气为深色；多列表格数据不再被塞进空旷的大方块——系统按每页数据形态自动匹配最合适的版式（占比→比例图、漏斗→漏斗图、表格→表格、达成率→进度环）。</li>
-  <li><strong>结果更稳定</strong>：新增计划规范器——即使遇到不太听话的模型，成稿的封面、节奏、选型三处也会被自动纠偏拉回，配合已有的数据保真核对，整册质量更可控。</li>
+  <li><strong>结构化洞察清单</strong>：新增咨询机构常用的「关键发现 / 诊断结论」页型——每条=编号 + 粗体论点 + 支撑解释 + 右侧带来源的证据数字，适合把几条有锋芒的结论一屏讲清。</li>
+  <li><strong>标题更像结论、论断更有依据</strong>：策略师现在倾向把每页标题写成一句有 so-what 的论点（而非栏目名），并尽量给论断挂上带来源的数字；配色更克制，用同色系明度阶梯表达层级，少用杂色。</li>
+</ul>
+
+<h4>此前 PPT 升级（一并生效）</h4>
+<ul>
+  <li>新增 10 款封面并按报告类型自动「选脸」；新增断点图、量化损失表两种页型；章节分隔页自动限流；表格数据自动匹配版式；计划规范器自动纠偏封面与选型；数据保真核对防止编造数字。</li>
+</ul>
+
+<h4>经营分析 / 监控</h4>
+<ul>
+  <li><strong>占比列</strong>：经营分析聚合支持「占比（with_share）」列，分组结果可直接看各项占总量比重。</li>
+  <li><strong>口径对齐</strong>：监控「构成」页顶部总量与「概览」口径统一——技能内部直接调用也计入总数并注明，不再各显示一个数。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120386174" type="application/octet-stream" sparkle:edSignature="nrCAuVwjDNrbejCaanJVKeuSG7abdwDyG3IrkGHoTjWCn7L32ChfXYWnBIQw3xOTuaTayKMtTfNeCRF8Q5rhDA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120392584" type="application/octet-stream" sparkle:edSignature="8fKwo0CZqT6+Q7kSZYBd7mbFCmEIwGie9APQh9IARaciCL7wpsGNqB9ZWqPlOwX/4RoQBuHqUHpYCBisdbzsCg=="/>
         </item>
     </channel>
 </rss>
