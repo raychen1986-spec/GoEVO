@@ -4,63 +4,22 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 09 Jul 2026 21:24:32 +0800</pubDate>
-            <sparkle:version>1200</sparkle:version>
+            <pubDate>Fri, 10 Jul 2026 14:38:29 +0800</pubDate>
+            <sparkle:version>1202</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>监控中心：任务追踪更准</h4>
+<h4>PPT 生成：封面更丰富、版式更聪明（本次重点）</h4>
 <ul>
-  <li><strong>状态不再假死</strong>：任务已返回结果却一直显示「进行中」的问题彻底修复——正常完成显示「成功」，异常显示「错误 / 超时」；重启遗留任务诚实标为「已中断」；调用技能不再多出永远「进行中」的空任务行。</li>
-  <li><strong>链路更真实</strong>：修复了成功任务的部分步骤误显示「未结束（可能已中断）」；「概览 / 诊断 / 构成」三处 Token 数口径统一，不再各显示一个数。</li>
-  <li><strong>健康判定更合理</strong>：正常用量不再被误标红「需关注」——只有真正偏高才提示。</li>
-  <li><strong>Token 口径对齐</strong>：任务 Token 含技能内部子调用 / 子 Agent，与「概览今日总量」一致。「概览」页新增一句话总结卡（健康灯 + Token + 约花费 + 建议）。</li>
-  <li>修复超长任务标题在列表里溢出、与相邻行重叠的显示问题。</li>
-</ul>
-
-<h4>设置持久化</h4>
-<ul>
-  <li>修复费用告警的日 / 月预算、告警开关等一批设置「改完重启就复原」的问题——现在所有设置都能正确保存。</li>
-</ul>
-
-<h4>数据指标计算：更快、更准、更稳</h4>
-<ul>
-  <li><strong>大幅提速</strong>：修复了「深度思考」开关对 GLM / DeepSeek / Kimi 等模型不生效的问题——关闭深度思考后不再空耗大量推理，指标计算由数十分钟降到几分钟。</li>
-  <li><strong>按月过滤修复</strong>：钉钉日期字段（时间戳或「2026-07」「2026/07/06」等各种写法）现在都能按「年-月」正确命中，此前大量指标因过滤对不上而算不出的问题已解决。</li>
-  <li><strong>数据源更聚焦</strong>：只探查你点名的多维表，不再把所有已登记的表全拉进来；重复指标（同一算法不同叫法）自动合并，结果更干净。</li>
-  <li>导出 CSV 补全分组 / 下钻明细，与 Markdown 同一份数据；映射前强制确认统计期间。</li>
-</ul>
-
-<h4>PPT 生成：数据更可信、版式更丰富（本次重点）</h4>
-<ul>
-  <li><strong>数据保真</strong>：修复了「提供了真实数据、成稿数字却被模型自行编造 / 改写」的问题——你给了具体数据时，系统会把它作为唯一真源逐字使用，并逐个核对成稿里每个数字，发现编造自动打回重排，数字不再对不上。</li>
-  <li><strong>版式大幅丰富</strong>：模板库扩充到 40+ 种，新增满版巨数字、色块特写、进度环、转化漏斗、点阵比例图、指标缎带等更有冲击力的页型，整册自动穿插「呼吸页」，不再一堆卡片罗列。</li>
-  <li><strong>更干净通透</strong>：列表页去盒子改发丝分隔线、用色更克制、面板内容垂直居中；按每页数据形态自动匹配最合适版式（占比→比例图、漏斗→漏斗图、多目标→进度环）。</li>
-  <li><strong>跨机字体统一</strong>：统一使用微软雅黑，导出的 PPTX 在不同电脑上不再字体错乱；数字用衬线体更有质感。</li>
-</ul>
-
-<h4>知识库（Wiki）</h4>
-<ul>
-  <li><strong>二级分类</strong>：分类支持子类，侧栏两级展示、可拖拽调整归属、窄列表行内预览。</li>
-  <li><strong>原文完整归档</strong>：归档时可选「不经 AI 提炼、逐字保留全文」，明细不丢。</li>
-  <li>@引用支持整个文件夹（含子类文档）作为上下文；分类选择器升级为层级视图。</li>
-</ul>
-
-<h4>钉钉多维表</h4>
-<ul>
-  <li>映射管理页重新设计；支持编辑「分组别名」，用自然语言即可定位到整张多维表。</li>
-</ul>
-
-<h4>稳定性修复</h4>
-<ul>
-  <li><strong>彻底根治</strong> Dock 右键出现两个「GoEvo」的问题（从应用入口层根除，不再反复出现）。</li>
-  <li>设备身份密钥以文件为权威源，更新 / 重签后不再漂移导致配对失效。</li>
-  <li>聊天文件卡兼容含空格 / 全角括号的中文文档路径。</li>
+  <li><strong>封面告别千篇一律</strong>：新增 10 款封面（编辑大字、满版色块、数据头条、正式居中、个人述职、杂志目录、金句、渐变科技、历程时间轴…），并按报告类型自动「选脸」——述职用头像封面、经营分析甩头号数字、立项/方案走深色强封面，不再无论什么报告都长一个样。</li>
+  <li><strong>两种新页型</strong>：新增「断点图」（讲现状全链路断裂——一排流程环节 + 每环节红色断点卡 + 收敛结论）与「量化损失表」（把定性损失换算成真金白银——测算表 + 绿色合计带 + 口径免责说明），立项 / 诊断类汇报更有说服力。</li>
+  <li><strong>排版更专业、不再注水</strong>：章节分隔页自动限流（不再每章一张空页凑数）；正式汇报若误用了寡淡浅色封面会自动提气为深色；多列表格数据不再被塞进空旷的大方块——系统按每页数据形态自动匹配最合适的版式（占比→比例图、漏斗→漏斗图、表格→表格、达成率→进度环）。</li>
+  <li><strong>结果更稳定</strong>：新增计划规范器——即使遇到不太听话的模型，成稿的封面、节奏、选型三处也会被自动纠偏拉回，配合已有的数据保真核对，整册质量更可控。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120319443" type="application/octet-stream" sparkle:edSignature="LjZtJilPzCUd988JRnd9IqasmD+6FKsSGGSvT8byZiJLUDQBURqHTbB0CQTUBq/Hq//E1nRiV9TIqFWbrY+mCg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120386174" type="application/octet-stream" sparkle:edSignature="nrCAuVwjDNrbejCaanJVKeuSG7abdwDyG3IrkGHoTjWCn7L32ChfXYWnBIQw3xOTuaTayKMtTfNeCRF8Q5rhDA=="/>
         </item>
     </channel>
 </rss>
