@@ -4,38 +4,29 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sun, 12 Jul 2026 12:52:43 +0800</pubDate>
-            <sparkle:version>1220</sparkle:version>
+            <pubDate>Sun, 19 Jul 2026 22:26:52 +0800</pubDate>
+            <sparkle:version>1229</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>能力系统：外部技能安装更稳、兼容更多格式（本次重点）</h4>
+<h4>导出 PDF：原生渲染，零依赖，中文完美（本次重点）</h4>
 <ul>
-  <li><strong>兼容 Claude Code 插件格式技能</strong>：以前从 GitHub 安装的技能，若 SKILL.md 放在子目录（<code>skills/&lt;名&gt;/SKILL.md</code>，Claude Code 插件的标准布局），会被误当「可执行项目」装、无法通过技能调用。现在能正确识别嵌套 SKILL.md，装成正常技能、可被直接调用。</li>
-  <li><strong>不再装成「残包」</strong>：安装改为整包下载解压——此前按扩展名白名单 + 单文件 1MB 上限逐个拉取，会把 <code>.mjs</code>、字体、大数据文件砍掉，导致技能装完跑不起来。现在完整下载（保留超大仓护栏）。</li>
+  <li><strong>不再需要装 pandoc / LaTeX</strong>：以前把简历、报告等导出 PDF 会卡在缺 <code>pandoc</code> 或 <code>xelatex</code>（一套 LaTeX 排版系统动辄数 GB）。现在改用系统原生渲染直接出 PDF——<strong>零外部依赖、中文字体完美排版</strong>，简历/报告/发票一键成 PDF。</li>
 </ul>
 
-<h4>监控中心：口径统一、列表更整齐</h4>
+<h4>新增「Prompt 调试工作台」</h4>
 <ul>
-  <li><strong>Token 口径三处统一</strong>：「概览 / 诊断 / 构成」三个 tab 的 Token 数终于是同一个口径的真实消耗，不再各显示一个数。</li>
-  <li><strong>列表不再溢出重叠</strong>：任务列表超长标题、树状父子行、点击后换行等一批「文字撑破/压到下一行」的显示问题全部修复。</li>
+  <li>在「监控中心 → 追踪」新增 <strong>Prompt 工作台</strong>：选一段会话、填本轮输入（可挂附件、@引用知识库、调记忆/工具开关），点「模拟组装」即可看到这一轮<strong>真正会发给 AI 的完整 Prompt</strong>——按层展开每一段的「出处 &amp; 拼装逻辑」和「本次真实明细」。<strong>只组装、不发送</strong>，不打扰你的真实对话。</li>
 </ul>
 
-<h4>数据分析：更稳</h4>
+<h4>依赖安装更顺手</h4>
 <ul>
-  <li>修复钉钉/Excel 导出的 CSV 因换行符（CRLF）解析导致「没有数据行」的问题；聚合按月分组、占比等更可靠。</li>
-  <li>放行 macOS 每用户临时目录，修复经营分析上传 Excel 被安全策略误拦的问题。</li>
-</ul>
-
-<h4>细节打磨</h4>
-<ul>
-  <li>「任务已完成」提示框文字水平居中；「我的技能」页启用开关尺寸与全局统一控件一致。</li>
-  <li>PPT 技能（AI设计PPT）说明更新为当前能力（60+ 版式、封面按报告类型选脸、数据保真等）。</li>
+  <li>安装系统依赖（如用 <code>brew</code> 装个小工具）时，改为<strong>弹卡由你授权后执行</strong>，不再被安全策略一刀切拦死；远程脚本类高危安装仍然拦截。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120413921" type="application/octet-stream" sparkle:edSignature="tVn1Im0OTPlEd+ZsfRak2juHdqCjrdwUsSN2OGzg50eRqe6fUrjjxrKNajDMijccNwOqZ3z1LRfJRlVoiXlsBQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120684850" type="application/octet-stream" sparkle:edSignature="c+DjK3KGCjTBfAK6AVWgZF1YMd+qg+NRqjvx8G2QU67dDN0qpqHvGgHJJcEbe7gScNGuqd0lNsMWNM+Z3WI9Cg=="/>
         </item>
     </channel>
 </rss>
