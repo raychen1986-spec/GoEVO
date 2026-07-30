@@ -4,25 +4,33 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 20 Jul 2026 10:34:21 +0800</pubDate>
-            <sparkle:version>1232</sparkle:version>
+            <pubDate>Thu, 30 Jul 2026 20:09:51 +0800</pubDate>
+            <sparkle:version>1243</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>大内容不再卡：打开大段文本秒开、可搜索（本次重点）</h4>
+<h4>联网检索全面升级（本次重点）</h4>
 <ul>
-  <li><strong>根治"点开转圈打不开"</strong>：以前展开较大的文本内容（如监控中心的 <strong>Prompt 工作台会话历史</strong>、聊天里的<strong>工具调用结果</strong>、<strong>命令输出</strong>、<strong>思考过程</strong>、屏幕 OCR、对话历史详情等），内容一大就会一直转圈、渲染不出来。现已全部改用系统原生文本引擎渲染——<strong>几十万字也秒开</strong>，可流畅滚动、选中，并支持 <code>⌘F</code> 查找。</li>
-  <li>超大内容在卡片里只显示预览，配「<strong>查看全文 ↗</strong>」一键打开完整弹窗，界面不再被撑爆或卡死。</li>
+  <li><strong>接入专业搜索 API，从根上解决"搜不到 / 被反爬"</strong>：新增 <strong>设置 → 联网搜索</strong>，可配置 <strong>Tavily / Firecrawl / Brave / Serper</strong>（填 API Key、测试连接、一键启用）。以前靠爬搜索引擎结果页容易被拦截导致"未搜到结果"，现在优先走搜索 API，未配置则自动回落内置引擎兜底。</li>
+  <li><strong>更聪明的检索</strong>：自动把问题改写成精准查询、多个搜索源按顺序降级、并行读取网页正文（Firecrawl 直出干净全文）、结果按相关度重排、内容不足时自动补搜——最后带来源引用综合作答。</li>
+  <li>技能卡片上<strong>直接显示本次用了哪个搜索源</strong>（Tavily / Firecrawl / 本地爬取…），一眼看清。</li>
 </ul>
 
-<h4>细节打磨</h4>
+<h4>监控中心 · 概览重设计</h4>
 <ul>
-  <li>Prompt 工作台的「深度思考 / 纳入工具清单」开关缩小，与全局控件风格统一。</li>
+  <li>按「<strong>成本</strong>」与「<strong>性能</strong>」双支柱重排指标：今日费用 / 每轮成本 / Token、缓存命中率 / 首 token 延迟 / 降级熔断，点任意指标或模型可<strong>下钻查看明细</strong>。</li>
+</ul>
+
+<h4>修复与优化</h4>
+<ul>
+  <li><strong>修复换电脑一键恢复时丢失已安装能力的问题</strong>。</li>
+  <li>能力系统：分类筛选与卡片标签联动；安装外部能力时对无法运行的仓库提前拦截并说明原因。</li>
+  <li>新增对 Kimi K3 模型的适配（深度思考参数）。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120713465" type="application/octet-stream" sparkle:edSignature="B65y17WWBzgypR82HiXSco+ZNOVhZwyroZjx+pH5WRu5UAabsnNVhsGA4LNPOkFugDh1SlKZDbeS4eR90ikbAw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120889639" type="application/octet-stream" sparkle:edSignature="UEGYEB+KifYZaH0dQnoymJdK8yjfxXnlUWNKLxBz7IZArWvNrXmAuNCd2JlOIORiJ1KDLO4QWzdJcVOPps32DQ=="/>
         </item>
     </channel>
 </rss>
