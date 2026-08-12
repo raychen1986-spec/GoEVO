@@ -4,29 +4,63 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 04 Aug 2026 10:36:00 +0800</pubDate>
-            <sparkle:version>1252</sparkle:version>
+            <pubDate>Wed, 12 Aug 2026 16:44:30 +0800</pubDate>
+            <sparkle:version>1330</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>「联网查询」升级为「深度研究」（本次重点）</h4>
+<h4>记忆图谱（全新）</h4>
 <ul>
-  <li><strong>多角度并行调研</strong>：说出要研究的话题，它会自动把问题拆成多个专业角度（如调研一家公司：财务业绩 / 业务与产品 / 行业竞争 / 风险 / 研报预测），各角度并行检索多篇网页，再综合成一份<strong>带来源引用的结构化报告</strong>。</li>
-  <li><strong>深度可选 + 方案可改</strong>：开工前弹「方案确认卡」，可选<strong>轻度 / 中度 / 深度</strong>三档，并<strong>增删研究角度</strong>后再开始；深度越高读的网页越多、还会自适应补搜与反思补漏。</li>
-  <li><strong>更可信</strong>：报告对关键结论标注<strong>置信度（高/中/低）</strong>、<strong>指出来源分歧</strong>不强行抹平、<strong>优先采信权威来源</strong>（官方披露 / 券商研报 / 权威媒体），并在结尾<strong>自动审校</strong>（核查有无缺乏依据的数字、有无遗漏关键面）。</li>
-  <li><strong>普通快查更顺手</strong>：只是查一条事实、找几个链接时，AI 直接联网搜索作答（更快）；需要成体系的调研结论才动用「深度研究」。</li>
+  <li><strong>把记忆画成一颗可旋转的球</strong>：所有实体与它们的关系铺在球面上，按住拖动即可转动查看，边贴着球面走、近大远小，一眼看清知识的整体结构。</li>
+  <li><strong>每条边都能溯源</strong>：点任意节点，右栏列出它的全部关系，每条标注置信度、来源与时间——图上看到的每一笔都能追回它是从哪次对话或哪份文档来的。</li>
+  <li><strong>看得见"看不见的部分"</strong>：与你不直接相连的孤岛簇、超出当前跳数的节点都会显式列出；新增「全库」视图可一屏铺开整个知识库。</li>
+  <li><strong>共现关系</strong>：同一份知识库文档里一起出现过的实体之间会画出虚线，标注「未验证关系」——它只用于呈现联系，不参与记忆召回。</li>
+  <li><strong>历史可追</strong>：关系发生变更时旧值不删除，盖章存入「历史版本」，可查"当时的负责人是谁"。</li>
 </ul>
 
-<h4>修复与优化</h4>
+<h4>记忆系统全面升级</h4>
 <ul>
-  <li>修复深度研究/自执行技能的结果在重启后从聊天记录丢失的问题。</li>
-  <li>修复「内部任务模型」设置里选定的具体模型未生效的问题（现在你选的模型会真正被使用）。</li>
-  <li>联网搜索来源新增「域名权威 + 时效」加权，优先呈现更靠谱、更新的资料。</li>
+  <li><strong>夜间自动整理（做梦）</strong>：闲时自动去重、消解冲突、规范措辞、归并锚点，并生成<strong>晨报</strong>汇报昨夜做了什么，每条可撤销。</li>
+  <li><strong>知识库自动进记忆</strong>：Wiki 页面里的人物关系、项目信息会被自动抽取进图谱，并标注来源页面、可一键跳回原文；<strong>删除页面时，仅由它支撑的记忆会自动停用</strong>（可随时恢复）。</li>
+  <li><strong>召回更准</strong>：新增多跳链式检索、相关性重排与召回评估工具；聊天时的「引用记忆」卡片会列出本轮实际用到的每一条记忆及其相关度。</li>
+  <li><strong>每日记忆日结</strong>：自动为每天生成记忆小结，并回补遗漏的日子。</li>
+</ul>
+
+<h4>「联网查询」升级为「深度研究」</h4>
+<ul>
+  <li><strong>多角度并行调研</strong>：说出要研究的话题，它会自动把问题拆成多个专业角度（如调研一家公司：财务业绩 / 业务与产品 / 行业竞争 / 风险 / 研报预测），各角度并行检索多篇网页，再综合成一份<strong>带来源引用的结构化报告</strong>。</li>
+  <li><strong>深度可选 + 方案可改</strong>：开工前弹「方案确认卡」，可选<strong>轻度 / 中度 / 深度</strong>三档，并<strong>增删研究角度</strong>后再开始。</li>
+  <li><strong>更可信</strong>：对关键结论标注<strong>置信度</strong>、指出来源分歧不强行抹平、优先采信权威来源，并在结尾自动审校。</li>
+  <li><strong>普通快查更顺手</strong>：只是查一条事实时直接联网作答（更快），需要成体系的调研结论才动用「深度研究」。</li>
+</ul>
+
+<h4>编程工作台</h4>
+<ul>
+  <li><strong>任务与回合</strong>：一个编程任务可以持续多轮，每一轮的改动单独留痕，可<strong>逐回合查看 diff、回滚</strong>。</li>
+  <li><strong>聊天里的后续需求自动归位</strong>：接着上一个任务提新要求，会自动落到该任务开新回合，不会各说各话。</li>
+  <li><strong>界面重整</strong>：顶层合并为「工作」，侧栏统一管理会话与任务，右栏常驻产物列表，不再出现两个输入框同屏。</li>
+</ul>
+
+<h4>连接更多工具</h4>
+<ul>
+  <li><strong>通用 MCP 客户端</strong>：远程 MCP 服务填好配置即可接入，工具自动出现在能力清单里。</li>
+  <li><strong>钉钉文档</strong>：支持读取、列出知识库、新建与覆写。</li>
+</ul>
+
+<h4>修复</h4>
+<ul>
+  <li>修复<strong>设置项重启后复原</strong>——用户配置此前从未被真正加载。</li>
+  <li>修复启动异常时不弹提示、失败静默的问题。</li>
+  <li>修复工具调用偶发「缺少参数」导致任务空转。</li>
+  <li>修复某个模型额度耗尽时会<strong>连累其他模型一起失败</strong>的问题。</li>
+  <li>修复「引用记忆」卡片最多只显示 12 条、与标题条数对不上。</li>
+  <li>修复记忆图谱弹出窗口首次打开超出屏幕且无法缩放。</li>
+  <li>多项深浅色主题、文字对比度与长文本渲染卡顿的修复。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121046599" type="application/octet-stream" sparkle:edSignature="qF3gbHSE8JePesw7tpiBrjlINccvJRsDSWLZz++9ZwP568Q+sG36NwvPtJ0nMAsC7qwBG+VPFqEq32bdWrAlCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="122890194" type="application/octet-stream" sparkle:edSignature="k/Xw7cVYOWZScqlIBNqBjyazjZDGUYHX+sNsQWFs9ln206akOkBuphPDOd+xM5BU1lOyuZ40fF8oTViFRo1JBQ=="/>
         </item>
     </channel>
 </rss>
