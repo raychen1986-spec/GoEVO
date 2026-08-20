@@ -4,62 +4,60 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 18 Aug 2026 19:44:43 +0800</pubDate>
-            <sparkle:version>1343</sparkle:version>
+            <pubDate>Thu, 20 Aug 2026 09:38:49 +0800</pubDate>
+            <sparkle:version>1374</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>编程能力：推倒重做</h4>
+<h4>编程：改错了能一键还原</h4>
 <ul>
-  <li><strong>换了个更简单的做法</strong>：旧的编程模块规则太多、卡得厉害，已整体下架，改成一套直来直去的新引擎——它拿到需求就开始干，你随时能按停。</li>
-  <li><strong>看得见它在做什么</strong>：读了哪个文件、跑了什么命令、改了哪几行，全都在对话里逐条展开；右栏「文件」列出本次动过的所有文件，点一下就能在访达里打开。</li>
-  <li><strong>入口更清爽</strong>：左边栏顶部多了「对话 | 编程」开关，切过去就是编程，不用再找单独的页面。模型选择和聊天完全一致，默认自动路由。</li>
+  <li><strong>每一轮都能退回去</strong>：鼠标移到任意一轮的分隔线上，会出现「还原到这里之前」。点开先给你看清单——改回几个文件、删掉哪些新建的、找回哪些被删的，还能逐个文件看改动明细，确认无误再还原。</li>
+  <li><strong>你自己改过的文件会单独警告</strong>：如果某个文件在它读取之后被你改过，还原前会明确提示，不会悄悄覆盖你的改动。</li>
+  <li><strong>不留后遗症</strong>：还原会同时停掉它启动的后台服务，并告知它文件已回退，避免它继续在旧状态上接着改。</li>
+  <li>快照存在会话自己的目录里，<strong>不会在你的项目文件夹里留下任何东西</strong>。</li>
 </ul>
 
-<h4>你来定它能自己做到哪一步</h4>
+<h4>编程：看得出它是不是还在干活</h4>
 <ul>
-  <li>输入框上新增<strong>四档开关</strong>，每档都有一句人话说明：
-    <strong>只读</strong>（只分析给方案，不改任何文件）·
-    <strong>谨慎</strong>（每一步动手前都问你）·
-    <strong>标准</strong>（改文件放行，跑命令问你，默认）·
-    <strong>放手干</strong>（目录内不打扰你）。</li>
-  <li><strong>两条底线不受档位影响</strong>：动工作目录以外的文件、或遇到有风险的命令（要管理员权限、递归删除、强制覆盖远程仓库等），<strong>任何档位都会先问你一声</strong>，并且不提供"以后都别问了"。</li>
-  <li>在卡片上点「以后都不用问」会直接把档位调上去，开关跟着变——你永远知道自己现在开到哪一档。</li>
+  <li>以前它在写大文件时，画面会停在最后一句话上一两分钟，完全看不出是在工作还是卡死了。现在<strong>只要在运行就有提示，并显示已经花了多久</strong>——「正在写入 index.html… 1 分 15 秒」。</li>
 </ul>
 
-<h4>能跑起来给你看了</h4>
+<h4>技能更可靠了</h4>
 <ul>
-  <li><strong>可以启动服务再继续干活</strong>：像本地预览服务器这类要一直跑着的命令，现在会放到后台，它接着做别的事，随时回来看输出，不用了就关掉。以前这类命令会把它卡住直到超时。</li>
-  <li><strong>快了一截</strong>：需要同时看好几个文件时改成一起读，不再排队等。</li>
-  <li><strong>不会覆盖你的改动</strong>：如果某个文件在它读过之后被你（或别的程序）改了，它会停下来重新读一遍，而不是拿着过期的内容盖上去。</li>
-  <li><strong>能查资料、能看图</strong>：拿不准某个用法时可以去翻官方文档；截图、设计稿也能直接读进来看。</li>
-  <li><strong>长任务不断片</strong>：对话太长自动整理时，最近做的事会原样保留，不会整理完就忘了刚才在改哪个文件。</li>
-</ul>
-
-<h4>深色模式大修</h4>
-<ul>
-  <li><strong>底色和文字重新配过</strong>：之前深色下底色接近纯黑、浅灰文字看不清，现在整套灰阶重新标定，长时间看不累。</li>
-  <li><strong>修好了一批"白底深字"</strong>：输入框提示文字、图表坐标轴、下拉菜单、右键菜单在深色下会跟着系统外观走，不再突兀地压一块白底在深色界面上。</li>
-</ul>
-
-<h4>记忆图谱更顺手</h4>
-<ul>
-  <li><strong>不卡了</strong>：打开图谱时的两秒停顿消除，转动和收敛更跟手。</li>
-  <li>修了拖动时误触节点、深色下机身发白、长列表翻页等问题。</li>
-</ul>
-
-<h4>其它修复</h4>
-<ul>
+  <li><strong>让它帮你装的技能，现在能被正常调用了</strong>：此前只有从技能中心手动安装的才会生成路由摘要，你说「帮我装 xxx」装进来的没有，结果就是装好了却用不上。</li>
+  <li><strong>一个坏工具不再拖垮一整批</strong>：启动时某个工具注册失败会中断后面所有工具的注册，现在各自独立。</li>
+  <li><strong>修好一处会丢数据的写入 bug</strong>：能力摘要在特定时序下会被整份覆盖，实测从 140 条掉到 29 条且无任何报错。</li>
   <li><strong>技能不再"声称做不到"</strong>：技能清单被过度压缩导致模型看不到参数示例，已修。</li>
-  <li><strong>知识库归档三连错</strong>：归错文件、重复建页、分类被静默猜测，已修。</li>
-  <li><strong>晨报卡片</strong>：重启后消失、内容被拦腰截断、读不到时静默装空，已修。</li>
-  <li><strong>「发了工具却零调用」</strong>：补齐全链路探针与诊断，不再静默失败。</li>
-  <li><strong>设置</strong>：可为每个模型服务商指定默认模型，并单独开关「支持工具调用」。</li>
+</ul>
+
+<h4>邮件修复</h4>
+<ul>
+  <li><strong>邮件功能全线失效已修</strong>：一处脚本写法错误导致读信、搜索等全部失败。</li>
+  <li><strong>搜索结果点不开的问题</strong>：搜索给出的序号在读取时用不了（两处编号规则不一致），已打通。</li>
+</ul>
+
+<h4>诊断不再给危险建议</h4>
+<ul>
+  <li>之前有一次<strong>明明是我们自己的程序出错，诊断却判成"你的邮箱数据损坏"，并建议重建邮件数据库</strong>——那是不可逆且完全无效的操作。现在故障归属改由代码判定：是我们的问题就直说是我们的问题，不再让模型在"用户侧原因"里硬找一个。</li>
+</ul>
+
+<h4>换电脑恢复：补上会丢数据的缺口</h4>
+<ul>
+  <li><strong>你自建的技能、自建工具、MCP 服务器配置此前不会进备份</strong>，换电脑恢复后会全部丢失。已修，并改成新增内容自动纳入，不再依赖人工维护清单。</li>
+  <li><strong>顺带做了一次整理</strong>：GoEVO 自己的数据（自建技能/工具、MCP 配置等）从技能生态目录里搬了出来，各归各位。老备份包仍能正常恢复，已端到端验证。</li>
+</ul>
+
+<h4>界面细节</h4>
+<ul>
+  <li><strong>「思考中」换了个指示器</strong>：从系统原生转圈改成双螺旋动效——转圈是无始无终的机械循环，双螺旋有起伏节奏，更像"正在运转"。</li>
+  <li><strong>知识图谱的小节点点得中了</strong>：此前点击热区位置算错，小节点几乎点不到。</li>
+  <li><strong>深色模式</strong>：技能说明浮层不再是白底，Markdown 也按原样显示。</li>
+  <li>全局开关统一了样式，不再混用系统原生控件。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120705311" type="application/octet-stream" sparkle:edSignature="xnTfmhQDaCvce89TTtia8lJwsXvH3xRVFx/ajoVv2w7jUOm9VrTMYeWtKvOnKZc/PrAAlW1WO/oxyUjG2VHFAA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121049923" type="application/octet-stream" sparkle:edSignature="9PrgKKNuQMgIYa3GGr1i6O5gC11QoWsK0C07s1zRO9SFyDeoRzS5VISEkDjcvryAoBazS1Zne0gSNrdL5Y7fBA=="/>
         </item>
     </channel>
 </rss>
