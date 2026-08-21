@@ -4,60 +4,48 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 20 Aug 2026 09:38:49 +0800</pubDate>
-            <sparkle:version>1374</sparkle:version>
+            <pubDate>Fri, 21 Aug 2026 22:14:57 +0800</pubDate>
+            <sparkle:version>1387</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>编程：改错了能一键还原</h4>
+<h4>⚠️ 三个模块已下架</h4>
 <ul>
-  <li><strong>每一轮都能退回去</strong>：鼠标移到任意一轮的分隔线上，会出现「还原到这里之前」。点开先给你看清单——改回几个文件、删掉哪些新建的、找回哪些被删的，还能逐个文件看改动明细，确认无误再还原。</li>
-  <li><strong>你自己改过的文件会单独警告</strong>：如果某个文件在它读取之后被你改过，还原前会明确提示，不会悄悄覆盖你的改动。</li>
-  <li><strong>不留后遗症</strong>：还原会同时停掉它启动的后台服务，并告知它文件已回退，避免它继续在旧状态上接着改。</li>
-  <li>快照存在会话自己的目录里，<strong>不会在你的项目文件夹里留下任何东西</strong>。</li>
+  <li><strong>钉钉原生功能（日历、待办、工作通知、多维表读取）已移除</strong>。钉钉官方已把这些能力标准化为 MCP 服务，你在「设置 → MCP 服务」接入后能力更全（含群消息、机器人、通讯录等）。保留两套等价入口只会让它在 20 个候选工具里挑花眼、选错工具。</li>
+  <li><strong>「经营分析」与「数据指标计算」两个技能已下架</strong>，待业务场景重新设计后再建。<strong>日常的表格统计不受影响</strong>——那条路早已改走通用的表格聚合能力。</li>
+  <li>钉钉远程指挥（从钉钉给它下指令）一并移除。</li>
 </ul>
 
-<h4>编程：看得出它是不是还在干活</h4>
+<h4>发图片终于稳了</h4>
 <ul>
-  <li>以前它在写大文件时，画面会停在最后一句话上一两分钟，完全看不出是在工作还是卡死了。现在<strong>只要在运行就有提示，并显示已经花了多久</strong>——「正在写入 index.html… 1 分 15 秒」。</li>
+  <li><strong>修好一个"发了图它却说看不到"的 bug</strong>：某些内容会触发一次内部的请求重建，而重建时把图片连同若干设置一起弄丢了——发送日志显示一切正常、服务器也返回成功，唯独模型收不到图。这个问题是条件触发的，所以时好时坏。</li>
+  <li><strong>图里的文字现在会留在上下文里</strong>：以前发过的图，下一轮它就"看不见"了，得让你把内容再贴一遍。现在会在本机把图中文字识别出来一并记住，之后随时能引用。识别全程在本机完成。</li>
+  <li><strong>大图会自动压到合适尺寸再发</strong>：Retina 截图原样发出去有好几 MB，不少服务商会直接丢掉。</li>
+  <li><strong>模型服务新增「支持图片识别」开关</strong>：如果某个服务收到图片后总回"我看不到图片"，把它关掉，带图的请求会自动改走别的模型。</li>
 </ul>
 
-<h4>技能更可靠了</h4>
+<h4>语音输入</h4>
 <ul>
-  <li><strong>让它帮你装的技能，现在能被正常调用了</strong>：此前只有从技能中心手动安装的才会生成路由摘要，你说「帮我装 xxx」装进来的没有，结果就是装好了却用不上。</li>
-  <li><strong>一个坏工具不再拖垮一整批</strong>：启动时某个工具注册失败会中断后面所有工具的注册，现在各自独立。</li>
-  <li><strong>修好一处会丢数据的写入 bug</strong>：能力摘要在特定时序下会被整份覆盖，实测从 140 条掉到 29 条且无任何报错。</li>
-  <li><strong>技能不再"声称做不到"</strong>：技能清单被过度压缩导致模型看不到参数示例，已修。</li>
+  <li>聊天和编程输入框都能<strong>直接说话转文字</strong>。识别<strong>全程在本机</strong>，音频不出本机；如果系统没装对应语言的离线模型会明确报错，不会偷偷传到云端。</li>
+  <li>结果插在光标处、可以改，<strong>绝不自动发送</strong>——识别一定会有错字，自动发出去等于逼你在对话里道歉重说。</li>
 </ul>
 
-<h4>邮件修复</h4>
+<h4>不再擅自改写你发出去的内容</h4>
 <ul>
-  <li><strong>邮件功能全线失效已修</strong>：一处脚本写法错误导致读信、搜索等全部失败。</li>
-  <li><strong>搜索结果点不开的问题</strong>：搜索给出的序号在读取时用不了（两处编号规则不一致），已打通。</li>
-</ul>
-
-<h4>诊断不再给危险建议</h4>
-<ul>
-  <li>之前有一次<strong>明明是我们自己的程序出错，诊断却判成"你的邮箱数据损坏"，并建议重建邮件数据库</strong>——那是不可逆且完全无效的操作。现在故障归属改由代码判定：是我们的问题就直说是我们的问题，不再让模型在"用户侧原因"里硬找一个。</li>
-</ul>
-
-<h4>换电脑恢复：补上会丢数据的缺口</h4>
-<ul>
-  <li><strong>你自建的技能、自建工具、MCP 服务器配置此前不会进备份</strong>，换电脑恢复后会全部丢失。已修，并改成新增内容自动纳入，不再依赖人工维护清单。</li>
-  <li><strong>顺带做了一次整理</strong>：GoEVO 自己的数据（自建技能/工具、MCP 配置等）从技能生态目录里搬了出来，各归各位。老备份包仍能正常恢复，已端到端验证。</li>
+  <li>此前有一套"发送前脱敏"：检测到疑似身份证/银行卡等就把内容替换成占位符。<strong>实测它拦不住真泄露，却会打断正常功能</strong>——占位符从不还原（你会在回复里看到 <code>[BANK_CARD_1]</code>），而且它保护的对象是你自己配置的模型服务商。最离谱的一次：一个碰巧符合校验规则的 16 位编号让它判定"高度敏感"，结果<strong>一个字都没打码，却把整条请求重建了一次，顺手弄丢了图片</strong>。已整体移除。</li>
+  <li>日志、安全审计、会话导出里的脱敏<strong>保留</strong>——那些内容会外流（比如发诊断包给别人），打码是真有用的。</li>
 </ul>
 
 <h4>界面细节</h4>
 <ul>
-  <li><strong>「思考中」换了个指示器</strong>：从系统原生转圈改成双螺旋动效——转圈是无始无终的机械循环，双螺旋有起伏节奏，更像"正在运转"。</li>
-  <li><strong>知识图谱的小节点点得中了</strong>：此前点击热区位置算错，小节点几乎点不到。</li>
-  <li><strong>深色模式</strong>：技能说明浮层不再是白底，Markdown 也按原样显示。</li>
-  <li>全局开关统一了样式，不再混用系统原生控件。</li>
+  <li>深色模式下<strong>「加载更早的消息」的文字看不清</strong>，已修。</li>
+  <li>编程模块的「正在思考…」<strong>换成和主窗口一致的双螺旋</strong>，不再混用系统转圈。</li>
+  <li>点进输入框后，占位提示会让开，不再压在光标上。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121049923" type="application/octet-stream" sparkle:edSignature="9PrgKKNuQMgIYa3GGr1i6O5gC11QoWsK0C07s1zRO9SFyDeoRzS5VISEkDjcvryAoBazS1Zne0gSNrdL5Y7fBA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119864206" type="application/octet-stream" sparkle:edSignature="hBgNglfLMiVGdyCSCSCTE2GTc8KOS4PBGzznpxO5HSTTQZQJQ+gwJZ0zA80pN5mmB2ldhwCRGbKf+Cl2G07mCQ=="/>
         </item>
     </channel>
 </rss>
