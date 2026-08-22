@@ -4,48 +4,53 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 21 Aug 2026 22:14:57 +0800</pubDate>
-            <sparkle:version>1387</sparkle:version>
+            <pubDate>Sat, 22 Aug 2026 22:19:35 +0800</pubDate>
+            <sparkle:version>1408</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>⚠️ 三个模块已下架</h4>
+<h4>换机备份：补上会丢数据的 5 类缺口</h4>
 <ul>
-  <li><strong>钉钉原生功能（日历、待办、工作通知、多维表读取）已移除</strong>。钉钉官方已把这些能力标准化为 MCP 服务，你在「设置 → MCP 服务」接入后能力更全（含群消息、机器人、通讯录等）。保留两套等价入口只会让它在 20 个候选工具里挑花眼、选错工具。</li>
-  <li><strong>「经营分析」与「数据指标计算」两个技能已下架</strong>，待业务场景重新设计后再建。<strong>日常的表格统计不受影响</strong>——那条路早已改走通用的表格聚合能力。</li>
-  <li>钉钉远程指挥（从钉钉给它下指令）一并移除。</li>
+  <li><strong>技能里的 API Key 此前会在换机时静默丢失</strong>——技能还在、密钥没了，而且不报错。原因是备份跳过了隐藏文件，密钥恰好存在 <code>.env</code> 里。已修。</li>
+  <li><strong>创作库「有列表没文件」已修</strong>：索引和资产实体此前不在同一档位收集，选轻量备份就会得到一个空壳创作库。现在索引与实体同级，不会再对不上。</li>
+  <li><strong>会话锚点、技能分类、长期记忆索引、用户头像等 14 项此前根本没进备份包</strong>，换机后直接消失。</li>
+  <li>根子上的改动：备份从「白名单登记制」改成<strong>自动收集 + 排除清单</strong>。以前每加一个目录都要有人回来登记，这个约定已经漏了三轮——现在新增的内容默认就在包里。</li>
+  <li>导出时会<strong>自己检查覆盖率</strong>：磁盘上有、却没进包又不在排除清单里的东西，会直接列给你看。</li>
+</ul>
+<p>换机请选<strong>完整备份</strong>。注意：设备身份类密钥不跨机迁移，新机器上随身端需要重新配对。</p>
+
+<h4>随身端：编程会话可以在手机上盯着了</h4>
+<ul>
+  <li>编程会话现在会<strong>镜像到随身端</strong>，运行状态、后台任务数都能看到；此前编程模块对远程和监控是完全不可见的。</li>
+  <li>危险操作可以<strong>在手机上审批</strong>，也能远程把模型档位降下来。</li>
+  <li>会话列表带上了置顶状态，和电脑上顺序一致。</li>
+  <li>修好一处「写了但从没生效」的问题：远程编程服务此前压根没被启动过。</li>
 </ul>
 
-<h4>发图片终于稳了</h4>
+<h4>设置顶部的标签栏，用鼠标够得着了</h4>
 <ul>
-  <li><strong>修好一个"发了图它却说看不到"的 bug</strong>：某些内容会触发一次内部的请求重建，而重建时把图片连同若干设置一起弄丢了——发送日志显示一切正常、服务器也返回成功，唯独模型收不到图。这个问题是条件触发的，所以时好时坏。</li>
-  <li><strong>图里的文字现在会留在上下文里</strong>：以前发过的图，下一轮它就"看不见"了，得让你把内容再贴一遍。现在会在本机把图中文字识别出来一并记住，之后随时能引用。识别全程在本机完成。</li>
-  <li><strong>大图会自动压到合适尺寸再发</strong>：Retina 截图原样发出去有好几 MB，不少服务商会直接丢掉。</li>
-  <li><strong>模型服务新增「支持图片识别」开关</strong>：如果某个服务收到图片后总回"我看不到图片"，把它关掉，带图的请求会自动改走别的模型。</li>
+  <li>19 个标签排成一条横栏，一屏只放得下七八个。<strong>触控板能横滑，普通鼠标却完全没辙</strong>——没有滚动条、没有箭头，右边那十来个标签根本点不到。现在两端加了翻页按钮，一次翻一屏。</li>
+  <li>切到某个标签时，它会<strong>自动滚进视野</strong>，不用再自己找。</li>
 </ul>
 
-<h4>语音输入</h4>
+<h4>看得懂上下文到底发生了什么</h4>
 <ul>
-  <li>聊天和编程输入框都能<strong>直接说话转文字</strong>。识别<strong>全程在本机</strong>，音频不出本机；如果系统没装对应语言的离线模型会明确报错，不会偷偷传到云端。</li>
-  <li>结果插在光标处、可以改，<strong>绝不自动发送</strong>——识别一定会有错字，自动发出去等于逼你在对话里道歉重说。</li>
+  <li>Prompt 调试工作台的「会话历史」<strong>不再一律标成「压缩后」</strong>。现在分三种状态：原文直通（没触发压缩）、已压缩（标出压缩前后）、未启用。</li>
+  <li>压缩时会画出<strong>哪些轮次被压成了摘要、哪些保留了原文</strong>，还有一条「距触发线还有多远」的进度条——回答「为什么没压缩」比看文字直接。</li>
+  <li>顺带说清一件容易误会的事：<strong>字数和 token 数不一样</strong>。56,758 字约等于 26.8K token 是单位换算，不代表内容被裁剪过。</li>
 </ul>
 
-<h4>不再擅自改写你发出去的内容</h4>
+<h4>其它</h4>
 <ul>
-  <li>此前有一套"发送前脱敏"：检测到疑似身份证/银行卡等就把内容替换成占位符。<strong>实测它拦不住真泄露，却会打断正常功能</strong>——占位符从不还原（你会在回复里看到 <code>[BANK_CARD_1]</code>），而且它保护的对象是你自己配置的模型服务商。最离谱的一次：一个碰巧符合校验规则的 16 位编号让它判定"高度敏感"，结果<strong>一个字都没打码，却把整条请求重建了一次，顺手弄丢了图片</strong>。已整体移除。</li>
-  <li>日志、安全审计、会话导出里的脱敏<strong>保留</strong>——那些内容会外流（比如发诊断包给别人），打码是真有用的。</li>
-</ul>
-
-<h4>界面细节</h4>
-<ul>
-  <li>深色模式下<strong>「加载更早的消息」的文字看不清</strong>，已修。</li>
-  <li>编程模块的「正在思考…」<strong>换成和主窗口一致的双螺旋</strong>，不再混用系统转圈。</li>
-  <li>点进输入框后，占位提示会让开，不再压在光标上。</li>
+  <li><strong>编程模块：需要你拿主意时会弹选择卡</strong>，不用再从一大段文字里找它在问什么。</li>
+  <li><strong>治理中心的待办有红点了</strong>：进化提案有待确认时，从侧栏一路提示到具体页签，不会点进来才发现在哪；历史提案支持多选清理。</li>
+  <li>设置里删掉一条<strong>永远消不掉的假警告</strong>——它比对的是一个早已停用的配置项，而它建议你去改的那个设置根本没有入口。</li>
+  <li>清理了约 5,500 行无人调用的旧代码，不影响任何功能。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="119864206" type="application/octet-stream" sparkle:edSignature="hBgNglfLMiVGdyCSCSCTE2GTc8KOS4PBGzznpxO5HSTTQZQJQ+gwJZ0zA80pN5mmB2ldhwCRGbKf+Cl2G07mCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120057585" type="application/octet-stream" sparkle:edSignature="mmr8SW76Svi6AT6DVVtb2emJlHmZ6XKnUjX5iyrFKTO/6pLMhHwvEZVVfqFh5ysQjEKxdkOBCl0BnozlGpOWDA=="/>
         </item>
     </channel>
 </rss>
