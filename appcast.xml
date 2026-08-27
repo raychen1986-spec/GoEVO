@@ -4,66 +4,56 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Tue, 25 Aug 2026 22:54:56 +0800</pubDate>
-            <sparkle:version>1460</sparkle:version>
+            <pubDate>Thu, 27 Aug 2026 12:25:30 +0800</pubDate>
+            <sparkle:version>1472</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>🎙️ 语音对话：GoEVO 会说话了，也听得懂你说话</h4>
+<h4>📎 修好一个会让 AI「看不见你附件」的问题</h4>
 <ul>
-  <li>新增<strong>实时语音对话</strong>：直接开口说，它开口答，说话中途可以随时打断它。</li>
-  <li>输入框加了<strong>语音输入</strong>按钮，对话和编程两处都能用，说完自动转成文字。</li>
-  <li>语音聊的内容<strong>会进长期记忆</strong>——和打字聊的一样记得住，不会说完就忘。</li>
+  <li>此前上传 PDF/Word 后，AI 当轮分析得好好的，<strong>下一轮就说「我没有看到你的文档」</strong>。</li>
+  <li>原因是存进对话记忆时只留下了你手打的那句话，<strong>文档正文一个字都没存</strong>。现在完整保留——图片里识别出的文字同样。</li>
+  <li>@ 引用的知识库页面也一样，现在下一轮还记得。</li>
 </ul>
 
-<h4>🧠 修好一个会让 AI「失忆」的问题</h4>
+<h4>📐 附件注入上限统一，多了一个开关</h4>
 <ul>
-  <li>此前只要模型服务稍微慢一点，<strong>整段聊天记录会被连带丢掉</strong>——表现是你让它总结上面的内容，它却回你「请把内容贴给我」。</li>
-  <li>原因是聊天记录和记忆召回绑在同一个超时里，一个卡住就全丢。现在<strong>聊天记录永远进得去</strong>，慢只会让记忆少召回几条。</li>
-  <li>顺带把召回慢的那一步单独做成了可调项（设置 → ReAct → 上下文 → 记忆召回）。</li>
+  <li>以前<strong>同一份内容，截图传只留 2000 字、存成 PDF 传能留 25000 字</strong>——差 12 倍，且完全看不出来。现在统一了。</li>
+  <li>新增「附件注入上限」（设置 → ReAct → 上下文），默认 2.5 万字符可调；超出的附件会改成「摘要 + 文件路径」，AI 需要细节时自己去读。</li>
+  <li>发多个大附件时，超长截断改为<strong>保留你的提问、截掉附件尾部</strong>——以前正好反着来，会把你的问题砍掉。</li>
 </ul>
 
-<h4>💻 编程模块</h4>
+<h4>🌙 做梦晨报：裁决卡不再满屏假重复</h4>
 <ul>
-  <li>修好「<strong>模型宣布完计划就停手</strong>」——它会说「我这就去改 A、B、C」然后什么都不做。实测该情况从 42% 降到 8%。</li>
-  <li>切到「编程」之后，<strong>左下角的设置/技能/监控等菜单点了没反应</strong>，已修。</li>
-  <li>聊天窗口里<strong>能看到你上传的图片</strong>了，交互和对话页一致。</li>
-  <li>上下文压缩策略统一到对话口径，并新增四项可调（触发阈值 / 单轮余量 / 摘要上限 / 字数约束）。</li>
-  <li>压缩失败时不再直接丢内容：会重试、再不行用记录里的待办与改动文件自动拼一份摘要。</li>
+  <li>此前晨报里几十条「语义疑似重复，请裁决」，展开一看<strong>一对真重复都没有</strong>——「钉钉」和「钉钉在线文档技能」被判成了同一件事。</li>
+  <li>判重规则已修正；判定失败时也不再把整批倾倒给你，改为自动重试、判不出就留到下次。</li>
+  <li>升级后会自动释放之前被误冻结的记忆条目，需要你真正裁决的矛盾项保留不变。</li>
+</ul>
+
+<h4>🎙️ 语音</h4>
+<ul>
+  <li><strong>换新电脑首次安装更省心</strong>：自动检查环境、缺的运行时自动装，不再卡在「缺少 uv」。</li>
+  <li>中文语音<strong>开口更快</strong>——此前用的分句方式切不开中文长句，要等整段合成完才出声。</li>
+  <li>修好语音风格设置会干扰记忆检索、导致答非所问的问题。</li>
 </ul>
 
 <h4>📱 随身端（手机）</h4>
 <ul>
-  <li><strong>锁屏卡片实时跟进度</strong>：任务在思考 / 执行 / 等你批准 / 完成，锁屏上直接能看到，不用打开 App。</li>
-  <li>编程会话<strong>能发图片了</strong>，且切会话、重启后图片还在。</li>
-  <li>修好「手机发的图 Mac 收不到」——这条链路此前<strong>三处都是断的</strong>，而且全程不报错。</li>
+  <li>Mac 上跑「深度研究」时，<strong>手机能实时看到进度卡</strong>：规划 / 调研 / 汇总走到哪一步、5 个调研角度各自完成没有、已经花了多久，还能直接点「终止」。</li>
+  <li>需要手机端升级到最新版；旧版本不受影响。</li>
 </ul>
 
-<h4>💬 聊天体验</h4>
+<h4>🧹 设置项清理</h4>
 <ul>
-  <li>流式输出重做：回答<strong>逐字出现</strong>，中途断网也不会丢已经写出来的部分。</li>
-  <li>修好流式时<strong>页面不跟着往下滚</strong>、重启后打开会话<strong>停在中间</strong>而不是底部。</li>
-  <li>「回到最新」按钮改为常驻，随时点回底部。</li>
-  <li>深色主题下<strong>代码块里的深蓝字看不清</strong>，已修。</li>
+  <li>「智能上下文压缩」的开关去掉了——关掉它会回到一套明显更差的旧策略，留着只会误导。</li>
+  <li>连带清掉几个点了没用的旧配置；仍然生效的「用户输入上限」移到了显眼位置，默认值也从 2.5 万提到 5 万。</li>
 </ul>
 
-<h4>🔍 出问题时更容易查清楚</h4>
-<ul>
-  <li>开着「深度思考」时，消息下方会<strong>如实告诉你它到底思考了没有</strong>——有些模型或中转服务并不支持这个开关，以前完全看不出来。</li>
-  <li>报错不再显示「未能完成操作（错误4）」这种看不懂的文字，直接写清是超时、认证失败还是别的。</li>
-  <li>做梦晨报卡片<strong>此前根本没显示出来</strong>，且重启后内容会消失，两个问题都已修。</li>
-</ul>
-
-<h4>🔌 插件体系</h4>
-<ul>
-  <li>新增外部能力接入标准，语音是第一个落地的插件：安装、升级、卸载全程可视，装到一半失败会自动回退。</li>
-</ul>
-
-<p>升级后建议顺手看一眼 <strong>设置 → 路由 → 内部任务模型</strong>：选一个响应快的模型，能明显减少每轮回复前的等待。</p>
+<p>升级后如果常发大附件，可以去 <strong>设置 → ReAct → 上下文</strong> 看一眼新的两个上限是否合用。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="125707752" type="application/octet-stream" sparkle:edSignature="7VDHsQvmTHlK6rRguV1/vA0oujOzq9oZfV+mhkDty+v+7Z1TpmkTxu9UbWDlr0JK7Sbzvj2pZUFg73q9G8MtBQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="125752609" type="application/octet-stream" sparkle:edSignature="lKBTzFPdKQeJi/mhY+9SW07Chm/sk0IhimkkAX4ug9WcUqT1d58Sg1z438jsdO1x/cPRbk6pziIdkDusDWFUDw=="/>
         </item>
     </channel>
 </rss>
