@@ -4,56 +4,59 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 27 Aug 2026 12:25:30 +0800</pubDate>
-            <sparkle:version>1472</sparkle:version>
+            <pubDate>Fri, 28 Aug 2026 11:56:00 +0800</pubDate>
+            <sparkle:version>1493</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>📎 修好一个会让 AI「看不见你附件」的问题</h4>
+<h4>🧠 修好一批「AI 突然不记得刚说过什么」的问题</h4>
 <ul>
-  <li>此前上传 PDF/Word 后，AI 当轮分析得好好的，<strong>下一轮就说「我没有看到你的文档」</strong>。</li>
-  <li>原因是存进对话记忆时只留下了你手打的那句话，<strong>文档正文一个字都没存</strong>。现在完整保留——图片里识别出的文字同样。</li>
-  <li>@ 引用的知识库页面也一样，现在下一轮还记得。</li>
+  <li><strong>重启后忘掉最近几轮</strong>：聊天窗口里消息都在，AI 却当没发生过——现在不会了。（起因是给对话记录排序的编号在某些情况下会从头重来，最新的几轮被当成最老的丢掉。）</li>
+  <li><strong>手机发来的消息</strong>：这类消息此前既容易在重启后丢失，本身也看不到会话历史；现在两个问题一并修好，手机上问的问题 AI 能看到完整上下文了。</li>
+  <li>上下文压缩之后，被压掉的那段历史摘要不会再丢。</li>
 </ul>
 
-<h4>📐 附件注入上限统一，多了一个开关</h4>
+<h4>✉️ 消息里带邮箱地址不再「废掉一轮」</h4>
 <ul>
-  <li>以前<strong>同一份内容，截图传只留 2000 字、存成 PDF 传能留 25000 字</strong>——差 12 倍，且完全看不出来。现在统一了。</li>
-  <li>新增「附件注入上限」（设置 → ReAct → 上下文），默认 2.5 万字符可调；超出的附件会改成「摘要 + 文件路径」，AI 需要细节时自己去读。</li>
-  <li>发多个大附件时，超长截断改为<strong>保留你的提问、截掉附件尾部</strong>——以前正好反着来，会把你的问题砍掉。</li>
+  <li>此前只要你的消息里出现 <code>xxx@163.com</code> 这样的地址，整轮对话会被误判成「你在召唤某个子 Agent」，然后回你一句<strong>「未找到匹配的子 Agent」</strong>——你的问题根本没被回答。</li>
+  <li>同样会误伤的还有 <code>@某人</code>、代码里的 <code>@标注</code> 等写法，现在都正常了。</li>
 </ul>
 
-<h4>🌙 做梦晨报：裁决卡不再满屏假重复</h4>
+<h4>🎙️ 语音：这一版做了大量修复</h4>
 <ul>
-  <li>此前晨报里几十条「语义疑似重复，请裁决」，展开一看<strong>一对真重复都没有</strong>——「钉钉」和「钉钉在线文档技能」被判成了同一件事。</li>
-  <li>判重规则已修正；判定失败时也不再把整批倾倒给你，改为自动重试、判不出就留到下次。</li>
-  <li>升级后会自动释放之前被误冻结的记忆条目，需要你真正裁决的矛盾项保留不变。</li>
+  <li><strong>回声问题</strong>：外放时它会听见自己说话，已修。</li>
+  <li><strong>音频启动失败</strong>：找到了真正的元凶，现在能正常采音。</li>
+  <li><strong>语音融进聊天窗口</strong>：会话归属、麦克风入口、消息标记打通。</li>
+  <li>修好「用了语音对话之后，普通听写变成静音」。</li>
+  <li>语音插件异常退出时会明确告知，不再静默失效。</li>
 </ul>
 
-<h4>🎙️ 语音</h4>
+<h4>🖥️ 本地 Ollama 模型终于能正常接入</h4>
 <ul>
-  <li><strong>换新电脑首次安装更省心</strong>：自动检查环境、缺的运行时自动装，不再卡在「缺少 uv」。</li>
-  <li>中文语音<strong>开口更快</strong>——此前用的分句方式切不开中文长句，要等整段合成完才出声。</li>
-  <li>修好语音风格设置会干扰记忆检索、导致答非所问的问题。</li>
+  <li>此前 Ollama 的配置<strong>出厂默认值就是坏的</strong>：验证能通过，但拉取模型列表和实际对话都失败——比直接报错更难查。</li>
+  <li>现在验证、拉模型、对话走同一套地址规则；Base URL 不管填到端口还是粘了完整地址都能识别，<strong>无需改动已有配置</strong>。</li>
+</ul>
+
+<h4>💻 编程模块</h4>
+<ul>
+  <li>右栏「本次会话」的 token 消耗<strong>重启后不再归零</strong>，与对话模块一致。</li>
 </ul>
 
 <h4>📱 随身端（手机）</h4>
 <ul>
-  <li>Mac 上跑「深度研究」时，<strong>手机能实时看到进度卡</strong>：规划 / 调研 / 汇总走到哪一步、5 个调研角度各自完成没有、已经花了多久，还能直接点「终止」。</li>
-  <li>需要手机端升级到最新版；旧版本不受影响。</li>
+  <li>Mac 上跑「深度研究」时，<strong>手机能实时看到进度卡</strong>：规划 / 调研 / 汇总走到哪一步、各个调研角度完成没有、已经花了多久，还能直接点「终止」。需手机端升到最新版。</li>
 </ul>
 
-<h4>🧹 设置项清理</h4>
+<h4>🧹 其它</h4>
 <ul>
-  <li>「智能上下文压缩」的开关去掉了——关掉它会回到一套明显更差的旧策略，留着只会误导。</li>
-  <li>连带清掉几个点了没用的旧配置；仍然生效的「用户输入上限」移到了显眼位置，默认值也从 2.5 万提到 5 万。</li>
+  <li>修好聊天页面滚动不跟随的问题（找到了真正的原因）。</li>
+  <li>清掉三条「正常聊天也一直报」的日志噪音。</li>
+  <li>记忆重排失败时改为保留全部候选，而不是误当成「都不相关」清空。</li>
 </ul>
-
-<p>升级后如果常发大附件，可以去 <strong>设置 → ReAct → 上下文</strong> 看一眼新的两个上限是否合用。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="125752609" type="application/octet-stream" sparkle:edSignature="lKBTzFPdKQeJi/mhY+9SW07Chm/sk0IhimkkAX4ug9WcUqT1d58Sg1z438jsdO1x/cPRbk6pziIdkDusDWFUDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120667625" type="application/octet-stream" sparkle:edSignature="6VSt28+PL5EICmyboQthUhysXssYbxAWZYIetp2LDpMVSouNmIa3U4ZUVRgWe1Sjg/DgS2YS5dq4VpDu6X0kBw=="/>
         </item>
     </channel>
 </rss>
