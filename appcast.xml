@@ -4,59 +4,61 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Fri, 28 Aug 2026 11:56:00 +0800</pubDate>
-            <sparkle:version>1493</sparkle:version>
+            <pubDate>Wed, 02 Sep 2026 16:42:53 +0800</pubDate>
+            <sparkle:version>1532</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>🧠 修好一批「AI 突然不记得刚说过什么」的问题</h4>
+<h4>🎨 新增「创作」tab —— PPT 做完之后可以反复改</h4>
 <ul>
-  <li><strong>重启后忘掉最近几轮</strong>：聊天窗口里消息都在，AI 却当没发生过——现在不会了。（起因是给对话记录排序的编号在某些情况下会从头重来，最新的几轮被当成最老的丢掉。）</li>
-  <li><strong>手机发来的消息</strong>：这类消息此前既容易在重启后丢失，本身也看不到会话历史；现在两个问题一并修好，手机上问的问题 AI 能看到完整上下文了。</li>
-  <li>上下文压缩之后，被压掉的那段历史摘要不会再丢。</li>
+  <li>以前 PPT 生成完就定死了，不满意只能整份重做。现在多了一个和「对话」「编程」并列的<strong>创作</strong>分段：生成完点<strong>「转入创作台继续改」</strong>，这份 PPT 就变成一个可以长期迭代的项目。</li>
+  <li><strong>网格看板</strong>：整册缩略图一屏看完，点开单页看大图。</li>
+  <li><strong>改字段</strong>：右侧列出这一页的所有文字，直接改，秒级重渲——不经过 AI，改完就是你写的那几个字。</li>
+  <li><strong>说一句话就改</strong>：选中一页或几页（⌘ 点选多页），输入「这三个目标各补一个量化指标」，AI 给出<strong>逐字段的改动清单</strong>（原值 → 新值）+ 改后效果图，你逐页决定接受还是放弃——<strong>没点接受之前，原文件一个字都不会动</strong>。</li>
+  <li><strong>不许编数字</strong>：找不到依据的数值它不会自己填，而是列在「没做的 N 项」里告诉你缺什么。</li>
+  <li><strong>撤销</strong>：改错了、重做得不满意，都能退回改动前那一版。</li>
+  <li><strong>手改保护</strong>：你手动改过的页会打标记，重做前会先问你。</li>
 </ul>
 
-<h4>✉️ 消息里带邮箱地址不再「废掉一轮」</h4>
+<h4>📊 PPT 质量大幅提升</h4>
 <ul>
-  <li>此前只要你的消息里出现 <code>xxx@163.com</code> 这样的地址，整轮对话会被误判成「你在召唤某个子 Agent」，然后回你一句<strong>「未找到匹配的子 Agent」</strong>——你的问题根本没被回答。</li>
-  <li>同样会误伤的还有 <code>@某人</code>、代码里的 <code>@标注</code> 等写法，现在都正常了。</li>
+  <li><strong>数据页真的出图了</strong>：该出柱状图、瀑布图、雷达图的页面不再只是几行文字。同时<strong>拒绝拿模板里的假数据出片</strong>——以前偶尔会把「品牌A 92%」这种示例数据留在页面上当成你的数据。</li>
+  <li><strong>关系型页面换成真图示</strong>：分层架构、中心辐射、组织树、金字塔、流程轴等，从"几个方块"变成真正画出来的图。</li>
+  <li><strong>新增能力总览地图</strong>：一页铺开上百格的业务能力清单（对标咨询稿里那种「业务能力全景图」）。</li>
+  <li><strong>新增交叉表与对齐矩阵</strong>：五个业务域 × 四个成熟度打勾、四个候选方案 × 六个维度对比、带行标签的三年规划矩阵。</li>
+  <li><strong>版式不再千篇一律</strong>：同类页面自动换气，深浅页交替出节奏，共 37 种视觉呈现。</li>
+  <li><strong>治零信息页与大空洞</strong>：不再出现"只有标题、内容全是废话"的页，也不再有半页空白。</li>
+  <li><strong>导出 PPTX 支持异形</strong>：金字塔的梯形、流程条的箭头形，导出后仍是可编辑的形状，不再被压成方块。</li>
 </ul>
 
-<h4>🎙️ 语音：这一版做了大量修复</h4>
+<h4>🐛 PPT 里几个「静悄悄出错」的问题</h4>
 <ul>
-  <li><strong>回声问题</strong>：外放时它会听见自己说话，已修。</li>
-  <li><strong>音频启动失败</strong>：找到了真正的元凶，现在能正常采音。</li>
-  <li><strong>语音融进聊天窗口</strong>：会话归属、麦克风入口、消息标记打通。</li>
-  <li>修好「用了语音对话之后，普通听写变成静音」。</li>
-  <li>语音插件异常退出时会明确告知，不再静默失效。</li>
+  <li><strong>你给的素材以前会丢</strong>：跟 AI 说了一长段需求，真正做 PPT 时只收到一句摘要，细节全没了——现在原文完整传到位。</li>
+  <li><strong>选的设计风格会被覆盖</strong>：选了「高管商务」却出来一份深色主题——现在以你选的为准。</li>
+  <li><strong>白页</strong>：某些版式在内容填不全时会渲成一张只有标题的白页，已修。</li>
+  <li>要求的页数、汇报标题解析不准，也一并修了。</li>
 </ul>
 
-<h4>🖥️ 本地 Ollama 模型终于能正常接入</h4>
+<h4>🕸️ 知识图谱：换成 Obsidian 式星系网状图</h4>
 <ul>
-  <li>此前 Ollama 的配置<strong>出厂默认值就是坏的</strong>：验证能通过，但拉取模型列表和实际对话都失败——比直接报错更难查。</li>
-  <li>现在验证、拉模型、对话走同一套地址规则；Base URL 不管填到端口还是粘了完整地址都能识别，<strong>无需改动已有配置</strong>。</li>
+  <li>球面形态下架，改为平铺的星系网状图，双击节点聚焦同心环看关系。</li>
+  <li><strong>实体类型补标</strong>：图谱里"不知道是人还是公司"的节点会自动补类型；每晚处理量从 80 提到 1000，队列不会再被个别判不出的实体堵死（以前会卡在那儿一直补不完）。</li>
 </ul>
 
-<h4>💻 编程模块</h4>
+<h4>🧠 记忆 / 语音 / 其它</h4>
 <ul>
-  <li>右栏「本次会话」的 token 消耗<strong>重启后不再归零</strong>，与对话模块一致。</li>
-</ul>
-
-<h4>📱 随身端（手机）</h4>
-<ul>
-  <li>Mac 上跑「深度研究」时，<strong>手机能实时看到进度卡</strong>：规划 / 调研 / 汇总走到哪一步、各个调研角度完成没有、已经花了多久，还能直接点「终止」。需手机端升到最新版。</li>
-</ul>
-
-<h4>🧹 其它</h4>
-<ul>
-  <li>修好聊天页面滚动不跟随的问题（找到了真正的原因）。</li>
-  <li>清掉三条「正常聊天也一直报」的日志噪音。</li>
-  <li>记忆重排失败时改为保留全部候选，而不是误当成「都不相关」清空。</li>
+  <li><strong>整轮对话丢出上下文</strong>：某些情况下刚说过的一整轮会从上下文里消失，AI 表现得像没看见，已修。</li>
+  <li><strong>整段语音对话重启后全部消失</strong>：语音聊了半天，重启回来一句都不剩——已修，语音对话现在正常落盘。</li>
+  <li><strong>切换深浅主题</strong>：部分控件会停在旧配色不刷新（「回到底部」按钮等），已修。</li>
+  <li><strong>对话区右键删除单条消息</strong>：删了就是真删——落盘、上下文一起清掉。</li>
+  <li><strong>OpenAI 生图</strong>：gpt-image 系列一直报 400 无法出图，已修。</li>
+  <li>侧栏后台管理第一排新增 <strong>MCP</strong> 入口。</li>
+  <li>记忆增强失败会进监控中心「问题」列表，单条即立案，不再无声。</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="120667625" type="application/octet-stream" sparkle:edSignature="6VSt28+PL5EICmyboQthUhysXssYbxAWZYIetp2LDpMVSouNmIa3U4ZUVRgWe1Sjg/DgS2YS5dq4VpDu6X0kBw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121235230" type="application/octet-stream" sparkle:edSignature="keIKrNdxMkUecPDjehigLIL+eMJLMW8hU87gJg0fEvKC6r9oCBWdnW3tcQgcMBEo0tBdZL88DdGOWCiuEi/eCA=="/>
         </item>
     </channel>
 </rss>
