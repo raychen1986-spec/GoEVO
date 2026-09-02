@@ -4,61 +4,56 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 02 Sep 2026 16:42:53 +0800</pubDate>
-            <sparkle:version>1532</sparkle:version>
+            <pubDate>Wed, 02 Sep 2026 22:41:19 +0800</pubDate>
+            <sparkle:version>1546</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>🎨 新增「创作」tab —— PPT 做完之后可以反复改</h4>
+<h4>🎬 创作台重做：现在是「跟它说话，它改页面」</h4>
+<p>上一版的创作台只能在固定模板的格子里改字——你说「这页改成 6 个部分」，它只能回「没有第 6 个格子」。这一版把内核换掉了：<strong>每一页就是一份 HTML，由 AI 直接写</strong>，能表达什么取决于 HTML 能表达什么，不再受模板限制。</p>
 <ul>
-  <li>以前 PPT 生成完就定死了，不满意只能整份重做。现在多了一个和「对话」「编程」并列的<strong>创作</strong>分段：生成完点<strong>「转入创作台继续改」</strong>，这份 PPT 就变成一个可以长期迭代的项目。</li>
-  <li><strong>网格看板</strong>：整册缩略图一屏看完，点开单页看大图。</li>
-  <li><strong>改字段</strong>：右侧列出这一页的所有文字，直接改，秒级重渲——不经过 AI，改完就是你写的那几个字。</li>
-  <li><strong>说一句话就改</strong>：选中一页或几页（⌘ 点选多页），输入「这三个目标各补一个量化指标」，AI 给出<strong>逐字段的改动清单</strong>（原值 → 新值）+ 改后效果图，你逐页决定接受还是放弃——<strong>没点接受之前，原文件一个字都不会动</strong>。</li>
-  <li><strong>不许编数字</strong>：找不到依据的数值它不会自己填，而是列在「没做的 N 项」里告诉你缺什么。</li>
-  <li><strong>撤销</strong>：改错了、重做得不满意，都能退回改动前那一版。</li>
-  <li><strong>手改保护</strong>：你手动改过的页会打标记，重做前会先问你。</li>
+  <li><strong>说一句话就开始</strong>：新建创作 → 说清楚讲给谁听、要覆盖什么，可以直接粘截图当数据来源</li>
+  <li><strong>先给你一份骨架</strong>：页序、每页讲什么，可以改标题、调顺序、删页加页——骨架定错了后面每一页都白写，所以这一步不写任何文件</li>
+  <li><strong>并行写页</strong>：网格逐格点亮，写完一页亮一格，某页不对立刻看得出来，可以单独重写</li>
 </ul>
 
-<h4>📊 PPT 质量大幅提升</h4>
+<h4>⚡ 多页同时改，各改各的</h4>
 <ul>
-  <li><strong>数据页真的出图了</strong>：该出柱状图、瀑布图、雷达图的页面不再只是几行文字。同时<strong>拒绝拿模板里的假数据出片</strong>——以前偶尔会把「品牌A 92%」这种示例数据留在页面上当成你的数据。</li>
-  <li><strong>关系型页面换成真图示</strong>：分层架构、中心辐射、组织树、金字塔、流程轴等，从"几个方块"变成真正画出来的图。</li>
-  <li><strong>新增能力总览地图</strong>：一页铺开上百格的业务能力清单（对标咨询稿里那种「业务能力全景图」）。</li>
-  <li><strong>新增交叉表与对齐矩阵</strong>：五个业务域 × 四个成熟度打勾、四个候选方案 × 六个维度对比、带行标签的三年规划矩阵。</li>
-  <li><strong>版式不再千篇一律</strong>：同类页面自动换气，深浅页交替出节奏，共 37 种视觉呈现。</li>
-  <li><strong>治零信息页与大空洞</strong>：不再出现"只有标题、内容全是废话"的页，也不再有半页空白。</li>
-  <li><strong>导出 PPTX 支持异形</strong>：金字塔的梯形、流程条的箭头形，导出后仍是可编辑的形状，不再被压成方块。</li>
+  <li>选中第 2 页说一句话，<strong>不用等它跑完</strong>就能选第 5 页再说一句，右栏并排看到多张任务卡各自在跑（最多 5 个）</li>
+  <li>每一页有自己的对话历史——说「再大一点」它知道指的是刚才那处</li>
+  <li>点任务卡，中间预览自动跟到那一页；在左边选页，输入目标也跟着切。<strong>看的和改的始终是同一页</strong></li>
+  <li>改完可以撤销回这一轮之前</li>
 </ul>
 
-<h4>🐛 PPT 里几个「静悄悄出错」的问题</h4>
+<h4>🎨 六个风格现在真的不一样了</h4>
+<p>之前六个风格只有配色不同——因为写页时压根没用上风格的设计意图。现在接上了：编辑单色几乎不用卡片盒子、用发丝分隔线和巨大的衬线数字；深色仪表盘用描边幽灵卡和渐变柱；高管商务是大留白加双线边框。选风格的地方也换成了<strong>六张真实样片</strong>，一眼看出差别。</p>
+<p>同时全册的<strong>页眉页脚位置被锁死了</strong>：之前十页各画各的标题栏，有的页码还画了两遍（页面自己画一个、系统又加一个）。现在母版统一，十页看起来才像一份东西。</p>
+
+<h4>🔧 生成质量</h4>
 <ul>
-  <li><strong>你给的素材以前会丢</strong>：跟 AI 说了一长段需求，真正做 PPT 时只收到一句摘要，细节全没了——现在原文完整传到位。</li>
-  <li><strong>选的设计风格会被覆盖</strong>：选了「高管商务」却出来一份深色主题——现在以你选的为准。</li>
-  <li><strong>白页</strong>：某些版式在内容填不全时会渲成一张只有标题的白页，已修。</li>
-  <li>要求的页数、汇报标题解析不准，也一并修了。</li>
+  <li><strong>浅色主题不再混进深色页</strong>：之前选「高管商务」出来的十页里会夹几页深底，看着像没做完</li>
+  <li><strong>内容不再被裁掉</strong>：页面固定 16:9，超出的部分会被直接切掉而且截图上看不出来。现在写完自动量一遍，超了让它收一收再出</li>
+  <li>数值只能来自你给的需求——找不到依据的它会说找不到，不会自己编一个</li>
 </ul>
 
-<h4>🕸️ 知识图谱：换成 Obsidian 式星系网状图</h4>
+<h4>📤 交付</h4>
 <ul>
-  <li>球面形态下架，改为平铺的星系网状图，双击节点聚焦同心环看关系。</li>
-  <li><strong>实体类型补标</strong>：图谱里"不知道是人还是公司"的节点会自动补类型；每晚处理量从 80 提到 1000，队列不会再被个别判不出的实体堵死（以前会卡在那儿一直补不完）。</li>
+  <li><strong>单文件 HTML</strong>：整册打包成一个文件，双击就能全屏放映，方向键翻页</li>
+  <li><strong>PDF</strong>：每页一张 1280×720</li>
+  <li>成品同时存进创作库</li>
 </ul>
 
-<h4>🧠 记忆 / 语音 / 其它</h4>
+<h4>🐛 顺手修的</h4>
 <ul>
-  <li><strong>整轮对话丢出上下文</strong>：某些情况下刚说过的一整轮会从上下文里消失，AI 表现得像没看见，已修。</li>
-  <li><strong>整段语音对话重启后全部消失</strong>：语音聊了半天，重启回来一句都不剩——已修，语音对话现在正常落盘。</li>
-  <li><strong>切换深浅主题</strong>：部分控件会停在旧配色不刷新（「回到底部」按钮等），已修。</li>
-  <li><strong>对话区右键删除单条消息</strong>：删了就是真删——落盘、上下文一起清掉。</li>
-  <li><strong>OpenAI 生图</strong>：gpt-image 系列一直报 400 无法出图，已修。</li>
-  <li>侧栏后台管理第一排新增 <strong>MCP</strong> 入口。</li>
-  <li>记忆增强失败会进监控中心「问题」列表，单条即立案，不再无声。</li>
+  <li><strong>误弹的授权确认</strong>：删自己工作目录里的文件，被判成「递归删除工作目录以外的东西」。三个原因叠在一起，其中一条是 <code>rm -rf $HOME/x</code> 这种真正危险的命令<strong>反而从来没被拦住过</strong>——一并修了</li>
+  <li>编程与创作的输入框：粘贴的截图现在显示在输入框上方，与对话模块一致；发出去的截图也会留在对话记录里</li>
+  <li>创作台的对话不再混进编程模块的会话列表（点进去会直接改到创作项目的文件）</li>
+  <li>缩略图缓存带上渲染器版本——之前渲染层面的修复到不了已有项目，老项目会一直显示旧图</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121235230" type="application/octet-stream" sparkle:edSignature="keIKrNdxMkUecPDjehigLIL+eMJLMW8hU87gJg0fEvKC6r9oCBWdnW3tcQgcMBEo0tBdZL88DdGOWCiuEi/eCA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121475737" type="application/octet-stream" sparkle:edSignature="WZK0EROkJeAmTAVaJdfRieXY3Rt8VoFhofo7rvDQP2CArqeeCHn+Dm8WbjsqSzsP3Cr32DxUgK+yIQLytvZUCQ=="/>
         </item>
     </channel>
 </rss>
