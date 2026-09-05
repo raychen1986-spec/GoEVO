@@ -4,56 +4,37 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Wed, 02 Sep 2026 22:41:19 +0800</pubDate>
-            <sparkle:version>1546</sparkle:version>
+            <pubDate>Sat, 05 Sep 2026 12:25:36 +0800</pubDate>
+            <sparkle:version>1555</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
 
-<h4>🎬 创作台重做：现在是「跟它说话，它改页面」</h4>
-<p>上一版的创作台只能在固定模板的格子里改字——你说「这页改成 6 个部分」，它只能回「没有第 6 个格子」。这一版把内核换掉了：<strong>每一页就是一份 HTML，由 AI 直接写</strong>，能表达什么取决于 HTML 能表达什么，不再受模板限制。</p>
+<h4>📊 创作台汇报页：咨询规划范式</h4>
+<p>对照一套德勤式数字化转型规划蓝图，把「咨询稿长什么样」做成了确定性的积木，模型只负责往里填内容。</p>
 <ul>
-  <li><strong>说一句话就开始</strong>：新建创作 → 说清楚讲给谁听、要覆盖什么，可以直接粘截图当数据来源</li>
-  <li><strong>先给你一份骨架</strong>：页序、每页讲什么，可以改标题、调顺序、删页加页——骨架定错了后面每一页都白写，所以这一步不写任何文件</li>
-  <li><strong>并行写页</strong>：网格逐格点亮，写完一页亮一格，某页不对立刻看得出来，可以单独重写</li>
+  <li><strong>新风格「咨询绿」</strong>：纯白底、近黑标题、亮绿章号与图标、深绿表头、深灰侧栏；风格墙现在是 8 张，样片全部换成信息密度高的真实一页</li>
+  <li><strong>九种新模块</strong>：图标列、编号箭头步骤、因果链、环形评分、圆点热力图、目标值瓦片、深绿表头面板列、分层架构行、原则列表；外加雷达图</li>
+  <li><strong>六个章节版式</strong>：规划总览 / 现状评估 / 问题与约束 / 顶层设计 / 总体架构 / 安全体系，各配一张按标杆复刻的范例页；写规划类材料时按章节自动对号入座</li>
+  <li><strong>页面骨架三个变体</strong>：「01 章名｜判断式标题」一行页眉、「总体结论：」导语条、页底带标签的浅色结论带（关键发现 / 决策原则 / 共同目标）</li>
 </ul>
 
-<h4>⚡ 多页同时改，各改各的</h4>
+<h4>🔧 真机复盘的四处修正</h4>
 <ul>
-  <li>选中第 2 页说一句话，<strong>不用等它跑完</strong>就能选第 5 页再说一句，右栏并排看到多张任务卡各自在跑（最多 5 个）</li>
-  <li>每一页有自己的对话历史——说「再大一点」它知道指的是刚才那处</li>
-  <li>点任务卡，中间预览自动跟到那一页；在左边选页，输入目标也跟着切。<strong>看的和改的始终是同一页</strong></li>
-  <li>改完可以撤销回这一轮之前</li>
+  <li>下半页空白但检查说「没问题」：结论带钉在页底把撑满率骗到了 100%，现在按内容空洞判，空一大块就会被要求补模块</li>
+  <li>每页只出 3 个模块：骨架要求改为最少 4 个，网格随模块数选</li>
+  <li>模块没套网格就竖着堆：母版兜底平分，检查会提示套网格</li>
+  <li>每页都标「还剩几条没过」：视觉审片的意见只进修复提示，不再算作未通过</li>
 </ul>
 
-<h4>🎨 六个风格现在真的不一样了</h4>
-<p>之前六个风格只有配色不同——因为写页时压根没用上风格的设计意图。现在接上了：编辑单色几乎不用卡片盒子、用发丝分隔线和巨大的衬线数字；深色仪表盘用描边幽灵卡和渐变柱；高管商务是大留白加双线边框。选风格的地方也换成了<strong>六张真实样片</strong>，一眼看出差别。</p>
-<p>同时全册的<strong>页眉页脚位置被锁死了</strong>：之前十页各画各的标题栏，有的页码还画了两遍（页面自己画一个、系统又加一个）。现在母版统一，十页看起来才像一份东西。</p>
-
-<h4>🔧 生成质量</h4>
+<h4>🛡 模型故障处理</h4>
 <ul>
-  <li><strong>浅色主题不再混进深色页</strong>：之前选「高管商务」出来的十页里会夹几页深底，看着像没做完</li>
-  <li><strong>内容不再被裁掉</strong>：页面固定 16:9，超出的部分会被直接切掉而且截图上看不出来。现在写完自动量一遍，超了让它收一收再出</li>
-  <li>数值只能来自你给的需求——找不到依据的它会说找不到，不会自己编一个</li>
-</ul>
-
-<h4>📤 交付</h4>
-<ul>
-  <li><strong>单文件 HTML</strong>：整册打包成一个文件，双击就能全屏放映，方向键翻页</li>
-  <li><strong>PDF</strong>：每页一张 1280×720</li>
-  <li>成品同时存进创作库</li>
-</ul>
-
-<h4>🐛 顺手修的</h4>
-<ul>
-  <li><strong>误弹的授权确认</strong>：删自己工作目录里的文件，被判成「递归删除工作目录以外的东西」。三个原因叠在一起，其中一条是 <code>rm -rf $HOME/x</code> 这种真正危险的命令<strong>反而从来没被拦住过</strong>——一并修了</li>
-  <li>编程与创作的输入框：粘贴的截图现在显示在输入框上方，与对话模块一致；发出去的截图也会留在对话记录里</li>
-  <li>创作台的对话不再混进编程模块的会话列表（点进去会直接改到创作项目的文件）</li>
-  <li>缩略图缓存带上渲染器版本——之前渲染层面的修复到不了已有项目，老项目会一直显示旧图</li>
+  <li>手选的模型现在真的会被使用（此前「厂商｜模型」没拆开，固定模型从未生效）</li>
+  <li>配额用尽（403/429）立即熔断十分钟，写页循环遇到系统性故障会暂停剩余页并可续写，不再把一整册交给备用模型乱写</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="121475737" type="application/octet-stream" sparkle:edSignature="WZK0EROkJeAmTAVaJdfRieXY3Rt8VoFhofo7rvDQP2CArqeeCHn+Dm8WbjsqSzsP3Cr32DxUgK+yIQLytvZUCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="124861393" type="application/octet-stream" sparkle:edSignature="kCADmQXTxOihgifmBmWRDs7YAPSCsf+COivkEl2pQO5hMU9UwuA1VTRiYt+LG1O1reaT2Gd0hmX4dQabmqzPCA=="/>
         </item>
     </channel>
 </rss>
