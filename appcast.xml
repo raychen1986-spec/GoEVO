@@ -4,37 +4,65 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Sat, 05 Sep 2026 12:25:36 +0800</pubDate>
-            <sparkle:version>1555</sparkle:version>
+            <pubDate>Wed, 09 Sep 2026 22:35:54 +0800</pubDate>
+            <sparkle:version>1620</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
+<p>这一版累积了 60 多项改动，主线是<strong>让「坏了」这件事看得见</strong>：此前有相当一批故障是 HTTP 200、零报错、界面照常打绿灯，只有结果不对。</p>
 
-<h4>📊 创作台汇报页：咨询规划范式</h4>
-<p>对照一套德勤式数字化转型规划蓝图，把「咨询稿长什么样」做成了确定性的积木，模型只负责往里填内容。</p>
+<h4>🔌 模型与工具调用</h4>
 <ul>
-  <li><strong>新风格「咨询绿」</strong>：纯白底、近黑标题、亮绿章号与图标、深绿表头、深灰侧栏；风格墙现在是 8 张，样片全部换成信息密度高的真实一页</li>
-  <li><strong>九种新模块</strong>：图标列、编号箭头步骤、因果链、环形评分、圆点热力图、目标值瓦片、深绿表头面板列、分层架构行、原则列表；外加雷达图</li>
-  <li><strong>六个章节版式</strong>：规划总览 / 现状评估 / 问题与约束 / 顶层设计 / 总体架构 / 安全体系，各配一张按标杆复刻的范例页；写规划类材料时按章节自动对号入座</li>
-  <li><strong>页面骨架三个变体</strong>：「01 章名｜判断式标题」一行页眉、「总体结论：」导语条、页底带标签的浅色结论带（关键发现 / 决策原则 / 共同目标）</li>
+  <li><strong>工具没送到模型时会当场告诉你</strong>：某些中转网关不转发工具定义，模型只能回一句「我没有可用的工具」，而系统此前把它当正常答案交付、任务通知照常报完成。现在按 token 用量算术判定并在回复里直接标注，这类回合也不再污染后续对话</li>
+  <li><strong>手选的模型现在真的生效</strong>：修了非对话模型（向量/重排/语音）混进对话模型列表、新一代推理模型换了参数名导致直接报错、以及温度等浮点参数出站走样三处</li>
+  <li><strong>主力模型能看图了</strong>：五个 OpenAI 系适配器统一图片负载，发图不再只有一家能认</li>
+  <li>补上了 Claude 与 Ollama 流式工具调用的解析 —— 此前这两条协议在主对话里一个工具都调不出来且全程零报错（Ollama 已真机验证）</li>
+  <li>推理模型把正文放进「思考」字段时，17 处会拿到空串：长会话忘记上文、知识页只剩页脚、多 Agent 显示完成却一片空白，均已修</li>
+  <li>用量帧被提前丢弃导致缓存命中率长期记成 0，已修；对话前缀更稳定，命中率实测显著提升</li>
 </ul>
 
-<h4>🔧 真机复盘的四处修正</h4>
+<h4>🧰 能力与技能</h4>
 <ul>
-  <li>下半页空白但检查说「没问题」：结论带钉在页底把撑满率骗到了 100%，现在按内容空洞判，空一大块就会被要求补模块</li>
-  <li>每页只出 3 个模块：骨架要求改为最少 4 个，网格随模块数选</li>
-  <li>模块没套网格就竖着堆：母版兜底平分，检查会提示套网格</li>
-  <li>每页都标「还剩几条没过」：视觉审片的意见只进修复提示，不再算作未通过</li>
+  <li><strong>上架 7 个早已写好却从未注册的工具</strong>，时间工具补齐时间戳与区间</li>
+  <li><strong>技能成功率不再是编的</strong>：分子分母收进同一处（实测 6 次调用曾记出 8 次成功）、同一份文件在三个界面给出三组数已统一、用户主动「终止」不再计为技能失败、卸载技能会一并清掉旧统计</li>
+  <li>「统计有误」的行可以单条重置（保号清零，不删行）</li>
+  <li>用 <code>/</code> 选中的技能就是真正执行的那个（此前会被重新解析成别的），外部技能的执行确认门也补了回来</li>
 </ul>
 
-<h4>🛡 模型故障处理</h4>
+<h4>⌨️ 交互</h4>
 <ul>
-  <li>手选的模型现在真的会被使用（此前「厂商｜模型」没拆开，固定模型从未生效）</li>
-  <li>配额用尽（403/429）立即熔断十分钟，写页循环遇到系统性故障会暂停剩余页并可续写，不再把一整册交给备用模型乱写</li>
+  <li><strong>全局热键 ⌥Space</strong> 唤起</li>
+  <li>侧栏「搜索对话内容」现在真的搜内容，不只是标题</li>
+  <li>工具卡补 7 条中文名片，高频工具不再显示英文函数名</li>
+</ul>
+
+<h4>📊 面板不再显示假数字</h4>
+<ul>
+  <li>监控面板整整一块是空指标（10 个指标被读 18 处、写入方一个都没有），已接上真实写入</li>
+  <li>「零样本」不再被渲染成满分 / 0.00 秒 / 某个百分比 —— 没有数据就明说没有数据</li>
+  <li>记忆模块 42 处日志此前完全不进日志中心，诊断等于隐形，已全部接入</li>
+  <li>失败会留下可检索的痕迹，且「调用失败」与「结果无法解析」分得开</li>
+</ul>
+
+<h4>🎨 创作台</h4>
+<ul>
+  <li>填槽方案落地：网格 / 模块 / 页型三层登记表、结构面板、骨架缩略图、PPTX 导出</li>
+  <li>汇报页与调研报告范式、落位面板重设计、文本框合并</li>
+  <li>渲染服务加看门狗（此前一次量测不返回会让整条写页流水线永久卡死）；写到一半重启后可续写</li>
+</ul>
+
+<h4>🧠 记忆与其它</h4>
+<ul>
+  <li>「参与某个会」这类可并存的事实不再被当成互斥取值，助手不会再为此反复盘问</li>
+  <li>一次解析失败不再把那一簇经历永久烧掉</li>
+  <li>MCP 服务端还提供哪些资源与提示词，现在会如实显示</li>
+  <li>内网访问判定从字符串比对改为地址解析，并对重定向逐跳复检</li>
+  <li>配对失败给人话提示，并在配对前先做连接检查</li>
+  <li>锁屏实时活动卡不再把失败结局显示成完成</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="124861393" type="application/octet-stream" sparkle:edSignature="kCADmQXTxOihgifmBmWRDs7YAPSCsf+COivkEl2pQO5hMU9UwuA1VTRiYt+LG1O1reaT2Gd0hmX4dQabmqzPCA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="126284796" type="application/octet-stream" sparkle:edSignature="l9vU9S/LpnNmmazCMCd1i+B0EvOCXxtxqCBsjViuRH+DE4Rg2aQqYmWH9rWLtUpgxEVsD0pz6fR0Iw5S1HvnCg=="/>
         </item>
     </channel>
 </rss>
