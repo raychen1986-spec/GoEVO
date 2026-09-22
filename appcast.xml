@@ -4,13 +4,27 @@
         <title>GoEvo</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Mon, 21 Sep 2026 11:56:45 +0800</pubDate>
-            <sparkle:version>1675</sparkle:version>
+            <pubDate>Tue, 22 Sep 2026 12:10:10 +0800</pubDate>
+            <sparkle:version>1689</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>本次更新</h3>
-<p>这一版集中处理了一轮全量代码体检查出的问题：备份恢复不再有"恢复到一半"的风险，几处会让人误以为"App 坏了"的行为也修好了。另外菜单栏的快速对话终于会记住上下文、也会进会话记录了。</p>
+<p>这一版补齐了聊天交付物的可回看体验，并继续把 GoEVO 的可靠性和长期记忆打磨到可持续使用：备份恢复统一采用可回滚事务；外部命令超时会真正停止；跨会话记忆、事实冲突和图谱召回的口径也统一了。</p>
+
+<h4>📄 聊天交付物：重启后仍可打开</h4>
+<ul>
+  <li><strong>生成的 HTML、Markdown、Office 文档和其它支持格式</strong>，现在会保留与创作库托管副本的关联；原始临时文件被清理后，历史消息中的路径链接和文件条目仍可打开右侧预览</li>
+  <li><strong>路径链接、单文件条目和多文件交付清单</strong>统一进入右侧预览面板，方便边看文件边继续对话</li>
+  <li>右侧预览可单独收起，已打开的文档标签会保留；再次点击聊天中的文件即可恢复并定位到该文档</li>
+</ul>
+
+<h4>🧠 长期记忆：更懂上下文，也更少串话</h4>
+<ul>
+  <li><strong>会话隔离口径统一</strong>：长期画像可以跨会话延续，项目目标、临时任务等内容仍锁在原会话，减少不同话题互相干扰</li>
+  <li><strong>事实变更更可靠</strong>：真实的职位、汇报关系等变化会保留时间线；低可信自动提取不会覆盖你亲口确认过的信息</li>
+  <li><strong>图谱召回不再白走</strong>：第二段图谱扩展有结果时才为它让出候选位，避免有价值的关联被静默丢弃</li>
+</ul>
 
 <h4>🛡 备份恢复：要么整体成功，要么原样不动</h4>
 <p>以前恢复是边解压边覆盖，中途某个文件坏了就会留下"钥匙换了、数据一半新一半旧"的局面。现在改为<strong>先把整个备份包全部核验完、再一次性替换</strong>；替换过程中任何一步失败都会自动回滚，并明确告诉你"本机数据未变"。就算恢复时电脑断电，下次启动也会自动修复。</p>
@@ -19,6 +33,7 @@
   <li><strong>换机时钥匙对不上会提前拦下</strong>，并提示勾选「凭证」——不会再出现"恢复成功了但数据库打不开"</li>
   <li><strong>恢复页勾了「数据库」会自动锁定「凭证」</strong>，并说明原因</li>
   <li>磁盘空间不够会在动手前就提示，不会恢复到一半才发现</li>
+  <li><strong>本地快照恢复也使用同一事务机制</strong>，并会拒绝异常的快照文件名</li>
 </ul>
 
 <h4>💬 菜单栏快速对话：会记住上下文，也会进记录了</h4>
@@ -49,7 +64,7 @@
   <li>追踪记录曾写到两个地方、缺失的向量嵌入补不回来、诊断包的时间窗只有 96 秒——三处都已修</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="126554950" type="application/octet-stream" sparkle:edSignature="FlOI//HIfet3rrF/LHaNOWkZ4CBwmk8ulcfKLW+EUF+zuqp4DpVkdRJlbOgA0TSofrNfWxpkeAkj397P0JecDQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.0.0/GoEvo-v1.0.0.zip" length="126716941" type="application/octet-stream" sparkle:edSignature="+JA42qMmES6t7L8rXyewlyxY0XMiCiOXDvajIBfI5j9HEdw4kerQGvFxb2JCQAOhyqPOC0iUO9DTgbYAQ6poBQ=="/>
         </item>
     </channel>
 </rss>
