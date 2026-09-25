@@ -3,35 +3,25 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.1.0</title>
-            <pubDate>Thu, 24 Sep 2026 18:35:07 +0800</pubDate>
-            <sparkle:version>1699</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <title>1.2.0</title>
+            <pubDate>Fri, 25 Sep 2026 14:13:41 +0800</pubDate>
+            <sparkle:version>1701</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.1.0 · 编程任务交付更可靠</h3>
-<p>编程助手现在会先在每个会话自己的草稿目录里修改和验证代码，完成后再自动交付到原项目。原有聊天与右栏操作方式保持不变。</p>
+            <description><![CDATA[<h3>GoEVO 1.2.0 · 编程工作区支持工程化项目</h3>
+<p>新建编程任务时，可以按目标选择「编写一段代码」「设计 UI 及 Demo」或「工程化项目」。三种入口共用现有聊天与交付流程，已有会话会继续正常打开。</p>
 
-<h4>🧑‍💻 独立草稿与自动交付</h4>
+<h4>项目规范与依据</h4>
 <ul>
-  <li>多个编程会话可以各自工作；交付前会检查原文件是否被别人改动，避免互相覆盖。</li>
-  <li>项目有可识别的构建或测试命令时，会先运行检查；失败后尝试修复，仍未通过则保留草稿，不改动原项目。</li>
-  <li>原项目文件发生冲突时会停止写回，聊天记录和右侧进展栏会明确列出冲突文件。</li>
-  <li>本轮检查规则以原项目配置为准；检查期间草稿发生变化时会停止交付，避免把未经验证的版本写回。</li>
+  <li>优先读取项目中的 AGENTS.md，并按正在处理的路径加载对应子目录规范；外部旧项目仍兼容 CLAUDE.md。</li>
+  <li>工程化项目先检查现有架构与技术栈。遇到确实影响方案的选择时，在聊天中说明已知事实、推荐方案和影响，再请你决定。</li>
+  <li>右侧「项目」页显示目录结构、相关 Markdown 文档和适用规范，可直接查看原文；文档目录按需读取，避免把整仓库内容塞进每轮对话。</li>
 </ul>
 
-<h4>🔄 中断后继续</h4>
-<ul>
-  <li>草稿和待交付文件在 App 重启后仍可继续；写回途中意外退出时会先核对并恢复文件状态。</li>
-  <li>交付结果、检查失败原因和涉及的文件会保留在编程会话记录里。</li>
-  <li>项目可用 <code>.goevo-coder-checks.json</code> 选择自动运行的检查。</li>
-  <li>加密完整备份会携带未交付草稿；恢复后右栏可继续显示待交付文件，已交付的旧草稿不会再次写入。</li>
-  <li>右侧文件清单显示当前待交付或最近交付的文件，点击有差异记录的文件可跳转到聊天中的改动。</li>
-</ul>
-
-<p>同时修正了新文件路径在部分 macOS 临时目录下被误判为“工作目录外”的问题；从随身端发起的文件写入、移动、复制和代码编辑现在会先请求手机批准。技能管理页的开关样式也已统一。</p>
+<p>同时改进了命令执行时的实时输出展示，并补充编程会话与项目规范的兼容测试。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.1.0/GoEvo-v1.1.0.zip" length="126922269" type="application/octet-stream" sparkle:edSignature="r3RlZcOUzXgWVkxsLPWWP3cJNMj/CRCZwl7dEl2dP++ZQutKRyTemzxqE1vtYevHMI6uYh1va+EKalfaTWkCCA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.2.0/GoEvo-v1.2.0.zip" length="127066061" type="application/octet-stream" sparkle:edSignature="aFTSooyLBMmkN9qubK1sCP2eI5fj55P4eKXki/U7LReP6RnqxJLI5rRbXykfsiyfdRNEBjjSpztuGE5DFZRPDA=="/>
         </item>
     </channel>
 </rss>
