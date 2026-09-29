@@ -3,22 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.3.0</title>
-            <pubDate>Fri, 25 Sep 2026 20:50:14 +0800</pubDate>
-            <sparkle:version>1702</sparkle:version>
-            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <title>1.4.0</title>
+            <pubDate>Tue, 29 Sep 2026 20:54:01 +0800</pubDate>
+            <sparkle:version>1708</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.3.0 · 指挥室 Mac 侧任务状态同步</h3>
-<p>为聊天、编程和定时任务记录每次运行的状态，并向已配对的手机提供任务快照与实时更新。手机可以看到有证据的进展、终态及近期动态；来源无法确认时会明确显示覆盖不完整。</p>
+            <description><![CDATA[<h3>GoEVO 1.4.0 · 执行内容归档与跨端读取</h3>
 <ul>
-  <li>编程任务按当前轮次识别，远程取消前核对发起设备、任务和版本；无法精确确认时不提供取消。</li>
-  <li>远程聊天工具审批绑定发起设备与本次执行，避免将旧回复用于另一轮任务。</li>
-  <li>控制请求保留回执；“已接收”不等于“已生效”，最终状态以执行来源确认结果为准。</li>
+  <li>Codex 工作台增加完整正文、输入附件和明确文件变更的持久归档，以及“内容与文件”查看入口；重启后保留已归档内容。</li>
+  <li>Mac 提供执行资源目录与分块读取，校验来源、会话、连接和文件摘要，并优先处理聊天、审批等交互消息。</li>
+  <li>远程读取和工具执行统一复用 GoEvo 安全管理，减少重复确认；修复迟到的审批回复影响后续请求的问题。</li>
+  <li>执行账本新增升级前快照、旧版兼容导出及离线恢复校验，便于安全回退。</li>
+  <li>修复 Codex 运行时导入遗漏辅助程序的问题，增加完整性检查及缺件修复，保留已有配置和认证。</li>
 </ul>
-<p>当前定时任务只提供状态观察，独立技能任务尚未覆盖。远程审批、取消及多台 Mac 的完整联动仍在继续验证。</p>
+<p>跨端完整正文与文件读取需要配套的 iOS 和 Relay 新版；三端真机下载、断网恢复及多 Mac 联动仍在验收中，旧端保留兼容提示。仅在命令输出中出现文件路径不会自动归档该文件。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.3.0/GoEvo-v1.3.0.zip" length="127392010" type="application/octet-stream" sparkle:edSignature="HA6QiyLKAtJtcIEzT+lUtHTQpV1vJ1i1Uz5Y5Zj4RA8sc2MLmT8iOFQdz8cVcmRyt8fw3JF+f2dC09xGCyuCDg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.4.0/GoEvo-v1.4.0.zip" length="130189859" type="application/octet-stream" sparkle:edSignature="fKVjeMYEm4F9UOzHWMxTYCkdzHmAmcoSUFxlimR0jfzwYX+kGH5OqBgHankOd/udqweb+4ev2TQjPFAi2v0mDw=="/>
         </item>
     </channel>
 </rss>
