@@ -3,23 +3,22 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.6.0</title>
-            <pubDate>Thu, 08 Oct 2026 14:45:32 +0800</pubDate>
-            <sparkle:version>1713</sparkle:version>
-            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <title>1.6.1</title>
+            <pubDate>Thu, 08 Oct 2026 18:35:49 +0800</pubDate>
+            <sparkle:version>1715</sparkle:version>
+            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.6.0 · 任务故障恢复</h3>
+            <description><![CDATA[<h3>GoEVO 1.6.1 · 跨端图片与任务执行体验修复</h3>
 <ul>
-  <li>任务遇到阻塞后，可以诊断问题、局部修复并独立复验；验证通过后继续原计划，保留已完成成果。</li>
-  <li>区分“帮我修复”“验收不通过”和“重新验证”，明确提示失败原因、已尝试动作、预算与待决策事项。</li>
-  <li>右侧任务栏新增问题卡、恢复记录及复验入口，避免用笼统的结束提示掩盖阻塞。</li>
-  <li>恢复过程持久保存；暂停、未知执行结果和权限不足时停止重复执行，继续沿用现有安全管理。</li>
-  <li>完善 Codex 共享会话执行协调、历史会话批量管理，并调整编程项目规模限制。</li>
+  <li>修复手机普通对话发送图片后 Mac 端只收到文字的问题：图片现在会显示在桌面聊天中，并作为同一轮任务的模型输入。</li>
+  <li>图片传输增加来源设备、文件类型与字节数校验；网络处理短暂错序时会有限等待，失败时仍可正常发送文字。</li>
+  <li>任务执行过程新增更清晰的当前动作、问题和恢复展示，帮助区分执行、诊断、修复与复验状态。</li>
+  <li>改善任务续跑与验收失败后的处理，保留真实执行记录并避免重复或误导性状态。</li>
 </ul>
-<p>新版手机端可通过协商接入修复与复验操作。本次只更新 Mac，手机端需另行安装匹配版本；三端真机恢复流程尚待验收。</p>
+<p>本次发布为 Mac 端更新；图片上传沿用现有 iOS 协议，无需安装新的 iOS 版本。请在更新后从手机发送一张图片进行跨端验收。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.6.0/GoEvo-v1.6.0.zip" length="131844649" type="application/octet-stream" sparkle:edSignature="86RDvkk9yFqBG6eyf3S0U76x5ox01ie9g1Y4IbPD6WJbdmToXunlGZzY+R9uXQmA63HNIzylt26tOP0y0sBqDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.6.1/GoEvo-v1.6.1.zip" length="131982206" type="application/octet-stream" sparkle:edSignature="DDgtLfrueV88Qwxss5ZDBA4jGMM3c+jr+awSDiixwaC5VFlWtIlrdJYd5J9q+oCVKXCw05c4SG5tQzJ6fzWBCA=="/>
         </item>
     </channel>
 </rss>
