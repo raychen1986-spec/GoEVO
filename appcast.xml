@@ -3,23 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.5.0</title>
-            <pubDate>Tue, 06 Oct 2026 12:32:45 +0800</pubDate>
-            <sparkle:version>1709</sparkle:version>
-            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <title>1.6.0</title>
+            <pubDate>Thu, 08 Oct 2026 14:45:32 +0800</pubDate>
+            <sparkle:version>1713</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.5.0 · 任务模式与长会话体验优化</h3>
+            <description><![CDATA[<h3>GoEVO 1.6.0 · 任务故障恢复</h3>
 <ul>
-  <li>对话工作区新增任务模式，围绕目标、计划、验收和交付持续推进；右栏集中展示任务、项目依据与证据。</li>
-  <li>任务可关联编程、Codex 和工具执行，支持暂停、续办、限额、状态恢复及版本化验收；定时工作复用现有定时作业。</li>
-  <li>优化任务会话切换与长回复加载，复用任务快照、文档路径和 Markdown 表格解析，减少重复读取与排版。</li>
-  <li>聊天正文保持稳定字号；宽表格支持独立横向滚动和展开查看，长回复与长表按可视范围排版，缩放时保护阅读位置。</li>
-  <li>归档会话统一在“历史会话”管理，支持全部、对话、编程和 Codex 筛选；修复归档同步与历史会话滚动相关问题。</li>
+  <li>任务遇到阻塞后，可以诊断问题、局部修复并独立复验；验证通过后继续原计划，保留已完成成果。</li>
+  <li>区分“帮我修复”“验收不通过”和“重新验证”，明确提示失败原因、已尝试动作、预算与待决策事项。</li>
+  <li>右侧任务栏新增问题卡、恢复记录及复验入口，避免用笼统的结束提示掩盖阻塞。</li>
+  <li>恢复过程持久保存；暂停、未知执行结果和权限不足时停止重复执行，继续沿用现有安全管理。</li>
+  <li>完善 Codex 共享会话执行协调、历史会话批量管理，并调整编程项目规模限制。</li>
 </ul>
-<p>手机任务指挥与跨端控制需要匹配的 iOS 和 Relay 版本，本次更新不代表已更新手机或云端服务。任务验收仍区分执行结果、证据和人工确认。</p>
+<p>新版手机端可通过协商接入修复与复验操作。本次只更新 Mac，手机端需另行安装匹配版本；三端真机恢复流程尚待验收。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.5.0/GoEvo-v1.5.0.zip" length="131645829" type="application/octet-stream" sparkle:edSignature="FoJvFnaNMfHEg+L14j+vcqPJ4GX6L28XkeOXm3ES3bzLNYvp4RMFGTM91uZ3yD/SZFngR1KMaR2uV2NrBR3jCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.6.0/GoEvo-v1.6.0.zip" length="131844649" type="application/octet-stream" sparkle:edSignature="86RDvkk9yFqBG6eyf3S0U76x5ox01ie9g1Y4IbPD6WJbdmToXunlGZzY+R9uXQmA63HNIzylt26tOP0y0sBqDw=="/>
         </item>
     </channel>
 </rss>
