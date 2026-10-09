@@ -3,22 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.6.1</title>
-            <pubDate>Thu, 08 Oct 2026 18:35:49 +0800</pubDate>
-            <sparkle:version>1715</sparkle:version>
-            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <title>1.6.2</title>
+            <pubDate>Fri, 09 Oct 2026 11:27:35 +0800</pubDate>
+            <sparkle:version>1717</sparkle:version>
+            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.6.1 · 跨端图片与任务执行体验修复</h3>
+            <description><![CDATA[<h3>GoEVO 1.6.2 · 长任务与聊天交互优化</h3>
 <ul>
-  <li>修复手机普通对话发送图片后 Mac 端只收到文字的问题：图片现在会显示在桌面聊天中，并作为同一轮任务的模型输入。</li>
-  <li>图片传输增加来源设备、文件类型与字节数校验；网络处理短暂错序时会有限等待，失败时仍可正常发送文字。</li>
-  <li>任务执行过程新增更清晰的当前动作、问题和恢复展示，帮助区分执行、诊断、修复与复验状态。</li>
-  <li>改善任务续跑与验收失败后的处理，保留真实执行记录并避免重复或误导性状态。</li>
+<li>任务运行台固定展示当前执行、诊断和复验状态，执行过程按需展开；简化投入设置，保留高级限制。</li>
+<li>修复方案调整后的历史成果复验与续跑问题，减少重复关联执行窗口，保留真实尝试和验收记录。</li>
+<li>修复提及研究技能时的误触发；研究终止后卡片正确结束，不再保留运行中的按钮与动画。</li>
+<li>改善长消息快速滚动时的内容反复重建；阅读历史时发送新消息会自动返回最新位置，并继续尊重手动上滚。</li>
+<li>修复长表格末行定位及费用告警预算保存问题。</li>
 </ul>
-<p>本次发布为 Mac 端更新；图片上传沿用现有 iOS 协议，无需安装新的 iOS 版本。请在更新后从手机发送一张图片进行跨端验收。</p>
+<p>本次为 Mac 端更新，沿用已有共享协议；iOS 与 Relay 不在本次发布范围。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.6.1/GoEvo-v1.6.1.zip" length="131982206" type="application/octet-stream" sparkle:edSignature="DDgtLfrueV88Qwxss5ZDBA4jGMM3c+jr+awSDiixwaC5VFlWtIlrdJYd5J9q+oCVKXCw05c4SG5tQzJ6fzWBCA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.6.2/GoEvo-v1.6.2.zip" length="131988217" type="application/octet-stream" sparkle:edSignature="YJ9Kp65+4cgffQ8dUNzUXFR2dtscm1djJtVxXhdm3Yj44xI3D5Lnc1j4bJvXO4heQ2LiOQ2k3mFZ28/LG7tzDQ=="/>
         </item>
     </channel>
 </rss>
