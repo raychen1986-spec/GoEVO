@@ -3,23 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.6.2</title>
-            <pubDate>Fri, 09 Oct 2026 11:27:35 +0800</pubDate>
-            <sparkle:version>1717</sparkle:version>
-            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
+            <title>1.7.0</title>
+            <pubDate>Fri, 09 Oct 2026 19:26:32 +0800</pubDate>
+            <sparkle:version>1721</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.6.2 · 长任务与聊天交互优化</h3>
+            <description><![CDATA[<h3>GoEVO 1.7.0 · 任务交付、每日工作与长会话体验</h3>
 <ul>
-<li>任务运行台固定展示当前执行、诊断和复验状态，执行过程按需展开；简化投入设置，保留高级限制。</li>
-<li>修复方案调整后的历史成果复验与续跑问题，减少重复关联执行窗口，保留真实尝试和验收记录。</li>
-<li>修复提及研究技能时的误触发；研究终止后卡片正确结束，不再保留运行中的按钮与动画。</li>
-<li>改善长消息快速滚动时的内容反复重建；阅读历史时发送新消息会自动返回最新位置，并继续尊重手动上滚。</li>
-<li>修复长表格末行定位及费用告警预算保存问题。</li>
+<li>任务模式以用户目标为中心交付：服务未给出可用入口时不会误报完成；可在对话中直接追问进度、继续执行或提出范围变更，并保留历史成果后按新目标复验。</li>
+<li>新增“每日工作”工作台：把对话、任务、审批和交付物集中到当天事项；草稿、引用、跨日归档与恢复均复用现有真源。</li>
+<li>任务运行卡和右侧任务栏统一呈现真实执行、诊断、修复、复验与待决策状态，长记录按需展开，避免把执行日志塞满聊天。</li>
+<li>优化长会话的滚动、延迟 Markdown、窗口切换与发送后定位；减少表格和历史内容在布局变化时的重复渲染。</li>
+<li>Codex、编程工作台与远程任务投影继续保留真实任务状态和会话归属；iPhone 图片输入可安全进入 Mac 对话和模型上下文。</li>
 </ul>
-<p>本次为 Mac 端更新，沿用已有共享协议；iOS 与 Relay 不在本次发布范围。</p>
+<p>本次为 Mac 端更新。iOS 正式包和 Relay 云端部署需按各自发布流程另行完成。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.6.2/GoEvo-v1.6.2.zip" length="131988217" type="application/octet-stream" sparkle:edSignature="YJ9Kp65+4cgffQ8dUNzUXFR2dtscm1djJtVxXhdm3Yj44xI3D5Lnc1j4bJvXO4heQ2LiOQ2k3mFZ28/LG7tzDQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.7.0/GoEvo-v1.7.0.zip" length="132485992" type="application/octet-stream" sparkle:edSignature="MhNRFA1xkxgLWvPWhDEnlU+I3i9YXGiXX8qUr6tzPOHBr0dzpC2IDQ9znk/o8MACn6Xo7zGENekG1N0JdJTtAg=="/>
         </item>
     </channel>
 </rss>
