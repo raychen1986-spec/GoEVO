@@ -3,23 +3,26 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.7.0</title>
-            <pubDate>Fri, 09 Oct 2026 19:26:32 +0800</pubDate>
-            <sparkle:version>1721</sparkle:version>
-            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <title>1.8.0</title>
+            <pubDate>Tue, 13 Oct 2026 10:35:01 +0800</pubDate>
+            <sparkle:version>1724</sparkle:version>
+            <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.7.0 · 任务交付、每日工作与长会话体验</h3>
+            <description><![CDATA[<h3>GoEVO 1.8.0 · 持续工作助手、能力连接与编程可靠性</h3>
 <ul>
-<li>任务模式以用户目标为中心交付：服务未给出可用入口时不会误报完成；可在对话中直接追问进度、继续执行或提出范围变更，并保留历史成果后按新目标复验。</li>
-<li>新增“每日工作”工作台：把对话、任务、审批和交付物集中到当天事项；草稿、引用、跨日归档与恢复均复用现有真源。</li>
-<li>任务运行卡和右侧任务栏统一呈现真实执行、诊断、修复、复验与待决策状态，长记录按需展开，避免把执行日志塞满聊天。</li>
-<li>优化长会话的滚动、延迟 Markdown、窗口切换与发送后定位；减少表格和历史内容在布局变化时的重复渲染。</li>
-<li>Codex、编程工作台与远程任务投影继续保留真实任务状态和会话归属；iPhone 图片输入可安全进入 Mac 对话和模型上下文。</li>
+<li>每日工作升级为持续陪伴的工作助手：固定置顶入口，跨天接着聊；右侧日期仅切换事项，不再每天创建新的随聊。历史记录保留，结合既有记忆与话题边界减少无关上下文干扰。</li>
+<li>每日工作采用统一毛玻璃视觉：优化深浅主题顶栏、晨间简报、事项详情、来源面板和按钮；聊天全文自然展开，去除气泡内滚动条，收紧留白，并增加发送后的即时处理反馈。</li>
+<li>明确交付委托可由独立后台任务会话执行，关键状态与可预览交付物回到每日工作；查看事项不自动启动任务。</li>
+<li>新增“能力与连接”统一入口：管理飞书、本机邮件与自定义 MCP。飞书支持所选日历和任务范围的只读验证、补充授权与暂停；已兼容的钉钉日历 MCP 可在显式启用后参与每日工作。</li>
+<li>改进日历解析、分页完整性和读取失败提示，不再把读取异常当作“没有日程”；网络日志隐藏鉴权查询参数。</li>
+<li>增强编程任务的上下文续接、模型容量检查、历史原文恢复、自动检查证据与交付审阅；改进工作目录隔离、文件版本冲突保护和取消后的恢复体验。</li>
+<li>修复任务状态卡、执行过程卡的长文本遮挡，以及知识库控件主题切换延迟等界面问题。</li>
 </ul>
+<p>外部连接需你自行授权并选择读取范围；连接成功不等于自动开启每日工作读取。飞书 CLI 和第三方 MCP 服务仍需在本机配置，首次连接不会启用外部写入能力。</p>
 <p>本次为 Mac 端更新。iOS 正式包和 Relay 云端部署需按各自发布流程另行完成。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.7.0/GoEvo-v1.7.0.zip" length="132485992" type="application/octet-stream" sparkle:edSignature="MhNRFA1xkxgLWvPWhDEnlU+I3i9YXGiXX8qUr6tzPOHBr0dzpC2IDQ9znk/o8MACn6Xo7zGENekG1N0JdJTtAg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.8.0/GoEvo-v1.8.0.zip" length="134030627" type="application/octet-stream" sparkle:edSignature="ZE9E6ENgEOkCZl7WqBwpIm25t1ps3C/yLNxQil6rvvv5stIDL/9HtF32FbXfMMxUxR6YbCdPGEnZ6BFAR2geDA=="/>
         </item>
     </channel>
 </rss>
