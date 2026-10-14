@@ -3,26 +3,26 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.8.0</title>
-            <pubDate>Tue, 13 Oct 2026 10:35:01 +0800</pubDate>
-            <sparkle:version>1724</sparkle:version>
-            <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
+            <title>1.9.0</title>
+            <pubDate>Wed, 14 Oct 2026 18:22:03 +0800</pubDate>
+            <sparkle:version>1736</sparkle:version>
+            <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.8.0 · 持续工作助手、能力连接与编程可靠性</h3>
+            <description><![CDATA[<h3>GoEVO 1.9.0 · 每日事项闭环、网页浏览与持续任务</h3>
 <ul>
-<li>每日工作升级为持续陪伴的工作助手：固定置顶入口，跨天接着聊；右侧日期仅切换事项，不再每天创建新的随聊。历史记录保留，结合既有记忆与话题边界减少无关上下文干扰。</li>
-<li>每日工作采用统一毛玻璃视觉：优化深浅主题顶栏、晨间简报、事项详情、来源面板和按钮；聊天全文自然展开，去除气泡内滚动条，收紧留白，并增加发送后的即时处理反馈。</li>
-<li>明确交付委托可由独立后台任务会话执行，关键状态与可预览交付物回到每日工作；查看事项不自动启动任务。</li>
-<li>新增“能力与连接”统一入口：管理飞书、本机邮件与自定义 MCP。飞书支持所选日历和任务范围的只读验证、补充授权与暂停；已兼容的钉钉日历 MCP 可在显式启用后参与每日工作。</li>
-<li>改进日历解析、分页完整性和读取失败提示，不再把读取异常当作“没有日程”；网络日志隐藏鉴权查询参数。</li>
-<li>增强编程任务的上下文续接、模型容量检查、历史原文恢复、自动检查证据与交付审阅；改进工作目录隔离、文件版本冲突保护和取消后的恢复体验。</li>
-<li>修复任务状态卡、执行过程卡的长文本遮挡，以及知识库控件主题切换延迟等界面问题。</li>
+<li>每日事项增加持久处理状态、聊天关闭联动与结果记忆，减少已处理线索重复提醒；保留来源和历史记录，便于追溯。</li>
+<li>每日工作支持附件拖入和回复建议采用：建议先进入可编辑草稿，不自动发送。修复毛玻璃容器导致输入框无法接收 Finder 文件拖放的问题，并调整标题字号。</li>
+<li>网页读取统一为可追溯的浏览会话，支持动态页面、标签与分页、已读内容存档和覆盖范围提示。可选安装托管 Chromium；默认原生后端仍可使用。</li>
+<li>网页只读操作复用统一安全策略，保留禁用、强制确认与账号授权边界；需要登录或验证时交给用户处理，取消与超时不再反复重试。托管浏览器支持后台读取及人工接管。</li>
+<li>任务完成后可在原会话继续追问或提出新要求；输入区采用轻量状态条，历史交付保留在聊天中，后续核验避免重放已经完成的写操作。</li>
+<li>编程模块改进草稿与队列保存、停止与恢复、长会话接续、历史查找和文件搜索，统一聊天排版与侧栏日期分组。</li>
+<li>明确生图请求可直达已配置的图片 Provider，区分出图模型与聊天模型；补强空响应识别与候选路由回退。修复详情弹窗关闭等交互问题。</li>
 </ul>
-<p>外部连接需你自行授权并选择读取范围；连接成功不等于自动开启每日工作读取。飞书 CLI 和第三方 MCP 服务仍需在本机配置，首次连接不会启用外部写入能力。</p>
+<p>网页能力不绕过登录、验证码或网站权限，不承诺所有网站及分页均可完整读取；真实账号和长时模型任务仍受环境与服务限制。托管浏览器需自行安装启用，保存站点账号需明确同意。生图续作当前为提示词合并后重新生成，不是像素级编辑。</p>
 <p>本次为 Mac 端更新。iOS 正式包和 Relay 云端部署需按各自发布流程另行完成。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.8.0/GoEvo-v1.8.0.zip" length="134030627" type="application/octet-stream" sparkle:edSignature="ZE9E6ENgEOkCZl7WqBwpIm25t1ps3C/yLNxQil6rvvv5stIDL/9HtF32FbXfMMxUxR6YbCdPGEnZ6BFAR2geDA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.9.0/GoEvo-v1.9.0.zip" length="135134748" type="application/octet-stream" sparkle:edSignature="+2bYrzjpXgR9yUgbML6wTqCg2b+l18U+EkcZHPyYTKJ8TXFJlE87UPLxeb0grAVI62tJscrD8b9br9vHFhPiCQ=="/>
         </item>
     </channel>
 </rss>
