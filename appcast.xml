@@ -3,26 +3,25 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.9.0</title>
-            <pubDate>Wed, 14 Oct 2026 18:22:03 +0800</pubDate>
-            <sparkle:version>1736</sparkle:version>
-            <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
+            <title>1.10.0</title>
+            <pubDate>Fri, 16 Oct 2026 12:46:36 +0800</pubDate>
+            <sparkle:version>1739</sparkle:version>
+            <sparkle:shortVersionString>1.10.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.9.0 · 每日事项闭环、网页浏览与持续任务</h3>
+            <description><![CDATA[<h3>GoEVO 1.10.0 · 更顺畅的任务协作与能力接入</h3>
 <ul>
-<li>每日事项增加持久处理状态、聊天关闭联动与结果记忆，减少已处理线索重复提醒；保留来源和历史记录，便于追溯。</li>
-<li>每日工作支持附件拖入和回复建议采用：建议先进入可编辑草稿，不自动发送。修复毛玻璃容器导致输入框无法接收 Finder 文件拖放的问题，并调整标题字号。</li>
-<li>网页读取统一为可追溯的浏览会话，支持动态页面、标签与分页、已读内容存档和覆盖范围提示。可选安装托管 Chromium；默认原生后端仍可使用。</li>
-<li>网页只读操作复用统一安全策略，保留禁用、强制确认与账号授权边界；需要登录或验证时交给用户处理，取消与超时不再反复重试。托管浏览器支持后台读取及人工接管。</li>
-<li>任务完成后可在原会话继续追问或提出新要求；输入区采用轻量状态条，历史交付保留在聊天中，后续核验避免重放已经完成的写操作。</li>
-<li>编程模块改进草稿与队列保存、停止与恢复、长会话接续、历史查找和文件搜索，统一聊天排版与侧栏日期分组。</li>
-<li>明确生图请求可直达已配置的图片 Provider，区分出图模型与聊天模型；补强空响应识别与候选路由回退。修复详情弹窗关闭等交互问题。</li>
+<li>每日工作不再常驻显示已结束任务的横栏；多个后台任务合为轻量提示，优先呈现待处理事项。暂停与阻塞提示可收起，历史结果仍在原对话保留。</li>
+<li>改进任务规划、步骤交接和文件成果核验，减少反复读取尚未生成的文件，以及把不同文件操作误判为重复循环。等待人工确认不再消耗执行时长，过期确认不会在重启后自动授权。</li>
+<li>任务预览支持 CSV/TSV 原生表格、文件标签单独刷新和实时记录底部跟随；精简重复的任务操作入口，保留草稿开始与等待时暂停。</li>
+<li>网页浏览进度进入对应轮次的对话卡，聊天与编程共用右侧资料预览；历史卡片保留原位置，关闭预览不取消浏览，取消后的迟到更新不会复活旧卡。</li>
+<li>支持在连接中心注册本地 stdio 与远端 HTTP MCP 服务，也可在通用对话中整理注册配置并经明确确认后接入。增强配置更新、凭据保存、取消回滚和连接隔离。</li>
+<li>新增 OpenAI Responses 协议与原生工具结果接续，适配 GPT-6.1 等已知型号；未开深度思考时沿用服务端默认，开启时请求已知支持的最高档，并隔离不同连接、模型与会话的推理历史。</li>
 </ul>
-<p>网页能力不绕过登录、验证码或网站权限，不承诺所有网站及分页均可完整读取；真实账号和长时模型任务仍受环境与服务限制。托管浏览器需自行安装启用，保存站点账号需明确同意。生图续作当前为提示词合并后重新生成，不是像素级编辑。</p>
-<p>本次为 Mac 端更新。iOS 正式包和 Relay 云端部署需按各自发布流程另行完成。</p>
+<p>网页能力不绕过网站登录或权限；MCP 注册不会跳过用户确认。模型可用性与推理档位取决于实际服务端，官方账号直连及所有第三方服务并未逐一实测。</p>
+<p>本次发布为 macOS Apple Silicon 版本，沿用 Ad-hoc 签名，未经过 Apple 公证；不包含 iOS 正式包或 Relay 云端部署。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.9.0/GoEvo-v1.9.0.zip" length="135134748" type="application/octet-stream" sparkle:edSignature="+2bYrzjpXgR9yUgbML6wTqCg2b+l18U+EkcZHPyYTKJ8TXFJlE87UPLxeb0grAVI62tJscrD8b9br9vHFhPiCQ=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.10.0/GoEvo-v1.10.0.zip" length="135843686" type="application/octet-stream" sparkle:edSignature="DAWVO/NSrbe6pUfgPGWrsBUVswIAOwQUjHE5Nd2GaqGsWm4237GCHCWOfHYNBu8N+hDGLlulmG0Gx96wSRbqDw=="/>
         </item>
     </channel>
 </rss>
