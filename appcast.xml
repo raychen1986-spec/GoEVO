@@ -3,25 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.10.0</title>
-            <pubDate>Fri, 16 Oct 2026 12:46:36 +0800</pubDate>
-            <sparkle:version>1739</sparkle:version>
-            <sparkle:shortVersionString>1.10.0</sparkle:shortVersionString>
+            <title>1.10.1</title>
+            <pubDate>Fri, 16 Oct 2026 15:51:01 +0800</pubDate>
+            <sparkle:version>1741</sparkle:version>
+            <sparkle:shortVersionString>1.10.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.10.0 · 更顺畅的任务协作与能力接入</h3>
+            <description><![CDATA[<h3>GoEVO 1.10.1 · MCP 接入与授权体验修复</h3>
 <ul>
-<li>每日工作不再常驻显示已结束任务的横栏；多个后台任务合为轻量提示，优先呈现待处理事项。暂停与阻塞提示可收起，历史结果仍在原对话保留。</li>
-<li>改进任务规划、步骤交接和文件成果核验，减少反复读取尚未生成的文件，以及把不同文件操作误判为重复循环。等待人工确认不再消耗执行时长，过期确认不会在重启后自动授权。</li>
-<li>任务预览支持 CSV/TSV 原生表格、文件标签单独刷新和实时记录底部跟随；精简重复的任务操作入口，保留草稿开始与等待时暂停。</li>
-<li>网页浏览进度进入对应轮次的对话卡，聊天与编程共用右侧资料预览；历史卡片保留原位置，关闭预览不取消浏览，取消后的迟到更新不会复活旧卡。</li>
-<li>支持在连接中心注册本地 stdio 与远端 HTTP MCP 服务，也可在通用对话中整理注册配置并经明确确认后接入。增强配置更新、凭据保存、取消回滚和连接隔离。</li>
-<li>新增 OpenAI Responses 协议与原生工具结果接续，适配 GPT-6.1 等已知型号；未开深度思考时沿用服务端默认，开启时请求已知支持的最高档，并隔离不同连接、模型与会话的推理历史。</li>
+<li>修复聊天输入中的本地路径被误转为附件、导致 MCP 程序路径或配置文字丢失的问题；文件拖放仍可正常添加附件。</li>
+<li>MCP 首次注册失败后保留明确的失败状态；修复依赖后可沿用原服务标识与相同配置，重新确认授权并完成注册，减少重复连接。</li>
+<li>改善 MCP 连接错误说明，区分路径、权限、依赖和网络等线索；无法确认原因时明确提示，不自动重试或安装依赖。</li>
+<li>删除 MCP 连接前增加二次确认，并说明清理范围；精简重复说明，仅对相关连接展示主动日历读取设置。</li>
+<li>授权详情改为点击「查看全文」打开，修复鼠标悬停导致全文窗口闪烁的问题；保留滚动和复制，查看详情不会授权执行。</li>
 </ul>
-<p>网页能力不绕过网站登录或权限；MCP 注册不会跳过用户确认。模型可用性与推理档位取决于实际服务端，官方账号直连及所有第三方服务并未逐一实测。</p>
-<p>本次发布为 macOS Apple Silicon 版本，沿用 Ad-hoc 签名，未经过 Apple 公证；不包含 iOS 正式包或 Relay 云端部署。</p>
+<p>适用于 macOS Apple Silicon。MCP 本地程序启动仍须明确授权；沿用 Ad-hoc 签名与 Sparkle 签名更新。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.10.0/GoEvo-v1.10.0.zip" length="135843686" type="application/octet-stream" sparkle:edSignature="DAWVO/NSrbe6pUfgPGWrsBUVswIAOwQUjHE5Nd2GaqGsWm4237GCHCWOfHYNBu8N+hDGLlulmG0Gx96wSRbqDw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.10.1/GoEvo-v1.10.1.zip" length="135846640" type="application/octet-stream" sparkle:edSignature="xT+6fHx4F4u24HyjDxNktGqpJmZF1i3RQZQmWCMCb3M65U4wEof7Lm56+UJCstCgPik8/oMRMWpKDkJgu32aBg=="/>
         </item>
     </channel>
 </rss>
