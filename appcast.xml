@@ -3,23 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.12.0</title>
-            <pubDate>Mon, 19 Oct 2026 12:33:39 +0800</pubDate>
-            <sparkle:version>1746</sparkle:version>
-            <sparkle:shortVersionString>1.12.0</sparkle:shortVersionString>
+            <title>1.13.0</title>
+            <pubDate>Wed, 28 Oct 2026 17:47:17 +0800</pubDate>
+            <sparkle:version>1753</sparkle:version>
+            <sparkle:shortVersionString>1.13.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.12.0 · 深度调研与每日工作体验升级</h3>
+            <description><![CDATA[<h3>GoEVO 1.13.0 · 记忆整理与对话可靠性升级</h3>
 <ul>
-<li>深度调研将搜索候选与正文获取分开处理，支持 Tavily 正文提取、Firecrawl 有限降级、公开网页与文字 PDF 读取；交互浏览按需启用，并对并发、排队与取消统一管理。</li>
-<li>研究报告准确区分成功、部分完成、失败与取消，展示来源及读取缺口；长文续读保留固定快照和已读资料，网页关闭后仍可查看，避免把摘要或错误页当作完整正文。</li>
-<li>每日工作支持聊天创建事项、跨消息补充与更正、建议先采用再执行；完善工作日期、单次提醒、完成后的提醒停用、记忆同步和历史恢复，减少重复事项与旧状态覆盖。</li>
-<li>网页操作根据真实内容、标签状态与已读范围判断进展，减少重复点击空转；取消不再触发成功完成通知，正常退出会等待清理并关闭数据库连接。</li>
-<li>修复费用告警预算在开发验证后重启复原的问题：隔离测试配置，保护已保存的用户设置，完善连续保存顺序。</li>
+<li>记忆图谱增加来源级更新状态、长资料分段整理、有界重试与受控历史补图；区分原文保存、关系整理、待确认及失败，保留来源修订、撤回和遗忘约束。</li>
+<li>待确认关系和名称整理统一展示具体内容，支持逐项查看、采用或不采用；确认前重新核对版本与依据，减少过期建议和名称误报。</li>
+<li>对话等待增加计时、绿色动态活动条与模型详情；同轮优先续用成功服务并避开失败候选，限制无有效输出的等待，不自动重跑已有工具结果。</li>
+<li>连接中心增加受控 CLI 适配与飞书领域能力配置，完善账号绑定、逐次确认、写入回执及回读核验；新写工具默认关闭，授权与业务结果分开显示。</li>
+<li>每日工作完善后台进度跨会话恢复、交付文件卡与右侧预览，修复图解请求误分流；改进模型流结束、失败归属、图片能力约束和内部任务输出预算。</li>
 </ul>
-<p>适用于 macOS 14 及以上 Apple Silicon。沿用现有授权、加密存储与 Sparkle 签名更新；登录和验证码仍需人工处理。不保证所有站点均可完整读取，也不会因本次升级自动创建外部文档、发送消息或修改日历。</p>
+<p>适用于 macOS 14 及以上 Apple Silicon。沿用现有加密存储与 Sparkle 签名更新。原文保存不代表全部关系已确认；外部账号仍需授权和逐次确认，本次升级不会自动替用户采用待确认关系或创建外部业务对象。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.12.0/GoEvo-v1.12.0.zip" length="137485788" type="application/octet-stream" sparkle:edSignature="x/mRreRpVp5zlAHRxdZSc5zwyJD87GsUf9dgVnnWdQekPYoeCFLi9k9DbsICUm7myQgIwsO54Z79iiF+Hco6DA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.13.0/GoEvo-v1.13.0.zip" length="139412438" type="application/octet-stream" sparkle:edSignature="EXg5H5YKU4cLM13tl8NbW/HJkjI0Wlks83PYtaB+Ya0yIpziZlQhM/Al+OsJZkUfFz3LAH3e+he3enjsJ8WSAA=="/>
         </item>
     </channel>
 </rss>
