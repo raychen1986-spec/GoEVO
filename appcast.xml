@@ -3,28 +3,27 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.16.0</title>
-            <pubDate>Mon, 16 Nov 2026 18:38:17 +0800</pubDate>
-            <sparkle:version>1762</sparkle:version>
-            <sparkle:shortVersionString>1.16.0</sparkle:shortVersionString>
+            <title>1.17.0</title>
+            <pubDate>Tue, 17 Nov 2026 09:46:01 +0800</pubDate>
+            <sparkle:version>1764</sparkle:version>
+            <sparkle:shortVersionString>1.17.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.16.0 · 命令执行与完全信任体验优化</h3>
+            <description><![CDATA[<h3>GoEVO 1.17.0 · 持续任务与工作台优化</h3>
 <ul>
-<li>统一对话、每日工作及编程检查的命令执行底层，减少脚本、路径和参数被误拦；补齐目录、工具链环境、超时及取消处理，报错时给出更明确的调整方向。</li>
-<li>新增受管理的后台命令运行，可在原会话查询状态、查看有界日志和停止；减少无主进程及重复启动。后台进程已启动不等于服务已可用，仍会核对真实运行结果。</li>
-<li>统一完全信任模式下的确认逻辑，在已授权范围内减少重复弹窗；显式禁用、强制确认、Hook及凭据保护仍然生效。等待期间撤权、锁定或目标变化会使旧授权失效。</li>
-<li>修复编程草稿工作区、内部检查与最终交付的权限错配；任务验收实时读取权限，普通版本号变化不再误判验收标准改变，检查脚本变化不会被静默放行。</li>
-<li>精简CLI重复身份探测，执行前仍核对程序及账号；修复技能版本变化、会话切换导致的结果归属问题，完善文件链接与压缩范围处理。</li>
-<li>归档前读取真实知识库分类，支持分类查询、完整路径和ID；兼容空格与常见层级分隔写法，避免已有分类被误判为不存在。</li>
-<li>修复多轮确认、目录更正和重试时的报告来源丢失：沿用最初待归档的完整内容，避免把失败说明或确认消息保存为报告。</li>
-<li>归档默认逐字保存原文，仅在明确要求时提炼；上传提炼失败保留完整内容，改分类或顺序重试复用已核验结果，减少重复生成和重复页面。</li>
-<li>统一归档提交与写后回读，核对正文、分类和原附件；完善附件缺失或损坏的恢复，部分成功如实显示，并保留用户已有修改。</li>
-<li>修复安全设置页在工具较多或窗口较窄时的横向越界；分页保持有界展示，支持首末页和前后翻页，深浅主题适配。</li>
+<li>任务围绕同一个目标持续推进：分轮保存进展，网络、资源暂忙时自动等待并接续，减少要求用户调整超时、次数及重复点击继续。</li>
+<li>完善重启、睡眠与退出恢复：区分尚未派发和已执行的操作；结果不明时先只读核对，保留原回执，不盲目重复安装或写入。</li>
+<li>普通安装优先使用原生执行能力，精简为检查环境、安装配置、实测交付；补齐目录创建、文件批量读取参数和受管理长命令的任务归属。</li>
+<li>改进交付核验：最终标准与具体证据逐项对应，服务需真实健康检查，多服务分别核验；文件与金额等优先确定性检查，减少重复模型审查。</li>
+<li>更新上下文优先保留当前要求、完整约束及最新证据，历史材料按需读取；新增需求保留未受影响成果，减少整条任务反复重验。</li>
+<li>右侧工作台简化为目标、当前活动、里程碑与成果、活动记录；技术配置收进详情，完成后可以在原会话继续优化。</li>
+<li>恢复运行中任务的过程与实时记录入口，支持较早记录分页；最新信息保持在底部，上翻查看历史时不会被新回执打断。</li>
+<li>长任务历史归档并保持可查询，避免累计记录数量成为继续工作的障碍；增加任务用量统计，区分真实上报与估算。</li>
+<li>修复网页文本与HTTP回执识别、交付后多余模型请求、任务跟进历史异步崩溃等执行问题。</li>
 </ul>
-<p>适用于 macOS 14 及以上 Apple Silicon。本次累计包含此前尚未单独上线的1.15.1归档与安全页修复。后台运行句柄限当前应用生命周期，不支持跨崩溃恢复；未知写入结果保留回执核对，不自动重放。未知或重名分类展示真实目录供选择，不自动创建分类。</p>
+<p>适用于 macOS 14 及以上 Apple Silicon。App 打开期间持续推进，重开后核对并接续；App 真正退出期间不执行任务。用户明确的暂停、停止、权限和投入约束继续生效。已派发且无法核对的非幂等操作不会自动重放。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.16.0/GoEvo-v1.16.0.zip" length="142199169" type="application/octet-stream" sparkle:edSignature="TPg3vO7LYwr7cZk0a/7piFJhUCMZje3gQN6ulTG2xTw82tiTLi1pfolZT0OU0jrPLgoQyvZKV8yVJU/umCbnCg=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.17.0/GoEvo-v1.17.0.zip" length="142894826" type="application/octet-stream" sparkle:edSignature="CgwOa3C2TvQZzESQh4drrd8za6htzbegyc9ppgl9N/V20xXmsgEnMkR3fKNByl+5Z0EcB31er4sJJy2O7p8yAA=="/>
         </item>
     </channel>
 </rss>
