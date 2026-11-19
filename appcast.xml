@@ -3,27 +3,24 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.17.0</title>
-            <pubDate>Tue, 17 Nov 2026 09:46:01 +0800</pubDate>
-            <sparkle:version>1764</sparkle:version>
-            <sparkle:shortVersionString>1.17.0</sparkle:shortVersionString>
+            <title>1.18.0</title>
+            <pubDate>Thu, 19 Nov 2026 13:31:53 +0800</pubDate>
+            <sparkle:version>1766</sparkle:version>
+            <sparkle:shortVersionString>1.18.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.17.0 · 持续任务与工作台优化</h3>
+            <description><![CDATA[<h3>GoEVO 1.18.0 · 一次对话，多个任务</h3>
 <ul>
-<li>任务围绕同一个目标持续推进：分轮保存进展，网络、资源暂忙时自动等待并接续，减少要求用户调整超时、次数及重复点击继续。</li>
-<li>完善重启、睡眠与退出恢复：区分尚未派发和已执行的操作；结果不明时先只读核对，保留原回执，不盲目重复安装或写入。</li>
-<li>普通安装优先使用原生执行能力，精简为检查环境、安装配置、实测交付；补齐目录创建、文件批量读取参数和受管理长命令的任务归属。</li>
-<li>改进交付核验：最终标准与具体证据逐项对应，服务需真实健康检查，多服务分别核验；文件与金额等优先确定性检查，减少重复模型审查。</li>
-<li>更新上下文优先保留当前要求、完整约束及最新证据，历史材料按需读取；新增需求保留未受影响成果，减少整条任务反复重验。</li>
-<li>右侧工作台简化为目标、当前活动、里程碑与成果、活动记录；技术配置收进详情，完成后可以在原会话继续优化。</li>
-<li>恢复运行中任务的过程与实时记录入口，支持较早记录分页；最新信息保持在底部，上翻查看历史时不会被新回执打断。</li>
-<li>长任务历史归档并保持可查询，避免累计记录数量成为继续工作的障碍；增加任务用量统计，区分真实上报与估算。</li>
-<li>修复网页文本与HTTP回执识别、交付后多余模型请求、任务跟进历史异步崩溃等执行问题。</li>
+<li>同一对话可以先后完成多个目标。右侧工作台一次展示一项任务，可按标题或来源查找历史成果，随时返回当前任务。</li>
+<li>任务先做必要的只读检查，再展示短计划。点击「确认并开始」后，按已批准的版本直接执行。App 重启后会恢复已保存的计划和批准状态。</li>
+<li>交付后可以在普通对话直接问「这份说明里写了什么」。助手会读取对应的交付文件，回看历史时也能引用当时交付的文件。</li>
+<li>小修改记录在原文件上，原验收问题在原目标中修复。新增模块可从已有成果派生新目标，独立支线也可以留在同一会话中。</li>
+<li>打开网页时，GoEVO 浏览器会核实可见窗口、实际地址和页面内容，发生跳转时列出最终落点。页面连接失败时会在对话中说明原因。</li>
+<li>任务规划与执行共用正常请求的模型和预算设置。任务聊天支持与普通对话一致的 Markdown 展示，服务等待、恢复和验收状态在工作台中分别呈现。</li>
 </ul>
-<p>适用于 macOS 14 及以上 Apple Silicon。App 打开期间持续推进，重开后核对并接续；App 真正退出期间不执行任务。用户明确的暂停、停止、权限和投入约束继续生效。已派发且无法核对的非幂等操作不会自动重放。</p>
+<p>适用于 macOS 14 及以上版本的 Apple Silicon Mac。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.17.0/GoEvo-v1.17.0.zip" length="142894826" type="application/octet-stream" sparkle:edSignature="CgwOa3C2TvQZzESQh4drrd8za6htzbegyc9ppgl9N/V20xXmsgEnMkR3fKNByl+5Z0EcB31er4sJJy2O7p8yAA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.0/GoEvo-v1.18.0.zip" length="143968870" type="application/octet-stream" sparkle:edSignature="ixPCE5Mxa+nIl9Gh3ij1HJpUkMjbLPh1MymvghPwsl/UipfZClEZgNs18M1/+NsQ/WaRG7/WI92wHTtK0yAPAw=="/>
         </item>
     </channel>
 </rss>
