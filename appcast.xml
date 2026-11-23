@@ -3,24 +3,23 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.18.0</title>
-            <pubDate>Thu, 19 Nov 2026 13:31:53 +0800</pubDate>
-            <sparkle:version>1766</sparkle:version>
-            <sparkle:shortVersionString>1.18.0</sparkle:shortVersionString>
+            <title>1.18.1</title>
+            <pubDate>Mon, 23 Nov 2026 15:12:22 +0800</pubDate>
+            <sparkle:version>1768</sparkle:version>
+            <sparkle:shortVersionString>1.18.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.18.0 · 一次对话，多个任务</h3>
+            <description><![CDATA[<h3>GoEVO 1.18.1 · 任务接续和交付优化</h3>
 <ul>
-<li>同一对话可以先后完成多个目标。右侧工作台一次展示一项任务，可按标题或来源查找历史成果，随时返回当前任务。</li>
-<li>任务先做必要的只读检查，再展示短计划。点击「确认并开始」后，按已批准的版本直接执行。App 重启后会恢复已保存的计划和批准状态。</li>
-<li>交付后可以在普通对话直接问「这份说明里写了什么」。助手会读取对应的交付文件，回看历史时也能引用当时交付的文件。</li>
-<li>小修改记录在原文件上，原验收问题在原目标中修复。新增模块可从已有成果派生新目标，独立支线也可以留在同一会话中。</li>
-<li>打开网页时，GoEVO 浏览器会核实可见窗口、实际地址和页面内容，发生跳转时列出最终落点。页面连接失败时会在对话中说明原因。</li>
-<li>任务规划与执行共用正常请求的模型和预算设置。任务聊天支持与普通对话一致的 Markdown 展示，服务等待、恢复和验收状态在工作台中分别呈现。</li>
+<li>任务中补充要求时，计划只更新受影响的步骤。明确要求「等我确认」后，已发出的操作先收回执，后续写入等确认再开始。重复确认只会执行一次。</li>
+<li>明确给出文件、原文和新内容的单处替换，在确认后直接执行。获得真实写入回执后，本机会验收结果，通过即可自动交付。已通过的无关步骤沿用已有证据。</li>
+<li>任务聊天与普通对话对齐流式回复、推理展示、模型和耗时。查进度会标注任务记录来源及更新时间，对应消息可展开查看真实工具回执。</li>
+<li>工作台区分「恢复并验证」和「仅重新检查」。任务有部分结果时先保留成果，重复发送「继续」会接续当前动作或报告真实阻塞状态。</li>
+<li>改进任务模型排队、候补和上下文选取。规划、执行与验收使用任务的正常模型和预算配置。</li>
 </ul>
 <p>适用于 macOS 14 及以上版本的 Apple Silicon Mac。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.0/GoEvo-v1.18.0.zip" length="143968870" type="application/octet-stream" sparkle:edSignature="ixPCE5Mxa+nIl9Gh3ij1HJpUkMjbLPh1MymvghPwsl/UipfZClEZgNs18M1/+NsQ/WaRG7/WI92wHTtK0yAPAw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.1/GoEvo-v1.18.1.zip" length="144628871" type="application/octet-stream" sparkle:edSignature="oHbmxS42+7vTsCU2rKMapxxXVRAvMN7iCJw8fj9L7cnNlt3uYHGQRPA65j3EHZ4Psb5OrXu+ctlRNNzN+QQ6AA=="/>
         </item>
     </channel>
 </rss>
