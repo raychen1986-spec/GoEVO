@@ -3,20 +3,20 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.18.2</title>
-            <pubDate>Tue, 24 Nov 2026 12:51:24 +0800</pubDate>
-            <sparkle:version>1770</sparkle:version>
-            <sparkle:shortVersionString>1.18.2</sparkle:shortVersionString>
+            <title>1.18.3</title>
+            <pubDate>Tue, 24 Nov 2026 15:11:08 +0800</pubDate>
+            <sparkle:version>1771</sparkle:version>
+            <sparkle:shortVersionString>1.18.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.18.2 · 修复旧任务接续</h3>
+            <description><![CDATA[<h3>GoEVO 1.18.3 · 任务诊断复用检查回执</h3>
 <ul>
-<li>旧任务的本机检查可接续。能从历史回执确认是系统误记的编程窗口关联时，自动修正当前项，沿用已有证据和授权。</li>
-<li>验收启动前核对原窗口、执行目录和权限，区分窗口忙碌、关联失效和权限不足，便于从原步骤继续。</li>
+<li>复验取得部分结果后，继续诊断会复用同一任务项仍有效的成功回执，只补查缺失项。复用时标注原检查时间和运行编号。</li>
+<li>明确选择重新验证时执行现场检查，任务仍以实际验收结果自动签收。改进 macOS 版本等只读探针的调用提示。</li>
 </ul>
 <p>适用于 macOS 14 及以上版本的 Apple Silicon Mac。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.2/GoEvo-v1.18.2.zip" length="144661521" type="application/octet-stream" sparkle:edSignature="L9UBBsyfV4/cVIwd70ZLWyWJTy7ujRRbt0naxurzJ4bMMFptC8nLxE0S7sEDAEW+8qjo+I7EiAwsBM+DzZy1CA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.3/GoEvo-v1.18.3.zip" length="144697681" type="application/octet-stream" sparkle:edSignature="9OnWJ/1MrEjA7Vxtd8jCaVM2tAlpJVjr8nmdaXmJZzjoHbMUR2VYdhu3a4M8abGWO2215TA2J+TVIrUN53LDDQ=="/>
         </item>
     </channel>
 </rss>
