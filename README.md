@@ -4,18 +4,15 @@
 
 ## 下载
 
-**[下载 GoEVO 1.18.1（Apple Silicon）](https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.1/GoEvo-v1.18.1.zip)**
+**[下载 GoEVO 1.18.2（Apple Silicon）](https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.2/GoEvo-v1.18.2.zip)**
 
 需要 macOS 14 或以上。下载后解压并打开 GoEvo.app。已安装用户可在应用的「软件更新」中检查更新。
 
-[查看版本说明](https://github.com/raychen1986-spec/GoEVO/releases/tag/v1.18.1) · [历史版本](https://github.com/raychen1986-spec/GoEVO/releases)
+[查看版本说明](https://github.com/raychen1986-spec/GoEVO/releases/tag/v1.18.2) · [历史版本](https://github.com/raychen1986-spec/GoEVO/releases)
 
-## 1.18.1 更新
+## 1.18.2 更新
 
-- 任务中补充要求时，计划只更新受影响的步骤。明确要求「等我确认」后，已发出的操作先收回执，后续写入等确认再开始。重复确认只会执行一次。
-- 明确给出文件、原文和新内容的单处替换，在确认后直接执行。获得真实写入回执后，本机会验收结果，通过即可自动交付。已通过的无关步骤沿用已有证据。
-- 任务聊天与普通对话对齐流式回复、推理展示、模型和耗时。查进度会标注任务记录来源及更新时间，对应消息可展开查看真实工具回执。
-- 工作台区分「恢复并验证」和「仅重新检查」。任务有部分结果时先保留成果，重复发送「继续」会接续当前动作或报告真实阻塞状态。
-- 改进任务模型排队、候补和上下文选取。规划、执行与验收使用任务的正常模型和预算配置。
+- 能确认是系统误记的旧编程窗口关联时，原任务可接续本机检查，沿用原权限和已通过的证据。
+- 验收启动前核对原窗口、工作目录和权限，并显示实际阻塞原因。
 
 App 打开时持续执行目标，睡眠唤醒或重新打开后先核对上次结果再接续。
