@@ -3,23 +3,20 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.18.1</title>
-            <pubDate>Mon, 23 Nov 2026 15:12:22 +0800</pubDate>
-            <sparkle:version>1768</sparkle:version>
-            <sparkle:shortVersionString>1.18.1</sparkle:shortVersionString>
+            <title>1.18.2</title>
+            <pubDate>Tue, 24 Nov 2026 12:51:24 +0800</pubDate>
+            <sparkle:version>1770</sparkle:version>
+            <sparkle:shortVersionString>1.18.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.18.1 · 任务接续和交付优化</h3>
+            <description><![CDATA[<h3>GoEVO 1.18.2 · 修复旧任务接续</h3>
 <ul>
-<li>任务中补充要求时，计划只更新受影响的步骤。明确要求「等我确认」后，已发出的操作先收回执，后续写入等确认再开始。重复确认只会执行一次。</li>
-<li>明确给出文件、原文和新内容的单处替换，在确认后直接执行。获得真实写入回执后，本机会验收结果，通过即可自动交付。已通过的无关步骤沿用已有证据。</li>
-<li>任务聊天与普通对话对齐流式回复、推理展示、模型和耗时。查进度会标注任务记录来源及更新时间，对应消息可展开查看真实工具回执。</li>
-<li>工作台区分「恢复并验证」和「仅重新检查」。任务有部分结果时先保留成果，重复发送「继续」会接续当前动作或报告真实阻塞状态。</li>
-<li>改进任务模型排队、候补和上下文选取。规划、执行与验收使用任务的正常模型和预算配置。</li>
+<li>旧任务的本机检查可接续。能从历史回执确认是系统误记的编程窗口关联时，自动修正当前项，沿用已有证据和授权。</li>
+<li>验收启动前核对原窗口、执行目录和权限，区分窗口忙碌、关联失效和权限不足，便于从原步骤继续。</li>
 </ul>
 <p>适用于 macOS 14 及以上版本的 Apple Silicon Mac。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.1/GoEvo-v1.18.1.zip" length="144628871" type="application/octet-stream" sparkle:edSignature="oHbmxS42+7vTsCU2rKMapxxXVRAvMN7iCJw8fj9L7cnNlt3uYHGQRPA65j3EHZ4Psb5OrXu+ctlRNNzN+QQ6AA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.2/GoEvo-v1.18.2.zip" length="144661521" type="application/octet-stream" sparkle:edSignature="L9UBBsyfV4/cVIwd70ZLWyWJTy7ujRRbt0naxurzJ4bMMFptC8nLxE0S7sEDAEW+8qjo+I7EiAwsBM+DzZy1CA=="/>
         </item>
     </channel>
 </rss>
