@@ -3,21 +3,20 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.18.5</title>
-            <pubDate>Tue, 24 Nov 2026 21:21:50 +0800</pubDate>
-            <sparkle:version>1773</sparkle:version>
-            <sparkle:shortVersionString>1.18.5</sparkle:shortVersionString>
+            <title>1.18.6</title>
+            <pubDate>Wed, 25 Nov 2026 09:36:17 +0800</pubDate>
+            <sparkle:version>1774</sparkle:version>
+            <sparkle:shortVersionString>1.18.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.18.5 · 修复任务工作台自动签收</h3>
+            <description><![CDATA[<h3>GoEVO 1.18.6 · 优化任务交付后的回复</h3>
 <ul>
-<li>「打开并验收」会将实际浏览器导航、原步骤交付说明和当前服务检查一起送审。验收通过后自动签收。</li>
-<li>等待打开窗口的任务重启后仍可从工作台接续。连续发送「继续」只提示下一步，保留已通过的证据。</li>
-<li>修复后台检查误将最后一项标记为完成的问题。符合条件的未交付任务会恢复为待打开验收，并保留原始回执。</li>
+<li>已交付的任务收到「继续」时，显示交付结论、原核验时间和成果入口，避免把历史待验收提示当成当前操作。</li>
+<li>可在任务工作台的「验证与证据」展开查看原始回执。</li>
 </ul>
 <p>适用于 macOS 14 及以上版本的 Apple Silicon Mac。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.5/GoEvo-v1.18.5.zip" length="144874085" type="application/octet-stream" sparkle:edSignature="FPPnxaOEXoYTIS/P/e2z617otoF7os/ZptmS5eM177DCycUOrDHcO4Kqtts77+mcP1+zeT6wVIa98Tuu4qOGAw=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.6/GoEvo-v1.18.6.zip" length="144874681" type="application/octet-stream" sparkle:edSignature="UgBNc2zxQ/wP/bAEa1A818oLZ0ksGu36LrtwNQ65+DGMQSuksNuDsl7VFfHmyQNcz0gl0tjMn93YuPMKG7vrCA=="/>
         </item>
     </channel>
 </rss>
