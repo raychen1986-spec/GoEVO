@@ -3,20 +3,22 @@
     <channel>
         <title>GoEvo</title>
         <item>
-            <title>1.18.6</title>
-            <pubDate>Wed, 25 Nov 2026 09:36:17 +0800</pubDate>
-            <sparkle:version>1774</sparkle:version>
-            <sparkle:shortVersionString>1.18.6</sparkle:shortVersionString>
+            <title>1.18.7</title>
+            <pubDate>Thu, 26 Nov 2026 11:18:52 +0800</pubDate>
+            <sparkle:version>1775</sparkle:version>
+            <sparkle:shortVersionString>1.18.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h3>GoEVO 1.18.6 · 优化任务交付后的回复</h3>
+            <description><![CDATA[<h3>GoEVO 1.18.7 · 做梦晨报更清楚，记忆整理更准确</h3>
 <ul>
-<li>已交付的任务收到「继续」时，显示交付结论、原核验时间和成果入口，避免把历史待验收提示当成当前操作。</li>
-<li>可在任务工作台的「验证与证据」展开查看原始回执。</li>
+<li>晨报默认显示两行。点「查看记录」可在聊天中直接查看新增内容和更新前后的值。</li>
+<li>整理记忆时会核对完整原文，区分已发生的更正、尚未调整和计划调整。新值已有记录时会复用，并保留旧值历史。</li>
+<li>白天和夜间使用同一套记忆处理规则。单页知识库资料反复失败时，其他来源仍可继续整理。</li>
+<li>查找有明确原文依据的单条记忆时，可以直接用本机结果。</li>
 </ul>
 <p>适用于 macOS 14 及以上版本的 Apple Silicon Mac。</p>
 ]]></description>
-            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.6/GoEvo-v1.18.6.zip" length="144874681" type="application/octet-stream" sparkle:edSignature="UgBNc2zxQ/wP/bAEa1A818oLZ0ksGu36LrtwNQ65+DGMQSuksNuDsl7VFfHmyQNcz0gl0tjMn93YuPMKG7vrCA=="/>
+            <enclosure url="https://github.com/raychen1986-spec/GoEVO/releases/download/v1.18.7/GoEvo-v1.18.7.zip" length="145108922" type="application/octet-stream" sparkle:edSignature="ZLKg8xOk3H1ORvJpA5RK5Pco8zUd208RaTmJzr2SiUrEjGYDeSXz9oQ6tMfmg7lORnN4hhKGw8Lead3r5QDtDA=="/>
         </item>
     </channel>
 </rss>
